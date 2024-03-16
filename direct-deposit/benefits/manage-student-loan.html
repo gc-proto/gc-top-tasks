@@ -7,7 +7,7 @@
 <head>
 	<meta charset="utf-8">
 	<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW) wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
-	<title>Sign in to [NAME OF ACCOUNT] - Canada.ca</title>
+	<title>Manage your student loan at the National Student Loans Service Centre - Canada.ca</title>
 	<meta content="width=device-width,initial-scale=1" name="viewport">
 	<!-- Meta data -->
 	<!-- Meta data-->
@@ -24,7 +24,14 @@
 		}));
 	</script>
 </head>
-
+<style>
+    h1#wb-cont {
+    border-bottom: 0.18em solid #af3c43;
+    -o-border-image: linear-gradient(to right, #af3c43 71px, transparent 71px);
+    border-image: linear-gradient(to right, #af3c43 71px, transparent 71px);
+    border-image-slice: 1;
+}
+</style>
 <body vocab="http://schema.org/" typeof="WebPage" class="cnt-wdth-lmtd">
 	<div id="def-top"> </div>
 	<!-- Write closure template -->
@@ -37,18 +44,80 @@
 				text: "Français"
 			}],
 			breadcrumbs: [{
-				title: "Home",
-				href: "https://www.canada.ca/en.html"
-			}, {
-				title: "[theme, topic, or department ]",
-				href: ""
+				title: "Benefits",
+				href: "../benefits.html"
+			},{
+				title: "Student aid and education planning",
+				href: "./education.html"
+			},{
+				title: "Student aid",
+				href: "./student-aid.html"
 			}],
 			search: true,
 			siteMenu: true,
 			showPreContent: true
 		});
 	</script>
-	<main role="main" property="mainContentOfPage">
+	<main role="main"  property="mainContentOfPage">
+		<div class="container">
+			<div class="">
+				<h1 style="max-width: 30ch !important;" property="name" id="wb-cont" dir="ltr">
+					Manage your student loan at the National Student Loans Service Centre</h1>
+					
+					
+					
+						 <p>The National Student Loans Service Centre (NSLSC) is where you manage your student loan.</p>
+					<section>
+					  <h2>On this page</h2>
+					  <ul>
+						<li><a href="#h2.1">Your NSLSC account</a></li>
+						<li><a href="#h2.2">Keep your loan payment-free while you study</a></li>
+						<li><a href="#h2.3">Medical and parental leave</a></li>
+						<li><a href="#h2.4">Let another person manage your student loan</a></li>
+						<li><a href="#h2.5">Reservists in the Canadian Forces</a></li>
+					  </ul>
+					</section>
+					<section>
+					  <h2 id="h2.1">Your NSLSC account</h2>
+					  <p>Manage your loan, make payments and apply for repayment help from your NSLSC account.</p>
+					  <p class="mrgn-tp-lg"><a class="btn btn-primary" href="https://www.csnpe-nslsc.canada.ca/en/home">Login to your NSLSC account</a></p>
+					</section>
+					<section>
+					  <h2 id="h2.2">Keep your loan payment-free while you study</h2>
+					  <p>Let us&nbsp;know that you are still in study. You can:</p>
+					  <ul>
+						<li><a href="https://www.csnpe-nslsc.canada.ca/en/home">log in to your NSLSC account</a>&nbsp;to confirm your enrolment</li>
+						<li>submit a paper copy of the <a href="/content/dam/canada/employment-social-development/migration/documents/assets/portfolio/docs/en/student_loans/forms/sde0003_en.pdf">Confirmation of Enrolment (PDF, 267 KB)</a></li>
+					  </ul>
+					  <p>This will make sure that repayment is delayed until you finish.</p>
+					</section>
+					<section>
+					  <h2 id="h2.3">Medical and parental leave</h2>
+					  <p>If you need to take time away from your studies for medical or parental reasons, you can apply for&nbsp;<a href="https://www.canada.ca/en/services/benefits/education/student-aid/grants-loans/medical-parental-leave.html">Medical and parental leave</a>.</p>
+					</section>
+					<section>
+					  <h2 id="h2.4">Let another person manage your student loan</h2>
+					  <p>You can give another person power of attorney to take care of your student loan dealings with us.</p>
+					  <ul>
+						<li><a href="/content/dam/canada/employment-social-development/migration/documents/assets/portfolio/docs/en/student_loans/forms/hrsdc_power.pdf">Power of Attorney form (PDF, 69 KB)</a>&nbsp;</li>
+					  </ul>
+					  <p>Fill out the form and send it to:</p>
+					  <p>National Student Loans Service Centre (NSLSC)<br>
+						P.O. Box 4030&nbsp;<br>
+						Mississauga ON&nbsp;&nbsp;L5A 4M4</p>
+					</section>
+					<section>
+					  <h2 id="h2.5">Reservists in the Canadian Forces</h2>
+					  <p>If you are a reservist in the Canadian Forces on a&nbsp;<a href="https://www.canada.ca/en/department-national-defence/services/operations/military-operations/current-operations/list.html">designated operation</a>&nbsp;you can <a href="https://www.canada.ca/en/services/benefits/education/student-aid/reservists.html">delay repayment on your student loan</a>.</p>
+					</section>
+					
+					
+					</div>
+</div>
+
+
+</div>
+
 
 		<div class="container">
 			<div id="def-preFooter"> </div>
@@ -59,7 +128,7 @@
 		<script type="text/javascript">
 			var defPreFooter = document.getElementById("def-preFooter");
 			defPreFooter.outerHTML = wet.builder.preFooter({
-				dateModified: "November 1, 2022",
+				dateModified: "2024-02-05",
 				showPostContent: true,
 				showFeedback: true,
 				showShare: true
