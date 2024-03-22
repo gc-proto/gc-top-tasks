@@ -273,7 +273,7 @@
                                         <label for="filterSearch" class="h5 mrgn-tp-0">Contains</label>
                                         <input type="search" id="filterSearch" class="form-control full-width" placeholder="Type a keyword, a day, or a month" />
                                     </div>
-                                    <div class="form-group">
+                                    <!-- <div class="form-group">
                                         <fieldset>
                                             <legend class="mrgn-tp-sm mrgn-bttm-sm h5">Date</legend>
                                             <div class="row">
@@ -304,22 +304,28 @@
                                                 </div>
                                             </div>
                                         </fieldset>
-                                    </div>
+                                    </div> -->
                                     <div class="form-group mrgn-bttm-0">
                                         <fieldset class="p-0">
-                                            <legend class="mrgn-tp-md mrgn-bttm-md h5">Format</legend>
+                                            <legend class="mrgn-tp-md mrgn-bttm-md h5">For</legend>
                                             <div class="clearfix"></div>
                                             <ul class="list-unstyled">
                                                 <li class="checkbox mrgn-tp-0">
-                                                    <label for="delivery_online"> <input type="checkbox" name="delivery" id="delivery_online" class="wb-tagfilter-ctrl" value="delivery_online" /> Online </label>
+                                                    <label for="delivery_online"> <input type="checkbox" name="delivery" id="delivery_online" class="wb-tagfilter-ctrl" value="delivery_online" /> Individuals in Canada </label>
                                                 </li>
                                                 <li class="checkbox">
-                                                    <label for="delivery_inperson"> <input type="checkbox" name="delivery" id="delivery_inperson" class="wb-tagfilter-ctrl" value="delivery_in-person" /> In-person </label>
+                                                    <label for="delivery_inperson"> <input type="checkbox" name="delivery" id="delivery_inperson" class="wb-tagfilter-ctrl" value="delivery_in-person" /> Individuals outside Canada </label>
+                                                </li>
+												<li class="checkbox">
+                                                    <label for="business"> <input type="checkbox" name="delivery" id="business" class="wb-tagfilter-ctrl" value="business" /> Businesses </label>
+                                                </li>
+												<li class="checkbox">
+                                                    <label for="organizations"> <input type="checkbox" name="delivery" id="organizations" class="wb-tagfilter-ctrl" value="organizations" /> Other organizations </label>
                                                 </li>
                                             </ul>
                                         </fieldset>
                                     </div>
-                                    <div class="form-group">
+                                    <!-- <div class="form-group">
                                         <label for="filterLocation" class="h5 mrgn-tp-md">Location</label>
                                         <select name="filterLocation" id="filterLocation" class="form-control full-width wb-tagfilter-ctrl">
                                             <option value="">Any</option>
@@ -339,8 +345,8 @@
                                             <option value="location_saskatchewan">Saskatchewan</option>
                                             <option value="location_yukon">Yukon</option>
                                         </select>
-                                    </div>
-                                    <div class="form-group">
+                                    </div> -->
+                                    <!-- <div class="form-group">
                                         <label for="filterTitle" class="h5 mrgn-tp-md">Title</label>
                                         <select name="filterTitle" id="filterTitle" class="form-control full-width wb-tagfilter-ctrl">
                                             <option value="">Any</option>
@@ -354,9 +360,9 @@
                                             <option value="title_mythbustinggovernmentprocurement">Mythbusting Government Procurement</option>
                                             <option value="title_askpacanything">Ask PAC Anything</option>
                                         </select>
-                                    </div>
+                                    </div> -->
 
-                                    <div class="form-group">
+                                    <!-- <div class="form-group">
                                         <label for="filterSubject" class="h5 mrgn-tp-md">Subject</label>
                                         <select name="filterSubject" id="filterSubject" class="form-control full-width wb-tagfilter-ctrl">
                                             <option value="">Any</option>
@@ -365,26 +371,27 @@
                                             <option value="subject_findopportunities">Find opportunities</option>
                                             <option value="subject_bidding">Bidding</option>
                                         </select>
-                                    </div>
+                                    </div> -->
                                     <div class="form-group mrgn-bttm-0">
                                         <fieldset class="p-0">
-                                            <legend class="mrgn-tp-md mrgn-bttm-md h5">Language</legend>
+                                            <legend class="mrgn-tp-md mrgn-bttm-md h5">Payments</legend>
                                             <div class="clearfix"></div>
                                             <ul class="list-unstyled">
                                                 <li class="checkbox mrgn-tp-0">
-                                                    <label for="language_english"> <input type="checkbox" name="language" id="language_english" class="wb-tagfilter-ctrl" value="language_english" /> English </label>
+                                                    <label for="language_english"> <input type="checkbox" name="language" id="language_english" class="wb-tagfilter-ctrl" value="language_english" /> Apprenticeship grants and loans
+													</label>
                                                 </li>
                                                 <li class="checkbox">
-                                                    <label for="language_french"> <input type="checkbox" name="language" id="language_french" class="wb-tagfilter-ctrl" value="language_french" /> French </label>
+                                                    <label for="language_french"> <input type="checkbox" name="language" id="language_french" class="wb-tagfilter-ctrl" value="language_french" /> Canada Carbon Rebate </label>
                                                 </li>
                                                 <li class="checkbox">
-                                                    <label for="language_bilingual"> <input type="checkbox" name="language" id="language_bilingual" class="wb-tagfilter-ctrl" value="language_bilingual" /> Bilingual </label>
+                                                    <label for="language_bilingual"> <input type="checkbox" name="language" id="language_bilingual" class="wb-tagfilter-ctrl" value="language_bilingual" /> Canada child Benefit </label>
                                                 </li>
                                                 <li class="checkbox">
-                                                    <label for="language_asl"> <input type="checkbox" name="language" id="language_asl" class="wb-tagfilter-ctrl" value="language_asl" /> American Sign Language (ASL) </label>
+                                                    <label for="language_asl"> <input type="checkbox" name="language" id="language_asl" class="wb-tagfilter-ctrl" value="language_asl" /> Canada Pension Plan (CPP) </label>
                                                 </li>
                                                 <li class="checkbox">
-                                                    <label for="language_qcsign"> <input type="checkbox" name="language" id="language_qcsign" class="wb-tagfilter-ctrl" value="language_lsq" /> Langue des signes québecoise (LSQ) </label>
+                                                    <label for="language_qcsign"> <input type="checkbox" name="language" id="language_qcsign" class="wb-tagfilter-ctrl" value="language_lsq" /> Canada workers Benefit (CWB) </label>
                                                 </li>
                                                 <li class="checkbox">
                                                     <label for="language_other"> <input type="checkbox" name="language" id="language_other" class="wb-tagfilter-ctrl" value="language_other" /> Other </label>
