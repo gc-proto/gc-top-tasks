@@ -12,6 +12,7 @@
         <link rel="alternate" hreflang="en" href="https://www.canada.ca/en/public-services-procurement/programs/pac/event-calendar.html" />
         <link rel="alternate" hreflang="fr" href="https://www.canada.ca/fr/services-publics-approvisionnement/programmes/sac/calendrier-evenements.html" />
         <script src="//assets.adobedtm.com/be5dfd287373/abb618326704/launch-3eac5e076135.min.js"></script>
+        <link rel="stylesheet" href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/méli-mélo/2023-10-mount-revelstoke.css" />
 
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous" />
         <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/wet-boew/css/theme.min.css" />
@@ -277,7 +278,7 @@
                                     <p class="text-right"><a href="./event-calendar.html" class="small">Clear all</a></p>
                                     <div class="form-group">
                                         <label for="filterSearch" class="h5 mrgn-tp-0">Contains</label>
-                                        <input type="search" id="filterSearch" class="form-control full-width" placeholder="Type a keyword, a day, or a month" />
+                                        <input type="search" id="filterSearch" class="form-control full-width" placeholder="Type a keyword" />
                                     </div>
                                     <div class="form-group mrgn-bttm-0">
                                         <fieldset class="p-0">
@@ -285,16 +286,16 @@
                                             <div class="clearfix"></div>
                                             <ul class="list-unstyled">
                                                 <li class="checkbox mrgn-tp-0">
-                                                    <label for="delivery_online"> <input type="checkbox" name="delivery" id="delivery_online" class="wb-tagfilter-ctrl" value="delivery_online" /> Individuals in Canada </label>
+                                                    <label for="for_individualsin"> <input type="checkbox" name="for" id="for_individualsin" class="wb-tagfilter-ctrl" value="for_individualsin" /> Individuals in Canada </label>
                                                 </li>
                                                 <li class="checkbox">
-                                                    <label for="delivery_inperson"> <input type="checkbox" name="delivery" id="delivery_inperson" class="wb-tagfilter-ctrl" value="delivery_in-person" /> Individuals outside Canada </label>
+                                                    <label for="for_individualsout"> <input type="checkbox" name="for" id="for_individualsout" class="wb-tagfilter-ctrl" value="for_individualsout" /> Individuals outside Canada </label>
                                                 </li>
 												<li class="checkbox">
-                                                    <label for="business"> <input type="checkbox" name="delivery" id="business" class="wb-tagfilter-ctrl" value="business" /> Businesses </label>
+                                                    <label for="for_business"> <input type="checkbox" name="for" id="for_business" class="wb-tagfilter-ctrl" value="for_business" /> Businesses </label>
                                                 </li>
 												<li class="checkbox">
-                                                    <label for="organizations"> <input type="checkbox" name="delivery" id="organizations" class="wb-tagfilter-ctrl" value="organizations" /> Other organizations </label>
+                                                    <label for="for_organizations"> <input type="checkbox" name="for" id="for_organizations" class="wb-tagfilter-ctrl" value="for_organizations" /> Other organizations </label>
                                                 </li>
                                             </ul>
                                         </fieldset>
@@ -305,71 +306,71 @@
                                             <div class="clearfix"></div>
                                             <ul class="list-unstyled">
                                                 <li class="checkbox mrgn-tp-0">
-                                                    <label for="language_english"> <input type="checkbox" name="language" id="language_english" class="wb-tagfilter-ctrl" value="language_english" /> Apprenticeship grants and loans
+                                                    <label for="payments_apprenticeship"> <input type="checkbox" name="payments" id="payments_apprenticeship" class="wb-tagfilter-ctrl" value="payments_apprenticeship" /> Apprenticeship grants and loans
 													</label>
                                                 </li>
                                                 <li class="checkbox">
-                                                    <label for="language_french"> <input type="checkbox" name="language" id="language_french" class="wb-tagfilter-ctrl" value="language_french" /> Canada Carbon Rebate </label>
+                                                    <label for="payments_ccr"> <input type="checkbox" name="payments" id="payments_ccr" class="wb-tagfilter-ctrl" value="payments_ccr" /> Canada Carbon Rebate </label>
                                                 </li>
                                                 <li class="checkbox">
-                                                    <label for="language_bilingual"> <input type="checkbox" name="language" id="language_bilingual" class="wb-tagfilter-ctrl" value="language_bilingual" /> Canada child Benefit </label>
+                                                    <label for="payments_ccb"> <input type="checkbox" name="payments" id="payments_ccb" class="wb-tagfilter-ctrl" value="payments_ccb" /> Canada child Benefit </label>
                                                 </li>
                                                 <li class="checkbox">
-                                                    <label for="language_asl"> <input type="checkbox" name="language" id="language_asl" class="wb-tagfilter-ctrl" value="language_asl" /> Canada Pension Plan (CPP) </label>
+                                                    <label for="payments_cpp"> <input type="checkbox" name="payments" id="payments_cpp" class="wb-tagfilter-ctrl" value="payments_cpp" /> Canada Pension Plan (CPP) </label>
                                                 </li>
                                                 <li class="checkbox">
-                                                    <label for="language_qcsign"> <input type="checkbox" name="language" id="language_qcsign" class="wb-tagfilter-ctrl" value="language_qcsign" /> Canada workers Benefit (CWB) </label>
+                                                    <label for="payments_cwb"> <input type="checkbox" name="payments" id="payments_cwb" class="wb-tagfilter-ctrl" value="payments_cwb" /> Canada workers Benefit (CWB) </label>
                                                 </li>
 												<li class="checkbox">
-                                                    <label for="language_ei"> <input type="checkbox" name="language" id="language_ei" class="wb-tagfilter-ctrl" value="language_ei" /> Employment Insurance (EI) </label>
+                                                    <label for="payments_ei"> <input type="checkbox" name="payments" id="payments_ei" class="wb-tagfilter-ctrl" value="payments_ei" /> Employment Insurance (EI) </label>
                                                 </li>
 												<li class="checkbox">
-                                                    <label for="language_pspay"> <input type="checkbox" name="language" id="language_pspay" class="wb-tagfilter-ctrl" value="language_pspay" /> Federal public service pay </label>
+                                                    <label for="payments_pspay"> <input type="checkbox" name="payments" id="payments_pspay" class="wb-tagfilter-ctrl" value="payments_pspay" /> Federal public service pay </label>
                                                 </li>
 												<li class="checkbox">
-                                                    <label for="language_pspension"> <input type="checkbox" name="language" id="language_pspension" class="wb-tagfilter-ctrl" value="language_pspension" /> Federal public service pension 
+                                                    <label for="payments_pspension"> <input type="checkbox" name="payments" id="payments_pspension" class="wb-tagfilter-ctrl" value="payments_pspension" /> Federal public service pension 
 													</label>
                                                 </li>
 												<li class="checkbox">
-                                                    <label for="language_annuity"> <input type="checkbox" name="language" id="language_annuity" class="wb-tagfilter-ctrl" value="language_annuity" /> Government annuity </label>
+                                                    <label for="payments_annuity"> <input type="checkbox" name="payments" id="payments_annuity" class="wb-tagfilter-ctrl" value="payments_annuity" /> Government annuity </label>
                                                 </li>
 												<li class="checkbox">
-                                                    <label for="language_grants"> <input type="checkbox" name="language" id="language_grants" class="wb-tagfilter-ctrl" value="language_grants" /> Grants and contributions 
+                                                    <label for="payments_grants"> <input type="checkbox" name="payments" id="payments_grants" class="wb-tagfilter-ctrl" value="payments_grants" /> Grants and contributions 
 													</label>
                                                 </li>
 												<li class="checkbox">
-                                                    <label for="language_gsthst"> <input type="checkbox" name="language" id="language_gsthst" class="wb-tagfilter-ctrl" value="language_gsthst" /> GST/HST credit
+                                                    <label for="payments_gsthst"> <input type="checkbox" name="payments" id="payments_gsthst" class="wb-tagfilter-ctrl" value="payments_gsthst" /> GST/HST credit
 													</label>
                                                 </li>
 												<li class="checkbox">
-                                                    <label for="language_gis"> <input type="checkbox" name="language" id="language_gis" class="wb-tagfilter-ctrl" value="language_gis" /> Guaranteed Income Supplement (GIS)
+                                                    <label for="payments_gis"> <input type="checkbox" name="payments" id="payments_gis" class="wb-tagfilter-ctrl" value="payments_gis" /> Guaranteed Income Supplement (GIS)
 													</label>
                                                 </li>
 												<li class="checkbox">
-                                                    <label for="language_oas"> <input type="checkbox" name="language" id="language_oas" class="wb-tagfilter-ctrl" value="language_oas" /> Old Age Security (OAS)
+                                                    <label for="payments_oas"> <input type="checkbox" name="payments" id="payments_oas" class="wb-tagfilter-ctrl" value="payments_oas" /> Old Age Security (OAS)
 													</label>
                                                 </li>
 												<li class="checkbox">
-                                                    <label for="language_tri"> <input type="checkbox" name="language" id="language_tri" class="wb-tagfilter-ctrl" value="language_tri" /> Ontario Trillium Benefit
+                                                    <label for="payments_tri"> <input type="checkbox" name="payments" id="payments_tri" class="wb-tagfilter-ctrl" value="payments_tri" /> Ontario Trillium Benefit
 													</label>
                                                 </li>
 												<li class="checkbox">
-                                                    <label for="language_sloan"> <input type="checkbox" name="language" id="language_sloan" class="wb-tagfilter-ctrl" value="language_sloan" /> Student loans </label>
+                                                    <label for="payments_sloan"> <input type="checkbox" name="payments" id="payments_sloan" class="wb-tagfilter-ctrl" value="payments_sloan" /> Student loans </label>
                                                 </li>
 												<li class="checkbox">
-                                                    <label for="language_sinv"> <input type="checkbox" name="language" id="language_sinv" class="wb-tagfilter-ctrl" value="language_sinv" /> Supplier invoices 
+                                                    <label for="payments_sinv"> <input type="checkbox" name="payments" id="payments_sinv" class="wb-tagfilter-ctrl" value="payments_sinv" /> Supplier invoices 
 													</label>
                                                 </li>
 												<li class="checkbox">
-                                                    <label for="language_refund"> <input type="checkbox" name="language" id="language_refund" class="wb-tagfilter-ctrl" value="language_refund" /> Tax refunds
+                                                    <label for="payments_refund"> <input type="checkbox" name="payments" id="payments_refund" class="wb-tagfilter-ctrl" value="payments_refund" /> Tax refunds
 													</label>
                                                 </li>
 												<li class="checkbox">
-                                                    <label for="language_veterans"> <input type="checkbox" name="language" id="language_veterans" class="wb-tagfilter-ctrl" value="language_veterans" /> War Veterans Allowance and other veterans’ benefits
+                                                    <label for="payments_veterans"> <input type="checkbox" name="payments" id="payments_veterans" class="wb-tagfilter-ctrl" value="payments_veterans" /> War Veterans Allowance and other veterans’ benefits
 													</label>
                                                 </li>
                                                 <!-- <li class="checkbox">
-                                                    <label for="language_other"> <input type="checkbox" name="language" id="language_other" class="wb-tagfilter-ctrl" value="language_other" /> Other </label>
+                                                    <label for="payments_other"> <input type="checkbox" name="payments" id="payments_other" class="wb-tagfilter-ctrl" value="payments_other" /> Other </label>
                                                 </li> -->
                                             </ul>
                                         </fieldset>
@@ -382,1071 +383,45 @@
                             <div class="col-sm-6 col-md-7 col-lg-8 mrgn-bttm-lg">
                                 <div class="events-list wb-tagfilter-items">
                                     <article
-                                        data-wb-tags="subject_findopportunities title_innovationfordefenceexcellenceandsecurityprogram(ideas) timezone_edt id_20240123154439955 month_march year_2024 location_canada-wide language_english delivery_online"
+                                        data-wb-tags="for_individualsin payments_ccr payments_ccb payments_cwb payments_gsthst payments_tri payments_refund"
                                         class="panel brdr-tp brdr-rght brdr-bttm brdr-lft mrgn-bttm-md position-relative"
                                     >
                                         <div class="panel-body">
                                             <div class="mrgn-tp-sm mrgn-bttm-sm mrgn-rght-sm mrgn-lft-sm">
                                                 <h3 class="h4 mrgn-tp-0 mrgn-bttm-md">
-                                                    <a href="event-calendar/event-details.html?id=20240123154439955" rel="external" class="stretched-link">Innovation for Defence Excellence and Security Program (IDEaS)</a>
+                                                    Canada Revenue Agency (CRA) - Individuals
                                                 </h3>
-                                                <dl class="clearfix event-details dl-inline">
-                                                    <div>
-                                                        <dt class="mrgn-rght-sm"><i class="fa fa-calendar-alt"></i><span class="wb-inv">Date and time</span></dt>
-                                                        <dd><b>Monday, March 18, 2024, 1:30 pm EDT</b></dd>
-                                                    </div>
-                                                    <div class="pull-left">
-                                                        <dt class="mrgn-rght-sm"><i class="fa fa-map-marker-alt"></i><span class="wb-inv">Location</span></dt>
-                                                        <dd class="mrgn-rght-md"><b>Canada-wide</b></dd>
-                                                    </div>
-                                                    <div class="pull-left">
-                                                        <dt class="mrgn-rght-sm"><i class="fas fa-tv"></i><span class="wb-inv">Format</span></dt>
-                                                        <dd class="mrgn-rght-md"><b>Online</b></dd>
-                                                    </div>
-                                                    <div class="pull-left">
-                                                        <dt><i class="fa fa-globe"></i><span class="wb-inv">Language</span></dt>
-                                                        <dd><b>English</b></dd>
-                                                    </div>
-                                                </dl>
-                                                <p class="mrgn-bttm-0">This webinar provides information on the elements of the IDEaS program.</p>
-                                            </div>
-                                        </div>
-                                    </article>
-                                    <article
-                                        data-wb-tags="subject_bidding title_biddingonopportunities timezone_edt id_20240123152420347 month_march year_2024 location_canada-wide language_french delivery_online"
-                                        class="panel brdr-tp brdr-rght brdr-bttm brdr-lft mrgn-bttm-md position-relative"
-                                    >
-                                        <div class="panel-body">
-                                            <div class="mrgn-tp-sm mrgn-bttm-sm mrgn-rght-sm mrgn-lft-sm">
-                                                <h3 class="h4 mrgn-tp-0 mrgn-bttm-md"><a href="event-calendar/event-details.html?id=20240123152420347" rel="external" class="stretched-link">Bidding on Opportunities</a></h3>
-                                                <dl class="clearfix event-details dl-inline">
-                                                    <div>
-                                                        <dt class="mrgn-rght-sm"><i class="fa fa-calendar-alt"></i><span class="wb-inv">Date and time</span></dt>
-                                                        <dd><b>Tuesday, March 19, 2024, 10 am EDT</b></dd>
-                                                    </div>
-                                                    <div class="pull-left">
-                                                        <dt class="mrgn-rght-sm"><i class="fa fa-map-marker-alt"></i><span class="wb-inv">Location</span></dt>
-                                                        <dd class="mrgn-rght-md"><b>Canada-wide</b></dd>
-                                                    </div>
-                                                    <div class="pull-left">
-                                                        <dt class="mrgn-rght-sm"><i class="fas fa-tv"></i><span class="wb-inv">Format</span></dt>
-                                                        <dd class="mrgn-rght-md"><b>Online</b></dd>
-                                                    </div>
-                                                    <div class="pull-left">
-                                                        <dt><i class="fa fa-globe"></i><span class="wb-inv">Language</span></dt>
-                                                        <dd><b>French</b></dd>
-                                                    </div>
-                                                </dl>
-                                                <p class="mrgn-bttm-0">Key information to help you bid on opportunities</p>
-                                            </div>
-                                        </div>
-                                    </article>
-                                    <article
-                                        data-wb-tags="subject_findopportunities title_supplyingprofessionalservicestothegovernmentofcanada timezone_edt id_20240214091128725 month_march year_2024 location_canada-wide language_english delivery_online"
-                                        class="panel brdr-tp brdr-rght brdr-bttm brdr-lft mrgn-bttm-md position-relative"
-                                    >
-                                        <div class="panel-body">
-                                            <div class="mrgn-tp-sm mrgn-bttm-sm mrgn-rght-sm mrgn-lft-sm">
-                                                <h3 class="h4 mrgn-tp-0 mrgn-bttm-md">
-                                                    <a href="event-calendar/event-details.html?id=20240214091128725" rel="external" class="stretched-link">Supplying Professional Services to the Government of Canada</a>
-                                                </h3>
-                                                <dl class="clearfix event-details dl-inline">
-                                                    <div>
-                                                        <dt class="mrgn-rght-sm"><i class="fa fa-calendar-alt"></i><span class="wb-inv">Date and time</span></dt>
-                                                        <dd><b>Wednesday, March 20, 2024, 10 am EDT</b></dd>
-                                                    </div>
-                                                    <div class="pull-left">
-                                                        <dt class="mrgn-rght-sm"><i class="fa fa-map-marker-alt"></i><span class="wb-inv">Location</span></dt>
-                                                        <dd class="mrgn-rght-md"><b>Canada-wide</b></dd>
-                                                    </div>
-                                                    <div class="pull-left">
-                                                        <dt class="mrgn-rght-sm"><i class="fas fa-tv"></i><span class="wb-inv">Format</span></dt>
-                                                        <dd class="mrgn-rght-md"><b>Online</b></dd>
-                                                    </div>
-                                                    <div class="pull-left">
-                                                        <dt><i class="fa fa-globe"></i><span class="wb-inv">Language</span></dt>
-                                                        <dd><b>English</b></dd>
-                                                    </div>
-                                                </dl>
-                                                <p class="mrgn-bttm-0">Key information to help you bid on professional services opportunities with the Government of Canada.</p>
-                                            </div>
-                                        </div>
-                                    </article>
-                                    <article
-                                        data-wb-tags="subject_understandprocurement title_askpacandtheofficeoftheprocurementombudanything timezone_edt id_20240301140437260 month_march year_2024 location_canada-wide language_french delivery_online"
-                                        class="panel brdr-tp brdr-rght brdr-bttm brdr-lft mrgn-bttm-md position-relative"
-                                    >
-                                        <div class="panel-body">
-                                            <div class="mrgn-tp-sm mrgn-bttm-sm mrgn-rght-sm mrgn-lft-sm">
-                                                <h3 class="h4 mrgn-tp-0 mrgn-bttm-md">
-                                                    <a href="event-calendar/event-details.html?id=20240301140437260" rel="external" class="stretched-link">Ask PAC and the Office of the Procurement Ombud anything</a>
-                                                </h3>
-                                                <dl class="clearfix event-details dl-inline">
-                                                    <div>
-                                                        <dt class="mrgn-rght-sm"><i class="fa fa-calendar-alt"></i><span class="wb-inv">Date and time</span></dt>
-                                                        <dd><b>Wednesday, March 20, 2024, 10 am EDT</b></dd>
-                                                    </div>
-                                                    <div class="pull-left">
-                                                        <dt class="mrgn-rght-sm"><i class="fa fa-map-marker-alt"></i><span class="wb-inv">Location</span></dt>
-                                                        <dd class="mrgn-rght-md"><b>Canada-wide</b></dd>
-                                                    </div>
-                                                    <div class="pull-left">
-                                                        <dt class="mrgn-rght-sm"><i class="fas fa-tv"></i><span class="wb-inv">Format</span></dt>
-                                                        <dd class="mrgn-rght-md"><b>Online</b></dd>
-                                                    </div>
-                                                    <div class="pull-left">
-                                                        <dt><i class="fa fa-globe"></i><span class="wb-inv">Language</span></dt>
-                                                        <dd><b>French</b></dd>
-                                                    </div>
-                                                </dl>
-                                                <p class="mrgn-bttm-0">Join procurement specialists from Procurement Assistance Canada and the Office of the Procurement Ombud.</p>
-                                            </div>
-                                        </div>
-                                    </article>
-                                    <article
-                                        data-wb-tags="subject_notapplicable title_smallbusinessinformationexpoforatlanticcanada’sblackentrepreneurs timezone_adt city_halifax id_20240213151045319 month_march year_2024 location_canada-wide language_bilingual delivery_online"
-                                        class="panel brdr-tp brdr-rght brdr-bttm brdr-lft mrgn-bttm-md position-relative"
-                                    >
-                                        <div class="panel-body">
-                                            <div class="mrgn-tp-sm mrgn-bttm-sm mrgn-rght-sm mrgn-lft-sm">
-                                                <h3 class="h4 mrgn-tp-0 mrgn-bttm-md">
-                                                    <a href="event-calendar/event-details.html?id=20240213151045319" rel="external" class="stretched-link">Small Business Information Expo for Atlantic Canada’s Black Entrepreneurs</a>
-                                                </h3>
-                                                <dl class="clearfix event-details dl-inline">
-                                                    <div>
-                                                        <dt class="mrgn-rght-sm"><i class="fa fa-calendar-alt"></i><span class="wb-inv">Date and time</span></dt>
-                                                        <dd><b>Thursday, March 21, 2024, 9:30 am ADT</b></dd>
-                                                    </div>
-                                                    <div class="pull-left">
-                                                        <dt class="mrgn-rght-sm"><i class="fa fa-map-marker-alt"></i><span class="wb-inv">Location</span></dt>
-                                                        <dd class="mrgn-rght-md"><b>Canada-wide</b></dd>
-                                                    </div>
-                                                    <div class="pull-left">
-                                                        <dt class="mrgn-rght-sm"><i class="fas fa-tv"></i><span class="wb-inv">Format</span></dt>
-                                                        <dd class="mrgn-rght-md"><b>Online</b></dd>
-                                                    </div>
-                                                    <div class="pull-left">
-                                                        <dt><i class="fa fa-globe"></i><span class="wb-inv">Language</span></dt>
-                                                        <dd><b>Bilingual</b></dd>
-                                                    </div>
-                                                </dl>
-                                                <p class="mrgn-bttm-0">Small Business Information Expo</p>
-                                            </div>
-                                        </div>
-                                    </article>
-                                    <article
-                                        data-wb-tags="subject_howtosell title_doingbusinesswiththegovernmentofcanada timezone_pdt city_vancouver id_20240228161228566 month_march year_2024 location_canada-wide language_english delivery_online"
-                                        class="panel brdr-tp brdr-rght brdr-bttm brdr-lft mrgn-bttm-md position-relative"
-                                    >
-                                        <div class="panel-body">
-                                            <div class="mrgn-tp-sm mrgn-bttm-sm mrgn-rght-sm mrgn-lft-sm">
-                                                <h3 class="h4 mrgn-tp-0 mrgn-bttm-md">
-                                                    <a href="event-calendar/event-details.html?id=20240228161228566" rel="external" class="stretched-link">Doing Business with the Government of Canada</a>
-                                                </h3>
-                                                <dl class="clearfix event-details dl-inline">
-                                                    <div>
-                                                        <dt class="mrgn-rght-sm"><i class="fa fa-calendar-alt"></i><span class="wb-inv">Date and time</span></dt>
-                                                        <dd><b>Thursday, March 21, 2024, 11 am PDT</b></dd>
-                                                    </div>
-                                                    <div class="pull-left">
-                                                        <dt class="mrgn-rght-sm"><i class="fa fa-map-marker-alt"></i><span class="wb-inv">Location</span></dt>
-                                                        <dd class="mrgn-rght-md"><b>Canada-wide</b></dd>
-                                                    </div>
-                                                    <div class="pull-left">
-                                                        <dt class="mrgn-rght-sm"><i class="fas fa-tv"></i><span class="wb-inv">Format</span></dt>
-                                                        <dd class="mrgn-rght-md"><b>Online</b></dd>
-                                                    </div>
-                                                    <div class="pull-left">
-                                                        <dt><i class="fa fa-globe"></i><span class="wb-inv">Language</span></dt>
-                                                        <dd><b>English</b></dd>
-                                                    </div>
-                                                </dl>
-                                                <p class="mrgn-bttm-0">Key information on how to sell to the Government of Canada</p>
-                                            </div>
-                                        </div>
-                                    </article>
-                                    <article
-                                        data-wb-tags="subject_bidding title_biddingonopportunities timezone_edt city_ottawa id_2024021609222249 month_march year_2024 location_canada-wide language_english delivery_online"
-                                        class="panel brdr-tp brdr-rght brdr-bttm brdr-lft mrgn-bttm-md position-relative"
-                                    >
-                                        <div class="panel-body">
-                                            <div class="mrgn-tp-sm mrgn-bttm-sm mrgn-rght-sm mrgn-lft-sm">
-                                                <h3 class="h4 mrgn-tp-0 mrgn-bttm-md"><a href="event-calendar/event-details.html?id=2024021609222249" rel="external" class="stretched-link">Bidding on Opportunities</a></h3>
-                                                <dl class="clearfix event-details dl-inline">
-                                                    <div>
-                                                        <dt class="mrgn-rght-sm"><i class="fa fa-calendar-alt"></i><span class="wb-inv">Date and time</span></dt>
-                                                        <dd><b>Thursday, March 21, 2024, 12 pm EDT</b></dd>
-                                                    </div>
-                                                    <div class="pull-left">
-                                                        <dt class="mrgn-rght-sm"><i class="fa fa-map-marker-alt"></i><span class="wb-inv">Location</span></dt>
-                                                        <dd class="mrgn-rght-md"><b>Canada-wide</b></dd>
-                                                    </div>
-                                                    <div class="pull-left">
-                                                        <dt class="mrgn-rght-sm"><i class="fas fa-tv"></i><span class="wb-inv">Format</span></dt>
-                                                        <dd class="mrgn-rght-md"><b>Online</b></dd>
-                                                    </div>
-                                                    <div class="pull-left">
-                                                        <dt><i class="fa fa-globe"></i><span class="wb-inv">Language</span></dt>
-                                                        <dd><b>English</b></dd>
-                                                    </div>
-                                                </dl>
-                                                <p class="mrgn-bttm-0">Key information to help you bid on opportunities</p>
-                                            </div>
-                                        </div>
-                                    </article>
-                                    <article
-                                        data-wb-tags="subject_notapplicable title_toronto–innovationinformationforum(iif) timezone_edt city_toronto id_20240229140155833 month_march year_2024 location_ontario–exceptncr language_english delivery_in-person"
-                                        class="panel brdr-tp brdr-rght brdr-bttm brdr-lft mrgn-bttm-md position-relative"
-                                    >
-                                        <div class="panel-body">
-                                            <div class="mrgn-tp-sm mrgn-bttm-sm mrgn-rght-sm mrgn-lft-sm">
-                                                <h3 class="h4 mrgn-tp-0 mrgn-bttm-md">
-                                                    <a href="event-calendar/event-details.html?id=20240229140155833" rel="external" class="stretched-link">Toronto – Innovation Information Forum (IIF)</a>
-                                                </h3>
-                                                <dl class="clearfix event-details dl-inline">
-                                                    <div>
-                                                        <dt class="mrgn-rght-sm"><i class="fa fa-calendar-alt"></i><span class="wb-inv">Date and time</span></dt>
-                                                        <dd><b>Thursday, March 21, 2024, 1 pm EDT</b></dd>
-                                                    </div>
-                                                    <div class="pull-left">
-                                                        <dt class="mrgn-rght-sm"><i class="fa fa-map-marker-alt"></i><span class="wb-inv">Location</span></dt>
-                                                        <dd class="mrgn-rght-md"><b>Toronto, Ontario</b></dd>
-                                                    </div>
-                                                    <div class="pull-left">
-                                                        <dt class="mrgn-rght-sm"><i class="fas fa-tv"></i><span class="wb-inv">Format</span></dt>
-                                                        <dd class="mrgn-rght-md"><b>In-person</b></dd>
-                                                    </div>
-                                                    <div class="pull-left">
-                                                        <dt><i class="fa fa-globe"></i><span class="wb-inv">Language</span></dt>
-                                                        <dd><b>English</b></dd>
-                                                    </div>
-                                                </dl>
-                                                <p class="mrgn-bttm-0">Supporting entrepreneurs and highlighting emerging opportunities from the Government of Canada’s innovation stakeholders</p>
-                                            </div>
-                                        </div>
-                                    </article>
-                                    <article
-                                        data-wb-tags="subject_understandprocurement title_introductiontofederalprocurement:thebasicsofsellingtothegovernmentofcanada timezone_edt id_20240308092112465 month_march year_2024 location_canada-wide language_french delivery_online"
-                                        class="panel brdr-tp brdr-rght brdr-bttm brdr-lft mrgn-bttm-md position-relative"
-                                    >
-                                        <div class="panel-body">
-                                            <div class="mrgn-tp-sm mrgn-bttm-sm mrgn-rght-sm mrgn-lft-sm">
-                                                <h3 class="h4 mrgn-tp-0 mrgn-bttm-md">
-                                                    <a href="event-calendar/event-details.html?id=20240308092112465" rel="external" class="stretched-link">
-                                                        Introduction to Federal Procurement: The Basics of Selling to the Government of Canada
-                                                    </a>
-                                                </h3>
-                                                <dl class="clearfix event-details dl-inline">
-                                                    <div>
-                                                        <dt class="mrgn-rght-sm"><i class="fa fa-calendar-alt"></i><span class="wb-inv">Date and time</span></dt>
-                                                        <dd><b>Friday, March 22, 2024, 11 am EDT</b></dd>
-                                                    </div>
-                                                    <div class="pull-left">
-                                                        <dt class="mrgn-rght-sm"><i class="fa fa-map-marker-alt"></i><span class="wb-inv">Location</span></dt>
-                                                        <dd class="mrgn-rght-md"><b>Canada-wide</b></dd>
-                                                    </div>
-                                                    <div class="pull-left">
-                                                        <dt class="mrgn-rght-sm"><i class="fas fa-tv"></i><span class="wb-inv">Format</span></dt>
-                                                        <dd class="mrgn-rght-md"><b>Online</b></dd>
-                                                    </div>
-                                                    <div class="pull-left">
-                                                        <dt><i class="fa fa-globe"></i><span class="wb-inv">Language</span></dt>
-                                                        <dd><b>French</b></dd>
-                                                    </div>
-                                                </dl>
-                                                <p class="mrgn-bttm-0">Learn about the federal procurement process to decide if you want to pursue federal procurement for your business.</p>
-                                            </div>
-                                        </div>
-                                    </article>
-                                    <article
-                                        data-wb-tags="subject_notapplicable title_askpacandfriendsanything! timezone_mdt id_20240229115532432 month_march year_2024 location_canada-wide language_english delivery_online"
-                                        class="panel brdr-tp brdr-rght brdr-bttm brdr-lft mrgn-bttm-md position-relative"
-                                    >
-                                        <div class="panel-body">
-                                            <div class="mrgn-tp-sm mrgn-bttm-sm mrgn-rght-sm mrgn-lft-sm">
-                                                <h3 class="h4 mrgn-tp-0 mrgn-bttm-md"><a href="event-calendar/event-details.html?id=20240229115532432" rel="external" class="stretched-link">Ask PAC and Friends Anything!</a></h3>
-                                                <dl class="clearfix event-details dl-inline">
-                                                    <div>
-                                                        <dt class="mrgn-rght-sm"><i class="fa fa-calendar-alt"></i><span class="wb-inv">Date and time</span></dt>
-                                                        <dd><b>Friday, March 22, 2024, 12 pm MDT</b></dd>
-                                                    </div>
-                                                    <div class="pull-left">
-                                                        <dt class="mrgn-rght-sm"><i class="fa fa-map-marker-alt"></i><span class="wb-inv">Location</span></dt>
-                                                        <dd class="mrgn-rght-md"><b>Canada-wide</b></dd>
-                                                    </div>
-                                                    <div class="pull-left">
-                                                        <dt class="mrgn-rght-sm"><i class="fas fa-tv"></i><span class="wb-inv">Format</span></dt>
-                                                        <dd class="mrgn-rght-md"><b>Online</b></dd>
-                                                    </div>
-                                                    <div class="pull-left">
-                                                        <dt><i class="fa fa-globe"></i><span class="wb-inv">Language</span></dt>
-                                                        <dd><b>English</b></dd>
-                                                    </div>
-                                                </dl>
-                                                <p class="mrgn-bttm-0">Virtual drop-in sessions for discussions related to government procurement, business programs and support.</p>
-                                            </div>
-                                        </div>
-                                    </article>
-                                    <article
-                                        data-wb-tags="subject_findopportunities title_findingopportunitiesonthegovernmentelectronictenderingservice timezone_adt city_st.johns id_2024030808052135 month_march year_2024 location_canada-wide language_english delivery_online"
-                                        class="panel brdr-tp brdr-rght brdr-bttm brdr-lft mrgn-bttm-md position-relative"
-                                    >
-                                        <div class="panel-body">
-                                            <div class="mrgn-tp-sm mrgn-bttm-sm mrgn-rght-sm mrgn-lft-sm">
-                                                <h3 class="h4 mrgn-tp-0 mrgn-bttm-md">
-                                                    <a href="event-calendar/event-details.html?id=2024030808052135" rel="external" class="stretched-link">Finding Opportunities on the Government Electronic Tendering Service</a>
-                                                </h3>
-                                                <dl class="clearfix event-details dl-inline">
-                                                    <div>
-                                                        <dt class="mrgn-rght-sm"><i class="fa fa-calendar-alt"></i><span class="wb-inv">Date and time</span></dt>
-                                                        <dd><b>Tuesday, March 26, 2024, 10 am ADT</b></dd>
-                                                    </div>
-                                                    <div class="pull-left">
-                                                        <dt class="mrgn-rght-sm"><i class="fa fa-map-marker-alt"></i><span class="wb-inv">Location</span></dt>
-                                                        <dd class="mrgn-rght-md"><b>Canada-wide</b></dd>
-                                                    </div>
-                                                    <div class="pull-left">
-                                                        <dt class="mrgn-rght-sm"><i class="fas fa-tv"></i><span class="wb-inv">Format</span></dt>
-                                                        <dd class="mrgn-rght-md"><b>Online</b></dd>
-                                                    </div>
-                                                    <div class="pull-left">
-                                                        <dt><i class="fa fa-globe"></i><span class="wb-inv">Language</span></dt>
-                                                        <dd><b>English</b></dd>
-                                                    </div>
-                                                </dl>
-                                                <p class="mrgn-bttm-0">Overview and demonstration of the key search features and functions on the Government Electronic Tendering Service.</p>
-                                            </div>
-                                        </div>
-                                    </article>
-                                    <article
-                                        data-wb-tags="subject_bidding title_southernfirstnationsecretariatsessiononbiddingonopportunities(virtual) timezone_edt id_20240118154725426 month_march year_2024 location_canada-wide language_english delivery_online"
-                                        class="panel brdr-tp brdr-rght brdr-bttm brdr-lft mrgn-bttm-md position-relative"
-                                    >
-                                        <div class="panel-body">
-                                            <div class="mrgn-tp-sm mrgn-bttm-sm mrgn-rght-sm mrgn-lft-sm">
-                                                <h3 class="h4 mrgn-tp-0 mrgn-bttm-md">
-                                                    <a href="event-calendar/event-details.html?id=20240118154725426" rel="external" class="stretched-link">Southern First Nation Secretariat session on Bidding on Opportunities (Virtual)</a>
-                                                </h3>
-                                                <dl class="clearfix event-details dl-inline">
-                                                    <div>
-                                                        <dt class="mrgn-rght-sm"><i class="fa fa-calendar-alt"></i><span class="wb-inv">Date and time</span></dt>
-                                                        <dd><b>Tuesday, March 26, 2024, 11 am EDT</b></dd>
-                                                    </div>
-                                                    <div class="pull-left">
-                                                        <dt class="mrgn-rght-sm"><i class="fa fa-map-marker-alt"></i><span class="wb-inv">Location</span></dt>
-                                                        <dd class="mrgn-rght-md"><b>Canada-wide</b></dd>
-                                                    </div>
-                                                    <div class="pull-left">
-                                                        <dt class="mrgn-rght-sm"><i class="fas fa-tv"></i><span class="wb-inv">Format</span></dt>
-                                                        <dd class="mrgn-rght-md"><b>Online</b></dd>
-                                                    </div>
-                                                    <div class="pull-left">
-                                                        <dt><i class="fa fa-globe"></i><span class="wb-inv">Language</span></dt>
-                                                        <dd><b>English</b></dd>
-                                                    </div>
-                                                </dl>
-                                                <p class="mrgn-bttm-0">Key information to help you bid on opportunities</p>
-                                            </div>
-                                        </div>
-                                    </article>
-                                    <article
-                                        data-wb-tags="subject_notapplicable title_forcedlabourinsupplychainsoftheelectronicsindustry timezone_edt id_20240311135547374 month_march year_2024 location_canada-wide language_english delivery_online"
-                                        class="panel brdr-tp brdr-rght brdr-bttm brdr-lft mrgn-bttm-md position-relative"
-                                    >
-                                        <div class="panel-body">
-                                            <div class="mrgn-tp-sm mrgn-bttm-sm mrgn-rght-sm mrgn-lft-sm">
-                                                <h3 class="h4 mrgn-tp-0 mrgn-bttm-md">
-                                                    <a href="event-calendar/event-details.html?id=20240311135547374" rel="external" class="stretched-link">Forced Labour in Supply Chains of the Electronics Industry</a>
-                                                </h3>
-                                                <dl class="clearfix event-details dl-inline">
-                                                    <div>
-                                                        <dt class="mrgn-rght-sm"><i class="fa fa-calendar-alt"></i><span class="wb-inv">Date and time</span></dt>
-                                                        <dd><b>Tuesday, March 26, 2024, 1 pm EDT</b></dd>
-                                                    </div>
-                                                    <div class="pull-left">
-                                                        <dt class="mrgn-rght-sm"><i class="fa fa-map-marker-alt"></i><span class="wb-inv">Location</span></dt>
-                                                        <dd class="mrgn-rght-md"><b>Canada-wide</b></dd>
-                                                    </div>
-                                                    <div class="pull-left">
-                                                        <dt class="mrgn-rght-sm"><i class="fas fa-tv"></i><span class="wb-inv">Format</span></dt>
-                                                        <dd class="mrgn-rght-md"><b>Online</b></dd>
-                                                    </div>
-                                                    <div class="pull-left">
-                                                        <dt><i class="fa fa-globe"></i><span class="wb-inv">Language</span></dt>
-                                                        <dd><b>English</b></dd>
-                                                    </div>
-                                                </dl>
-                                                <p class="mrgn-bttm-0">Learn about the risks of forced labour in the electronics industry supply chains</p>
-                                            </div>
-                                        </div>
-                                    </article>
-                                    <article
-                                        data-wb-tags="subject_howtosell title_howthegovernmentbuyswhatyousell timezone_edt id_20240301142831780 month_march year_2024 location_canada-wide language_english delivery_online"
-                                        class="panel brdr-tp brdr-rght brdr-bttm brdr-lft mrgn-bttm-md position-relative"
-                                    >
-                                        <div class="panel-body">
-                                            <div class="mrgn-tp-sm mrgn-bttm-sm mrgn-rght-sm mrgn-lft-sm">
-                                                <h3 class="h4 mrgn-tp-0 mrgn-bttm-md"><a href="event-calendar/event-details.html?id=20240301142831780" rel="external" class="stretched-link">How the government buys what you sell</a></h3>
-                                                <dl class="clearfix event-details dl-inline">
-                                                    <div>
-                                                        <dt class="mrgn-rght-sm"><i class="fa fa-calendar-alt"></i><span class="wb-inv">Date and time</span></dt>
-                                                        <dd><b>Tuesday, March 26, 2024, 2 pm EDT</b></dd>
-                                                    </div>
-                                                    <div class="pull-left">
-                                                        <dt class="mrgn-rght-sm"><i class="fa fa-map-marker-alt"></i><span class="wb-inv">Location</span></dt>
-                                                        <dd class="mrgn-rght-md"><b>Canada-wide</b></dd>
-                                                    </div>
-                                                    <div class="pull-left">
-                                                        <dt class="mrgn-rght-sm"><i class="fas fa-tv"></i><span class="wb-inv">Format</span></dt>
-                                                        <dd class="mrgn-rght-md"><b>Online</b></dd>
-                                                    </div>
-                                                    <div class="pull-left">
-                                                        <dt><i class="fa fa-globe"></i><span class="wb-inv">Language</span></dt>
-                                                        <dd><b>English</b></dd>
-                                                    </div>
-                                                </dl>
-                                                <p class="mrgn-bttm-0">Key information about how the Government of Canada buys goods&#x2F;services.</p>
-                                            </div>
-                                        </div>
-                                    </article>
-                                    <article
-                                        data-wb-tags="subject_findopportunities title_canadabuysandsapariba–registrationsupport&amp;findingopportunities(virtual) timezone_edt id_20240220123044607 month_march year_2024 location_canada-wide language_english delivery_online"
-                                        class="panel brdr-tp brdr-rght brdr-bttm brdr-lft mrgn-bttm-md position-relative"
-                                    >
-                                        <div class="panel-body">
-                                            <div class="mrgn-tp-sm mrgn-bttm-sm mrgn-rght-sm mrgn-lft-sm">
-                                                <h3 class="h4 mrgn-tp-0 mrgn-bttm-md">
-                                                    <a href="event-calendar/event-details.html?id=20240220123044607" rel="external" class="stretched-link">
-                                                        CanadaBuys and SAP Ariba – Registration support &amp; finding opportunities (virtual)
-                                                    </a>
-                                                </h3>
-                                                <dl class="clearfix event-details dl-inline">
-                                                    <div>
-                                                        <dt class="mrgn-rght-sm"><i class="fa fa-calendar-alt"></i><span class="wb-inv">Date and time</span></dt>
-                                                        <dd><b>Wednesday, March 27, 2024, 10 am EDT</b></dd>
-                                                    </div>
-                                                    <div class="pull-left">
-                                                        <dt class="mrgn-rght-sm"><i class="fa fa-map-marker-alt"></i><span class="wb-inv">Location</span></dt>
-                                                        <dd class="mrgn-rght-md"><b>Canada-wide</b></dd>
-                                                    </div>
-                                                    <div class="pull-left">
-                                                        <dt class="mrgn-rght-sm"><i class="fas fa-tv"></i><span class="wb-inv">Format</span></dt>
-                                                        <dd class="mrgn-rght-md"><b>Online</b></dd>
-                                                    </div>
-                                                    <div class="pull-left">
-                                                        <dt><i class="fa fa-globe"></i><span class="wb-inv">Language</span></dt>
-                                                        <dd><b>English</b></dd>
-                                                    </div>
-                                                </dl>
-                                                <p class="mrgn-bttm-0">How to search and find tender opportunities</p>
-                                            </div>
-                                        </div>
-                                    </article>
-                                    <article
-                                        data-wb-tags="subject_findopportunities title_supplyingprofessionalservicesmasterclass(virtual) timezone_edt city_toronto id_20240220145127579 month_march year_2024 location_canada-wide language_english delivery_online"
-                                        class="panel brdr-tp brdr-rght brdr-bttm brdr-lft mrgn-bttm-md position-relative"
-                                    >
-                                        <div class="panel-body">
-                                            <div class="mrgn-tp-sm mrgn-bttm-sm mrgn-rght-sm mrgn-lft-sm">
-                                                <h3 class="h4 mrgn-tp-0 mrgn-bttm-md">
-                                                    <a href="event-calendar/event-details.html?id=20240220145127579" rel="external" class="stretched-link">Supplying Professional Services Masterclass (virtual)</a>
-                                                </h3>
-                                                <dl class="clearfix event-details dl-inline">
-                                                    <div>
-                                                        <dt class="mrgn-rght-sm"><i class="fa fa-calendar-alt"></i><span class="wb-inv">Date and time</span></dt>
-                                                        <dd><b>Wednesday, March 27, 2024, 11 am EDT</b></dd>
-                                                    </div>
-                                                    <div class="pull-left">
-                                                        <dt class="mrgn-rght-sm"><i class="fa fa-map-marker-alt"></i><span class="wb-inv">Location</span></dt>
-                                                        <dd class="mrgn-rght-md"><b>Canada-wide</b></dd>
-                                                    </div>
-                                                    <div class="pull-left">
-                                                        <dt class="mrgn-rght-sm"><i class="fas fa-tv"></i><span class="wb-inv">Format</span></dt>
-                                                        <dd class="mrgn-rght-md"><b>Online</b></dd>
-                                                    </div>
-                                                    <div class="pull-left">
-                                                        <dt><i class="fa fa-globe"></i><span class="wb-inv">Language</span></dt>
-                                                        <dd><b>English</b></dd>
-                                                    </div>
-                                                </dl>
-                                                <p class="mrgn-bttm-0">Key information to help you bid on professional services opportunities with the Government of Canada.</p>
-                                            </div>
-                                        </div>
-                                    </article>
-                                    <article
-                                        data-wb-tags="subject_understandprocurement title_federalprocurementvirtualdrop–incafe timezone_edt id_2024030616224468 month_march year_2024 location_canada-wide language_english delivery_online"
-                                        class="panel brdr-tp brdr-rght brdr-bttm brdr-lft mrgn-bttm-md position-relative"
-                                    >
-                                        <div class="panel-body">
-                                            <div class="mrgn-tp-sm mrgn-bttm-sm mrgn-rght-sm mrgn-lft-sm">
-                                                <h3 class="h4 mrgn-tp-0 mrgn-bttm-md"><a href="event-calendar/event-details.html?id=2024030616224468" rel="external" class="stretched-link">Federal Procurement Virtual Drop–in Café</a></h3>
-                                                <dl class="clearfix event-details dl-inline">
-                                                    <div>
-                                                        <dt class="mrgn-rght-sm"><i class="fa fa-calendar-alt"></i><span class="wb-inv">Date and time</span></dt>
-                                                        <dd><b>Wednesday, March 27, 2024, 3 pm EDT</b></dd>
-                                                    </div>
-                                                    <div class="pull-left">
-                                                        <dt class="mrgn-rght-sm"><i class="fa fa-map-marker-alt"></i><span class="wb-inv">Location</span></dt>
-                                                        <dd class="mrgn-rght-md"><b>Canada-wide</b></dd>
-                                                    </div>
-                                                    <div class="pull-left">
-                                                        <dt class="mrgn-rght-sm"><i class="fas fa-tv"></i><span class="wb-inv">Format</span></dt>
-                                                        <dd class="mrgn-rght-md"><b>Online</b></dd>
-                                                    </div>
-                                                    <div class="pull-left">
-                                                        <dt><i class="fa fa-globe"></i><span class="wb-inv">Language</span></dt>
-                                                        <dd><b>English</b></dd>
-                                                    </div>
-                                                </dl>
-                                                <p class="mrgn-bttm-0">PAC-OR is hosting a virtual drop-in session on the federal procurement process.</p>
-                                            </div>
-                                        </div>
-                                    </article>
-                                    <article
-                                        data-wb-tags="subject_howtosell title_doingbusinesswiththegovernmentofcanada timezone_edt id_20240214091902551 month_april year_2024 location_canada-wide language_english delivery_online"
-                                        class="panel brdr-tp brdr-rght brdr-bttm brdr-lft mrgn-bttm-md position-relative"
-                                    >
-                                        <div class="panel-body">
-                                            <div class="mrgn-tp-sm mrgn-bttm-sm mrgn-rght-sm mrgn-lft-sm">
-                                                <h3 class="h4 mrgn-tp-0 mrgn-bttm-md">
-                                                    <a href="event-calendar/event-details.html?id=20240214091902551" rel="external" class="stretched-link">Doing Business with the Government of Canada</a>
-                                                </h3>
-                                                <dl class="clearfix event-details dl-inline">
-                                                    <div>
-                                                        <dt class="mrgn-rght-sm"><i class="fa fa-calendar-alt"></i><span class="wb-inv">Date and time</span></dt>
-                                                        <dd><b>Wednesday, April 3, 2024, 10 am EDT</b></dd>
-                                                    </div>
-                                                    <div class="pull-left">
-                                                        <dt class="mrgn-rght-sm"><i class="fa fa-map-marker-alt"></i><span class="wb-inv">Location</span></dt>
-                                                        <dd class="mrgn-rght-md"><b>Canada-wide</b></dd>
-                                                    </div>
-                                                    <div class="pull-left">
-                                                        <dt class="mrgn-rght-sm"><i class="fas fa-tv"></i><span class="wb-inv">Format</span></dt>
-                                                        <dd class="mrgn-rght-md"><b>Online</b></dd>
-                                                    </div>
-                                                    <div class="pull-left">
-                                                        <dt><i class="fa fa-globe"></i><span class="wb-inv">Language</span></dt>
-                                                        <dd><b>English</b></dd>
-                                                    </div>
-                                                </dl>
-                                                <p class="mrgn-bttm-0">Key information on how to sell to the Government of Canada</p>
-                                            </div>
-                                        </div>
-                                    </article>
-                                    <article
-                                        data-wb-tags="subject_understandprocurement title_mythbustinggovernmentprocurement timezone_edt id_20240301143206313 month_april year_2024 location_canada-wide language_french delivery_online"
-                                        class="panel brdr-tp brdr-rght brdr-bttm brdr-lft mrgn-bttm-md position-relative"
-                                    >
-                                        <div class="panel-body">
-                                            <div class="mrgn-tp-sm mrgn-bttm-sm mrgn-rght-sm mrgn-lft-sm">
-                                                <h3 class="h4 mrgn-tp-0 mrgn-bttm-md"><a href="event-calendar/event-details.html?id=20240301143206313" rel="external" class="stretched-link">Mythbusting Government Procurement</a></h3>
-                                                <dl class="clearfix event-details dl-inline">
-                                                    <div>
-                                                        <dt class="mrgn-rght-sm"><i class="fa fa-calendar-alt"></i><span class="wb-inv">Date and time</span></dt>
-                                                        <dd><b>Wednesday, April 3, 2024, 10 am EDT</b></dd>
-                                                    </div>
-                                                    <div class="pull-left">
-                                                        <dt class="mrgn-rght-sm"><i class="fa fa-map-marker-alt"></i><span class="wb-inv">Location</span></dt>
-                                                        <dd class="mrgn-rght-md"><b>Canada-wide</b></dd>
-                                                    </div>
-                                                    <div class="pull-left">
-                                                        <dt class="mrgn-rght-sm"><i class="fas fa-tv"></i><span class="wb-inv">Format</span></dt>
-                                                        <dd class="mrgn-rght-md"><b>Online</b></dd>
-                                                    </div>
-                                                    <div class="pull-left">
-                                                        <dt><i class="fa fa-globe"></i><span class="wb-inv">Language</span></dt>
-                                                        <dd><b>French</b></dd>
-                                                    </div>
-                                                </dl>
-                                                <p class="mrgn-bttm-0">Join us to dispel some myths about selling to the government.</p>
-                                            </div>
-                                        </div>
-                                    </article>
-                                    <article
-                                        data-wb-tags="subject_findopportunities title_innovationfordefenceexcellenceandsecurityprogram(ideas) timezone_edt id_20240301143531860 month_april year_2024 location_canada-wide language_french delivery_online"
-                                        class="panel brdr-tp brdr-rght brdr-bttm brdr-lft mrgn-bttm-md position-relative"
-                                    >
-                                        <div class="panel-body">
-                                            <div class="mrgn-tp-sm mrgn-bttm-sm mrgn-rght-sm mrgn-lft-sm">
-                                                <h3 class="h4 mrgn-tp-0 mrgn-bttm-md">
-                                                    <a href="event-calendar/event-details.html?id=20240301143531860" rel="external" class="stretched-link">Innovation for Defence Excellence and Security Program (IDEaS)</a>
-                                                </h3>
-                                                <dl class="clearfix event-details dl-inline">
-                                                    <div>
-                                                        <dt class="mrgn-rght-sm"><i class="fa fa-calendar-alt"></i><span class="wb-inv">Date and time</span></dt>
-                                                        <dd><b>Friday, April 5, 2024, 12 pm EDT</b></dd>
-                                                    </div>
-                                                    <div class="pull-left">
-                                                        <dt class="mrgn-rght-sm"><i class="fa fa-map-marker-alt"></i><span class="wb-inv">Location</span></dt>
-                                                        <dd class="mrgn-rght-md"><b>Canada-wide</b></dd>
-                                                    </div>
-                                                    <div class="pull-left">
-                                                        <dt class="mrgn-rght-sm"><i class="fas fa-tv"></i><span class="wb-inv">Format</span></dt>
-                                                        <dd class="mrgn-rght-md"><b>Online</b></dd>
-                                                    </div>
-                                                    <div class="pull-left">
-                                                        <dt><i class="fa fa-globe"></i><span class="wb-inv">Language</span></dt>
-                                                        <dd><b>French</b></dd>
-                                                    </div>
-                                                </dl>
-                                                <p class="mrgn-bttm-0">This webinar in provides information on the elements of the IDEaS program.</p>
-                                            </div>
-                                        </div>
-                                    </article>
-                                    <article
-                                        data-wb-tags="subject_notapplicable title_askpacanything timezone_mdt id_2024022911382814 month_april year_2024 location_canada-wide language_english delivery_online"
-                                        class="panel brdr-tp brdr-rght brdr-bttm brdr-lft mrgn-bttm-md position-relative"
-                                    >
-                                        <div class="panel-body">
-                                            <div class="mrgn-tp-sm mrgn-bttm-sm mrgn-rght-sm mrgn-lft-sm">
-                                                <h3 class="h4 mrgn-tp-0 mrgn-bttm-md"><a href="event-calendar/event-details.html?id=2024022911382814" rel="external" class="stretched-link">Ask PAC Anything</a></h3>
-                                                <dl class="clearfix event-details dl-inline">
-                                                    <div>
-                                                        <dt class="mrgn-rght-sm"><i class="fa fa-calendar-alt"></i><span class="wb-inv">Date and time</span></dt>
-                                                        <dd><b>Friday, April 5, 2024, 12 pm MDT</b></dd>
-                                                    </div>
-                                                    <div class="pull-left">
-                                                        <dt class="mrgn-rght-sm"><i class="fa fa-map-marker-alt"></i><span class="wb-inv">Location</span></dt>
-                                                        <dd class="mrgn-rght-md"><b>Canada-wide</b></dd>
-                                                    </div>
-                                                    <div class="pull-left">
-                                                        <dt class="mrgn-rght-sm"><i class="fas fa-tv"></i><span class="wb-inv">Format</span></dt>
-                                                        <dd class="mrgn-rght-md"><b>Online</b></dd>
-                                                    </div>
-                                                    <div class="pull-left">
-                                                        <dt><i class="fa fa-globe"></i><span class="wb-inv">Language</span></dt>
-                                                        <dd><b>English</b></dd>
-                                                    </div>
-                                                </dl>
-                                                <p class="mrgn-bttm-0">Virtual drop-in sessions for discussions related to government procurement and more.</p>
-                                            </div>
-                                        </div>
-                                    </article>
-                                    <article
-                                        data-wb-tags="subject_understandprocurement title_introductiontofederalprocurement:thebasicsofsellingtothegovernmentofcanada timezone_edt id_20240301144413678 month_april year_2024 location_canada-wide language_french delivery_online"
-                                        class="panel brdr-tp brdr-rght brdr-bttm brdr-lft mrgn-bttm-md position-relative"
-                                    >
-                                        <div class="panel-body">
-                                            <div class="mrgn-tp-sm mrgn-bttm-sm mrgn-rght-sm mrgn-lft-sm">
-                                                <h3 class="h4 mrgn-tp-0 mrgn-bttm-md">
-                                                    <a href="event-calendar/event-details.html?id=20240301144413678" rel="external" class="stretched-link">
-                                                        Introduction to Federal Procurement: The Basics of Selling to the Government of Canada
-                                                    </a>
-                                                </h3>
-                                                <dl class="clearfix event-details dl-inline">
-                                                    <div>
-                                                        <dt class="mrgn-rght-sm"><i class="fa fa-calendar-alt"></i><span class="wb-inv">Date and time</span></dt>
-                                                        <dd><b>Tuesday, April 9, 2024, 10:30 am EDT</b></dd>
-                                                    </div>
-                                                    <div class="pull-left">
-                                                        <dt class="mrgn-rght-sm"><i class="fa fa-map-marker-alt"></i><span class="wb-inv">Location</span></dt>
-                                                        <dd class="mrgn-rght-md"><b>Canada-wide</b></dd>
-                                                    </div>
-                                                    <div class="pull-left">
-                                                        <dt class="mrgn-rght-sm"><i class="fas fa-tv"></i><span class="wb-inv">Format</span></dt>
-                                                        <dd class="mrgn-rght-md"><b>Online</b></dd>
-                                                    </div>
-                                                    <div class="pull-left">
-                                                        <dt><i class="fa fa-globe"></i><span class="wb-inv">Language</span></dt>
-                                                        <dd><b>French</b></dd>
-                                                    </div>
-                                                </dl>
-                                                <p class="mrgn-bttm-0">Learn about the federal procurement process to decide if you want to pursue federal procurement for your business.</p>
-                                            </div>
-                                        </div>
-                                    </article>
-                                    <article
-                                        data-wb-tags="subject_howtosell title_howthegovernmentbuyswhatyousell timezone_edt id_20240301150007162 month_april year_2024 location_canada-wide language_french delivery_online"
-                                        class="panel brdr-tp brdr-rght brdr-bttm brdr-lft mrgn-bttm-md position-relative"
-                                    >
-                                        <div class="panel-body">
-                                            <div class="mrgn-tp-sm mrgn-bttm-sm mrgn-rght-sm mrgn-lft-sm">
-                                                <h3 class="h4 mrgn-tp-0 mrgn-bttm-md"><a href="event-calendar/event-details.html?id=20240301150007162" rel="external" class="stretched-link">How the government buys what you sell</a></h3>
-                                                <dl class="clearfix event-details dl-inline">
-                                                    <div>
-                                                        <dt class="mrgn-rght-sm"><i class="fa fa-calendar-alt"></i><span class="wb-inv">Date and time</span></dt>
-                                                        <dd><b>Tuesday, April 16, 2024, 10 am EDT</b></dd>
-                                                    </div>
-                                                    <div class="pull-left">
-                                                        <dt class="mrgn-rght-sm"><i class="fa fa-map-marker-alt"></i><span class="wb-inv">Location</span></dt>
-                                                        <dd class="mrgn-rght-md"><b>Canada-wide</b></dd>
-                                                    </div>
-                                                    <div class="pull-left">
-                                                        <dt class="mrgn-rght-sm"><i class="fas fa-tv"></i><span class="wb-inv">Format</span></dt>
-                                                        <dd class="mrgn-rght-md"><b>Online</b></dd>
-                                                    </div>
-                                                    <div class="pull-left">
-                                                        <dt><i class="fa fa-globe"></i><span class="wb-inv">Language</span></dt>
-                                                        <dd><b>French</b></dd>
-                                                    </div>
-                                                </dl>
-                                                <p class="mrgn-bttm-0">Key information about how the Government of Canada buys goods&#x2F;services.</p>
-                                            </div>
-                                        </div>
-                                    </article>
-                                    <article
-                                        data-wb-tags="subject_findopportunities title_supplyingprofessionalservicestothegovernmentofcanada timezone_edt id_20240228201610417 month_april year_2024 location_canada-wide language_english delivery_online"
-                                        class="panel brdr-tp brdr-rght brdr-bttm brdr-lft mrgn-bttm-md position-relative"
-                                    >
-                                        <div class="panel-body">
-                                            <div class="mrgn-tp-sm mrgn-bttm-sm mrgn-rght-sm mrgn-lft-sm">
-                                                <h3 class="h4 mrgn-tp-0 mrgn-bttm-md">
-                                                    <a href="event-calendar/event-details.html?id=20240228201610417" rel="external" class="stretched-link">Supplying Professional Services to the Government of Canada</a>
-                                                </h3>
-                                                <dl class="clearfix event-details dl-inline">
-                                                    <div>
-                                                        <dt class="mrgn-rght-sm"><i class="fa fa-calendar-alt"></i><span class="wb-inv">Date and time</span></dt>
-                                                        <dd><b>Wednesday, April 17, 2024, 10 am EDT</b></dd>
-                                                    </div>
-                                                    <div class="pull-left">
-                                                        <dt class="mrgn-rght-sm"><i class="fa fa-map-marker-alt"></i><span class="wb-inv">Location</span></dt>
-                                                        <dd class="mrgn-rght-md"><b>Canada-wide</b></dd>
-                                                    </div>
-                                                    <div class="pull-left">
-                                                        <dt class="mrgn-rght-sm"><i class="fas fa-tv"></i><span class="wb-inv">Format</span></dt>
-                                                        <dd class="mrgn-rght-md"><b>Online</b></dd>
-                                                    </div>
-                                                    <div class="pull-left">
-                                                        <dt><i class="fa fa-globe"></i><span class="wb-inv">Language</span></dt>
-                                                        <dd><b>English</b></dd>
-                                                    </div>
-                                                </dl>
-                                                <p class="mrgn-bttm-0">Key information to help you bid on professional services opportunities with the Government of Canada.</p>
-                                            </div>
-                                        </div>
-                                    </article>
-                                    <article
-                                        data-wb-tags="subject_notapplicable title_askpacanything timezone_edt id_20240301150410498 month_april year_2024 location_canada-wide language_bilingual delivery_online"
-                                        class="panel brdr-tp brdr-rght brdr-bttm brdr-lft mrgn-bttm-md position-relative"
-                                    >
-                                        <div class="panel-body">
-                                            <div class="mrgn-tp-sm mrgn-bttm-sm mrgn-rght-sm mrgn-lft-sm">
-                                                <h3 class="h4 mrgn-tp-0 mrgn-bttm-md"><a href="event-calendar/event-details.html?id=20240301150410498" rel="external" class="stretched-link">Ask PAC Anything</a></h3>
-                                                <dl class="clearfix event-details dl-inline">
-                                                    <div>
-                                                        <dt class="mrgn-rght-sm"><i class="fa fa-calendar-alt"></i><span class="wb-inv">Date and time</span></dt>
-                                                        <dd><b>Wednesday, April 17, 2024, 12 pm EDT</b></dd>
-                                                    </div>
-                                                    <div class="pull-left">
-                                                        <dt class="mrgn-rght-sm"><i class="fa fa-map-marker-alt"></i><span class="wb-inv">Location</span></dt>
-                                                        <dd class="mrgn-rght-md"><b>Canada-wide</b></dd>
-                                                    </div>
-                                                    <div class="pull-left">
-                                                        <dt class="mrgn-rght-sm"><i class="fas fa-tv"></i><span class="wb-inv">Format</span></dt>
-                                                        <dd class="mrgn-rght-md"><b>Online</b></dd>
-                                                    </div>
-                                                    <div class="pull-left">
-                                                        <dt><i class="fa fa-globe"></i><span class="wb-inv">Language</span></dt>
-                                                        <dd><b>Bilingual</b></dd>
-                                                    </div>
-                                                </dl>
-                                                <p class="mrgn-bttm-0">Virtual drop-in sessions for discussions related to government procurement and more.</p>
-                                            </div>
-                                        </div>
-                                    </article>
-                                    <article
-                                        data-wb-tags="subject_howtosell title_howthegovernmentbuyswhatyousell timezone_pst city_vancouver id_20240308160450527 month_april year_2024 location_canada-wide language_english delivery_online"
-                                        class="panel brdr-tp brdr-rght brdr-bttm brdr-lft mrgn-bttm-md position-relative"
-                                    >
-                                        <div class="panel-body">
-                                            <div class="mrgn-tp-sm mrgn-bttm-sm mrgn-rght-sm mrgn-lft-sm">
-                                                <h3 class="h4 mrgn-tp-0 mrgn-bttm-md"><a href="event-calendar/event-details.html?id=20240308160450527" rel="external" class="stretched-link">How the government buys what you sell</a></h3>
-                                                <dl class="clearfix event-details dl-inline">
-                                                    <div>
-                                                        <dt class="mrgn-rght-sm"><i class="fa fa-calendar-alt"></i><span class="wb-inv">Date and time</span></dt>
-                                                        <dd><b>Tuesday, April 23, 2024, 10 am PST</b></dd>
-                                                    </div>
-                                                    <div class="pull-left">
-                                                        <dt class="mrgn-rght-sm"><i class="fa fa-map-marker-alt"></i><span class="wb-inv">Location</span></dt>
-                                                        <dd class="mrgn-rght-md"><b>Canada-wide</b></dd>
-                                                    </div>
-                                                    <div class="pull-left">
-                                                        <dt class="mrgn-rght-sm"><i class="fas fa-tv"></i><span class="wb-inv">Format</span></dt>
-                                                        <dd class="mrgn-rght-md"><b>Online</b></dd>
-                                                    </div>
-                                                    <div class="pull-left">
-                                                        <dt><i class="fa fa-globe"></i><span class="wb-inv">Language</span></dt>
-                                                        <dd><b>English</b></dd>
-                                                    </div>
-                                                </dl>
-                                                <p class="mrgn-bttm-0">Key information about how the Government of Canada buys goods&#x2F;services.</p>
-                                            </div>
-                                        </div>
-                                    </article>
-                                    <article
-                                        data-wb-tags="subject_bidding title_obtainingsecurityclearance timezone_edt id_202402282030442 month_april year_2024 location_canada-wide language_english delivery_online"
-                                        class="panel brdr-tp brdr-rght brdr-bttm brdr-lft mrgn-bttm-md position-relative"
-                                    >
-                                        <div class="panel-body">
-                                            <div class="mrgn-tp-sm mrgn-bttm-sm mrgn-rght-sm mrgn-lft-sm">
-                                                <h3 class="h4 mrgn-tp-0 mrgn-bttm-md"><a href="event-calendar/event-details.html?id=202402282030442" rel="external" class="stretched-link">Obtaining security clearance</a></h3>
-                                                <dl class="clearfix event-details dl-inline">
-                                                    <div>
-                                                        <dt class="mrgn-rght-sm"><i class="fa fa-calendar-alt"></i><span class="wb-inv">Date and time</span></dt>
-                                                        <dd><b>Wednesday, April 24, 2024, 11 am EDT</b></dd>
-                                                    </div>
-                                                    <div class="pull-left">
-                                                        <dt class="mrgn-rght-sm"><i class="fa fa-map-marker-alt"></i><span class="wb-inv">Location</span></dt>
-                                                        <dd class="mrgn-rght-md"><b>Canada-wide</b></dd>
-                                                    </div>
-                                                    <div class="pull-left">
-                                                        <dt class="mrgn-rght-sm"><i class="fas fa-tv"></i><span class="wb-inv">Format</span></dt>
-                                                        <dd class="mrgn-rght-md"><b>Online</b></dd>
-                                                    </div>
-                                                    <div class="pull-left">
-                                                        <dt><i class="fa fa-globe"></i><span class="wb-inv">Language</span></dt>
-                                                        <dd><b>English</b></dd>
-                                                    </div>
-                                                </dl>
-                                                <p class="mrgn-bttm-0">This seminar provides information on how to apply for security clearances.</p>
-                                            </div>
-                                        </div>
-                                    </article>
-                                    <article
-                                        data-wb-tags="subject_understandprocurement title_introductiontofederalprocurement:thebasicsofsellingtothegovernmentofcanada timezone_pdt city_vancouver id_20240311140806144 month_april year_2024 location_canada-wide language_asl delivery_online"
-                                        class="panel brdr-tp brdr-rght brdr-bttm brdr-lft mrgn-bttm-md position-relative"
-                                    >
-                                        <div class="panel-body">
-                                            <div class="mrgn-tp-sm mrgn-bttm-sm mrgn-rght-sm mrgn-lft-sm">
-                                                <h3 class="h4 mrgn-tp-0 mrgn-bttm-md">
-                                                    <a href="event-calendar/event-details.html?id=20240311140806144" rel="external" class="stretched-link">
-                                                        Introduction to Federal Procurement: The Basics of Selling to the Government of Canada
-                                                    </a>
-                                                </h3>
-                                                <dl class="clearfix event-details dl-inline">
-                                                    <div>
-                                                        <dt class="mrgn-rght-sm"><i class="fa fa-calendar-alt"></i><span class="wb-inv">Date and time</span></dt>
-                                                        <dd><b>Wednesday, April 24, 2024, 11 am PDT</b></dd>
-                                                    </div>
-                                                    <div class="pull-left">
-                                                        <dt class="mrgn-rght-sm"><i class="fa fa-map-marker-alt"></i><span class="wb-inv">Location</span></dt>
-                                                        <dd class="mrgn-rght-md"><b>Canada-wide</b></dd>
-                                                    </div>
-                                                    <div class="pull-left">
-                                                        <dt class="mrgn-rght-sm"><i class="fas fa-tv"></i><span class="wb-inv">Format</span></dt>
-                                                        <dd class="mrgn-rght-md"><b>Online</b></dd>
-                                                    </div>
-                                                    <div class="pull-left">
-                                                        <dt><i class="fa fa-globe"></i><span class="wb-inv">Language</span></dt>
-                                                        <dd><b>American Sign Language (ASL)</b></dd>
-                                                    </div>
-                                                </dl>
-                                                <p class="mrgn-bttm-0">Learn about the federal procurement process to decide if you want to pursue federal procurement for your business.</p>
-                                            </div>
-                                        </div>
-                                    </article>
-                                    <article
-                                        data-wb-tags="subject_findopportunities title_findingopportunitiesonthegovernmentelectronictenderingservice timezone_edt id_20240301150630323 month_april year_2024 location_canada-wide language_french delivery_online"
-                                        class="panel brdr-tp brdr-rght brdr-bttm brdr-lft mrgn-bttm-md position-relative"
-                                    >
-                                        <div class="panel-body">
-                                            <div class="mrgn-tp-sm mrgn-bttm-sm mrgn-rght-sm mrgn-lft-sm">
-                                                <h3 class="h4 mrgn-tp-0 mrgn-bttm-md">
-                                                    <a href="event-calendar/event-details.html?id=20240301150630323" rel="external" class="stretched-link">Finding Opportunities on the Government Electronic Tendering Service</a>
-                                                </h3>
-                                                <dl class="clearfix event-details dl-inline">
-                                                    <div>
-                                                        <dt class="mrgn-rght-sm"><i class="fa fa-calendar-alt"></i><span class="wb-inv">Date and time</span></dt>
-                                                        <dd><b>Tuesday, April 30, 2024, 10 am EDT</b></dd>
-                                                    </div>
-                                                    <div class="pull-left">
-                                                        <dt class="mrgn-rght-sm"><i class="fa fa-map-marker-alt"></i><span class="wb-inv">Location</span></dt>
-                                                        <dd class="mrgn-rght-md"><b>Canada-wide</b></dd>
-                                                    </div>
-                                                    <div class="pull-left">
-                                                        <dt class="mrgn-rght-sm"><i class="fas fa-tv"></i><span class="wb-inv">Format</span></dt>
-                                                        <dd class="mrgn-rght-md"><b>Online</b></dd>
-                                                    </div>
-                                                    <div class="pull-left">
-                                                        <dt><i class="fa fa-globe"></i><span class="wb-inv">Language</span></dt>
-                                                        <dd><b>French</b></dd>
-                                                    </div>
-                                                </dl>
-                                                <p class="mrgn-bttm-0">Overview and demonstration of the key search features and functions on the Government Electronic Tendering Service.</p>
-                                            </div>
-                                        </div>
-                                    </article>
-                                    <article
-                                        data-wb-tags="subject_understandprocurement title_federalprocurementvirtualdrop–incafe timezone_edt id_20240305153619211 month_april year_2024 location_canada-wide language_english delivery_online"
-                                        class="panel brdr-tp brdr-rght brdr-bttm brdr-lft mrgn-bttm-md position-relative"
-                                    >
-                                        <div class="panel-body">
-                                            <div class="mrgn-tp-sm mrgn-bttm-sm mrgn-rght-sm mrgn-lft-sm">
-                                                <h3 class="h4 mrgn-tp-0 mrgn-bttm-md"><a href="event-calendar/event-details.html?id=20240305153619211" rel="external" class="stretched-link">Federal Procurement Virtual Drop–in Café</a></h3>
-                                                <dl class="clearfix event-details dl-inline">
-                                                    <div>
-                                                        <dt class="mrgn-rght-sm"><i class="fa fa-calendar-alt"></i><span class="wb-inv">Date and time</span></dt>
-                                                        <dd><b>Tuesday, April 30, 2024, 11 am EDT</b></dd>
-                                                    </div>
-                                                    <div class="pull-left">
-                                                        <dt class="mrgn-rght-sm"><i class="fa fa-map-marker-alt"></i><span class="wb-inv">Location</span></dt>
-                                                        <dd class="mrgn-rght-md"><b>Canada-wide</b></dd>
-                                                    </div>
-                                                    <div class="pull-left">
-                                                        <dt class="mrgn-rght-sm"><i class="fas fa-tv"></i><span class="wb-inv">Format</span></dt>
-                                                        <dd class="mrgn-rght-md"><b>Online</b></dd>
-                                                    </div>
-                                                    <div class="pull-left">
-                                                        <dt><i class="fa fa-globe"></i><span class="wb-inv">Language</span></dt>
-                                                        <dd><b>English</b></dd>
-                                                    </div>
-                                                </dl>
-                                                <p class="mrgn-bttm-0">PAC-OR is hosting a virtual drop-in session on the federal procurement process.</p>
-                                            </div>
-                                        </div>
-                                    </article>
-                                    <article
-                                        data-wb-tags="subject_howtosell title_doingbusinesswiththegovernmentofcanada timezone_edt id_20240229203420193 month_may year_2024 location_canada-wide language_english delivery_online"
-                                        class="panel brdr-tp brdr-rght brdr-bttm brdr-lft mrgn-bttm-md position-relative"
-                                    >
-                                        <div class="panel-body">
-                                            <div class="mrgn-tp-sm mrgn-bttm-sm mrgn-rght-sm mrgn-lft-sm">
-                                                <h3 class="h4 mrgn-tp-0 mrgn-bttm-md">
-                                                    <a href="event-calendar/event-details.html?id=20240229203420193" rel="external" class="stretched-link">Doing Business with the Government of Canada</a>
-                                                </h3>
-                                                <dl class="clearfix event-details dl-inline">
-                                                    <div>
-                                                        <dt class="mrgn-rght-sm"><i class="fa fa-calendar-alt"></i><span class="wb-inv">Date and time</span></dt>
-                                                        <dd><b>Wednesday, May 1, 2024, 10 am EDT</b></dd>
-                                                    </div>
-                                                    <div class="pull-left">
-                                                        <dt class="mrgn-rght-sm"><i class="fa fa-map-marker-alt"></i><span class="wb-inv">Location</span></dt>
-                                                        <dd class="mrgn-rght-md"><b>Canada-wide</b></dd>
-                                                    </div>
-                                                    <div class="pull-left">
-                                                        <dt class="mrgn-rght-sm"><i class="fas fa-tv"></i><span class="wb-inv">Format</span></dt>
-                                                        <dd class="mrgn-rght-md"><b>Online</b></dd>
-                                                    </div>
-                                                    <div class="pull-left">
-                                                        <dt><i class="fa fa-globe"></i><span class="wb-inv">Language</span></dt>
-                                                        <dd><b>English</b></dd>
-                                                    </div>
-                                                </dl>
-                                                <p class="mrgn-bttm-0">Key information on how to sell to the Government of Canada</p>
-                                            </div>
-                                        </div>
-                                    </article>
-                                    <article
-                                        data-wb-tags="subject_bidding title_biddingonopportunities timezone_edt id_20240228200340821 month_may year_2024 location_canada-wide language_english delivery_online"
-                                        class="panel brdr-tp brdr-rght brdr-bttm brdr-lft mrgn-bttm-md position-relative"
-                                    >
-                                        <div class="panel-body">
-                                            <div class="mrgn-tp-sm mrgn-bttm-sm mrgn-rght-sm mrgn-lft-sm">
-                                                <h3 class="h4 mrgn-tp-0 mrgn-bttm-md"><a href="event-calendar/event-details.html?id=20240228200340821" rel="external" class="stretched-link">Bidding on Opportunities</a></h3>
-                                                <dl class="clearfix event-details dl-inline">
-                                                    <div>
-                                                        <dt class="mrgn-rght-sm"><i class="fa fa-calendar-alt"></i><span class="wb-inv">Date and time</span></dt>
-                                                        <dd><b>Wednesday, May 8, 2024, 10 am EDT</b></dd>
-                                                    </div>
-                                                    <div class="pull-left">
-                                                        <dt class="mrgn-rght-sm"><i class="fa fa-map-marker-alt"></i><span class="wb-inv">Location</span></dt>
-                                                        <dd class="mrgn-rght-md"><b>Canada-wide</b></dd>
-                                                    </div>
-                                                    <div class="pull-left">
-                                                        <dt class="mrgn-rght-sm"><i class="fas fa-tv"></i><span class="wb-inv">Format</span></dt>
-                                                        <dd class="mrgn-rght-md"><b>Online</b></dd>
-                                                    </div>
-                                                    <div class="pull-left">
-                                                        <dt><i class="fa fa-globe"></i><span class="wb-inv">Language</span></dt>
-                                                        <dd><b>English</b></dd>
-                                                    </div>
-                                                </dl>
-                                                <p class="mrgn-bttm-0">Key information to help you bid on opportunities</p>
-                                            </div>
-                                        </div>
-                                    </article>
-                                    <article
-                                        data-wb-tags="subject_findopportunities title_supplyingprofessionalservicestothegovernmentofcanada timezone_edt id_20240229213257423 month_may year_2024 location_canada-wide language_english delivery_online"
-                                        class="panel brdr-tp brdr-rght brdr-bttm brdr-lft mrgn-bttm-md position-relative"
-                                    >
-                                        <div class="panel-body">
-                                            <div class="mrgn-tp-sm mrgn-bttm-sm mrgn-rght-sm mrgn-lft-sm">
-                                                <h3 class="h4 mrgn-tp-0 mrgn-bttm-md">
-                                                    <a href="event-calendar/event-details.html?id=20240229213257423" rel="external" class="stretched-link">Supplying Professional Services to the Government of Canada</a>
-                                                </h3>
-                                                <dl class="clearfix event-details dl-inline">
-                                                    <div>
-                                                        <dt class="mrgn-rght-sm"><i class="fa fa-calendar-alt"></i><span class="wb-inv">Date and time</span></dt>
-                                                        <dd><b>Wednesday, May 15, 2024, 10 am EDT</b></dd>
-                                                    </div>
-                                                    <div class="pull-left">
-                                                        <dt class="mrgn-rght-sm"><i class="fa fa-map-marker-alt"></i><span class="wb-inv">Location</span></dt>
-                                                        <dd class="mrgn-rght-md"><b>Canada-wide</b></dd>
-                                                    </div>
-                                                    <div class="pull-left">
-                                                        <dt class="mrgn-rght-sm"><i class="fas fa-tv"></i><span class="wb-inv">Format</span></dt>
-                                                        <dd class="mrgn-rght-md"><b>Online</b></dd>
-                                                    </div>
-                                                    <div class="pull-left">
-                                                        <dt><i class="fa fa-globe"></i><span class="wb-inv">Language</span></dt>
-                                                        <dd><b>English</b></dd>
-                                                    </div>
-                                                </dl>
-                                                <p class="mrgn-bttm-0">Key information to help you bid on professional services opportunities with the Government of Canada.</p>
-                                            </div>
-                                        </div>
-                                    </article>
-                                    <article
-                                        data-wb-tags="subject_findopportunities title_canadabuysandsapariba–registrationsupport&amp;findingopportunities(virtual) timezone_edt id_20240305150412132 month_may year_2024 location_canada-wide language_english delivery_online"
-                                        class="panel brdr-tp brdr-rght brdr-bttm brdr-lft mrgn-bttm-md position-relative"
-                                    >
-                                        <div class="panel-body">
-                                            <div class="mrgn-tp-sm mrgn-bttm-sm mrgn-rght-sm mrgn-lft-sm">
-                                                <h3 class="h4 mrgn-tp-0 mrgn-bttm-md">
-                                                    <a href="event-calendar/event-details.html?id=20240305150412132" rel="external" class="stretched-link">
-                                                        CanadaBuys and SAP Ariba – Registration support &amp; finding opportunities (virtual)
-                                                    </a>
-                                                </h3>
-                                                <dl class="clearfix event-details dl-inline">
-                                                    <div>
-                                                        <dt class="mrgn-rght-sm"><i class="fa fa-calendar-alt"></i><span class="wb-inv">Date and time</span></dt>
-                                                        <dd><b>Wednesday, May 22, 2024, 10 am EDT</b></dd>
-                                                    </div>
-                                                    <div class="pull-left">
-                                                        <dt class="mrgn-rght-sm"><i class="fa fa-map-marker-alt"></i><span class="wb-inv">Location</span></dt>
-                                                        <dd class="mrgn-rght-md"><b>Canada-wide</b></dd>
-                                                    </div>
-                                                    <div class="pull-left">
-                                                        <dt class="mrgn-rght-sm"><i class="fas fa-tv"></i><span class="wb-inv">Format</span></dt>
-                                                        <dd class="mrgn-rght-md"><b>Online</b></dd>
-                                                    </div>
-                                                    <div class="pull-left">
-                                                        <dt><i class="fa fa-globe"></i><span class="wb-inv">Language</span></dt>
-                                                        <dd><b>English</b></dd>
-                                                    </div>
-                                                </dl>
-                                                <p class="mrgn-bttm-0">How to search and find tender opportunities</p>
-                                            </div>
-                                        </div>
-                                    </article>
-                                    <article
-                                        data-wb-tags="subject_notapplicable title_savethedate:vessellifeextension(vle)program-procurementworkshop timezone_adt city_halifax id_20240308111324522 month_june year_2024 location_novascotia language_bilingual delivery_in-person"
-                                        class="panel brdr-tp brdr-rght brdr-bttm brdr-lft mrgn-bttm-md position-relative"
-                                    >
-                                        <div class="panel-body">
-                                            <div class="mrgn-tp-sm mrgn-bttm-sm mrgn-rght-sm mrgn-lft-sm">
-                                                <h3 class="h4 mrgn-tp-0 mrgn-bttm-md">
-                                                    <a href="event-calendar/event-details.html?id=20240308111324522" rel="external" class="stretched-link">Save the date : Vessel Life Extension (VLE) Program - Procurement Workshop</a>
-                                                </h3>
-                                                <dl class="clearfix event-details dl-inline">
-                                                    <div>
-                                                        <dt class="mrgn-rght-sm"><i class="fa fa-calendar-alt"></i><span class="wb-inv">Date</span></dt>
-                                                        <dd><b>Wednesday, June 19, 2024, to Thursday, June 20, 2024</b></dd>
-                                                    </div>
-                                                    <div class="pull-left">
-                                                        <dt class="mrgn-rght-sm"><i class="fa fa-map-marker-alt"></i><span class="wb-inv">Location</span></dt>
-                                                        <dd class="mrgn-rght-md"><b>Halifax, Nova Scotia</b></dd>
-                                                    </div>
-                                                    <div class="pull-left">
-                                                        <dt class="mrgn-rght-sm"><i class="fas fa-tv"></i><span class="wb-inv">Format</span></dt>
-                                                        <dd class="mrgn-rght-md"><b>In-person</b></dd>
-                                                    </div>
-                                                    <div class="pull-left">
-                                                        <dt><i class="fa fa-globe"></i><span class="wb-inv">Language</span></dt>
-                                                        <dd><b>Bilingual</b></dd>
-                                                    </div>
-                                                </dl>
-                                                <p class="mrgn-bttm-0">A collaborative workshop to improve procurement practices for Vessel Life Extension.</p>
+                                                <p>Available payments</p>
+                                                <ul>
+                                                    <li>Canada Carbon Rebate</li>
+                                                    <li>Canada child benefit</li>
+                                                    <li>Canada workers benefit</li>
+                                                    <li>GST/HST credit</li>
+                                                    <li>Ontario Trillium Benefit</li>
+                                                    <li>Tax refunds</li>
+                                                </ul>
+                                                <h4>How to sign-up or update your banking information</h4>
+                                                <h5>Online</h5>
+                                                <ul class="list-unstyled cnjnctn-type-or cnjnctn-xs">
+                                                    <li class="cnjnctn-col">
+                                                    <p>In the <b>profile</b> section of <a href="https://www.canada.ca/en/revenue-agency/services/e-services/digital-services-individuals/account-individuals.html">CRA My Account</a></p>
+                                                    </li>
+                                                    <li class="cnjnctn-col">
+                                                    <p><b>online banking</b> with <a href="https://www.canada.ca/en/revenue-agency/services/about-canada-revenue-agency-cra/direct-deposit.html#tfi">participating financial institutions</a></p>
+                                                    </li>
+                                                </ul>
+                                                <h5>Phone</h5>
+                                                <p>1-800-959-8281</p>
+                                                <h5>In person</h5>
+                                                <p>Your bank or other financial institution can help you sign-up for direct deposit for your CRA payments.
+                                                </p>
+                                                <h5>Mail</h5>
+                                                <p>Takes up to 3 months to process.</p>
+
+                                                <p>>omplete the <a href="https://www.tpsgc-pwgsc.gc.ca/recgen/form/inscription-enrolment-eng.html">Canada Direct Deposit enrolment form</a> and send it to the Receiver General for Canada at the address indicated at the bottom of the form. </p>
+
+                                                <h4>More information</h4>
+                                                <p><a href="https://www.canada.ca/en/revenue-agency/services/about-canada-revenue-agency-cra/direct-deposit.html">Canada Revenue Agency - Direct Deposit for Individuals</a></p>
                                             </div>
                                         </div>
                                     </article>
