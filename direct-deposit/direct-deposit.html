@@ -225,7 +225,7 @@
                             <ol class="breadcrumb">
                                 <li><a href="/en.html">Canada.ca</a></li>
                                 <li><a href="/en/services/business.html">About government</a></li>
-								<li><a href="/en/services/business.html">Government-wide reporting on spending and operations</a></li>
+                                <li><a href="/en/services/business.html">Government-wide reporting on spending and operations</a></li>
                                 <li><a href="/en/services/business.html">Government spending</a></li>
                                 <li><a href="/en/services/business.html">Payments to and from government </a></li>
                             </ol>
@@ -235,24 +235,22 @@
             </div>
         </div>
 
-        <main property="mainContentOfPage" resource="#wb-main" typeof="WebPageElement" class="container">
+        <main property="mainContentOfPage" resource="#wb-main" typeof="WebPageElement">
             <div class="mwstransform section">
-                <div>
+                <div class="container">
                     <hgroup>
                         <!-- <p class="h3 mrgn-bttm-sm fnt-nrml text-muted">Procurement Assistance Canada</p> -->
                         <h1 id="wb-cont" class="gc-thickline">Direct deposit</h1>
                     </hgroup>
-                    <p>Get payments from the Government of Canada deposited directly into your bank account. 
-						If you are receiving multiple payments, you may need to contact different government departments to update your information. 
-						</p>
+                    <p>Get payments from the Government of Canada deposited directly into your bank account. If you are receiving multiple payments, you may need to contact different government departments to update your information.</p>
                     <p>You can:</p>
-					<ul>
-						<li>Set up direct deposit</li>
-						<li>Change your payments to a different bank account</li>
-						<li>Report a late, incorrect or unexpected payment (best done by phone)</li>
-					</ul>
+                    <ul>
+                        <li>Set up direct deposit</li>
+                        <li>Change your payments to a different bank account</li>
+                        <li>Report a late, incorrect or unexpected payment (best done by phone)</li>
+                    </ul>
 
-					<p>Use the filters to find the information for your payments.</p>
+                    <p>Use the filters to find the information for your payments.</p>
                     <section
                         id="filteredEventsList"
                         class="wb-tagfilter wb-paginate provisional wb-filter mrgn-tp-lg"
@@ -268,7 +266,6 @@
 			"uiTarget": "#filteredEventsListPagination"
 		}'
                     >
-                
                         <div class="row mrgn-bttm-lg">
                             <div class="col-sm-6 col-md-5 col-lg-4">
                                 <details open class="provisional wb-details-close mrgn-bttm-lg nojs-hide" data-breakpoint="md">
@@ -291,10 +288,10 @@
                                                 <li class="checkbox">
                                                     <label for="for_individualsout"> <input type="checkbox" name="for" id="for_individualsout" class="wb-tagfilter-ctrl" value="for_individualsout" /> Individuals outside Canada </label>
                                                 </li>
-												<li class="checkbox">
+                                                <li class="checkbox">
                                                     <label for="for_business"> <input type="checkbox" name="for" id="for_business" class="wb-tagfilter-ctrl" value="for_business" /> Businesses </label>
                                                 </li>
-												<li class="checkbox">
+                                                <li class="checkbox">
                                                     <label for="for_organizations"> <input type="checkbox" name="for" id="for_organizations" class="wb-tagfilter-ctrl" value="for_organizations" /> Other organizations </label>
                                                 </li>
                                             </ul>
@@ -306,8 +303,9 @@
                                             <div class="clearfix"></div>
                                             <ul class="list-unstyled">
                                                 <li class="checkbox mrgn-tp-0">
-                                                    <label for="payments_apprenticeship"> <input type="checkbox" name="payments" id="payments_apprenticeship" class="wb-tagfilter-ctrl" value="payments_apprenticeship" /> Apprenticeship grants and loans
-													</label>
+                                                    <label for="payments_apprenticeship">
+                                                        <input type="checkbox" name="payments" id="payments_apprenticeship" class="wb-tagfilter-ctrl" value="payments_apprenticeship" /> Apprenticeship grants and loans
+                                                    </label>
                                                 </li>
                                                 <li class="checkbox">
                                                     <label for="payments_ccr"> <input type="checkbox" name="payments" id="payments_ccr" class="wb-tagfilter-ctrl" value="payments_ccr" /> Canada Carbon Rebate </label>
@@ -321,53 +319,48 @@
                                                 <li class="checkbox">
                                                     <label for="payments_cwb"> <input type="checkbox" name="payments" id="payments_cwb" class="wb-tagfilter-ctrl" value="payments_cwb" /> Canada workers Benefit (CWB) </label>
                                                 </li>
-												<li class="checkbox">
+                                                <li class="checkbox">
                                                     <label for="payments_ei"> <input type="checkbox" name="payments" id="payments_ei" class="wb-tagfilter-ctrl" value="payments_ei" /> Employment Insurance (EI) </label>
                                                 </li>
-												<li class="checkbox">
+                                                <li class="checkbox">
                                                     <label for="payments_pspay"> <input type="checkbox" name="payments" id="payments_pspay" class="wb-tagfilter-ctrl" value="payments_pspay" /> Federal public service pay </label>
                                                 </li>
-												<li class="checkbox">
-                                                    <label for="payments_pspension"> <input type="checkbox" name="payments" id="payments_pspension" class="wb-tagfilter-ctrl" value="payments_pspension" /> Federal public service pension 
-													</label>
+                                                <li class="checkbox">
+                                                    <label for="payments_pspension">
+                                                        <input type="checkbox" name="payments" id="payments_pspension" class="wb-tagfilter-ctrl" value="payments_pspension" /> Federal public service pension
+                                                    </label>
                                                 </li>
-												<li class="checkbox">
+                                                <li class="checkbox">
                                                     <label for="payments_annuity"> <input type="checkbox" name="payments" id="payments_annuity" class="wb-tagfilter-ctrl" value="payments_annuity" /> Government annuity </label>
                                                 </li>
-												<li class="checkbox">
-                                                    <label for="payments_grants"> <input type="checkbox" name="payments" id="payments_grants" class="wb-tagfilter-ctrl" value="payments_grants" /> Grants and contributions 
-													</label>
+                                                <li class="checkbox">
+                                                    <label for="payments_grants"> <input type="checkbox" name="payments" id="payments_grants" class="wb-tagfilter-ctrl" value="payments_grants" /> Grants and contributions </label>
                                                 </li>
-												<li class="checkbox">
-                                                    <label for="payments_gsthst"> <input type="checkbox" name="payments" id="payments_gsthst" class="wb-tagfilter-ctrl" value="payments_gsthst" /> GST/HST credit
-													</label>
+                                                <li class="checkbox">
+                                                    <label for="payments_gsthst"> <input type="checkbox" name="payments" id="payments_gsthst" class="wb-tagfilter-ctrl" value="payments_gsthst" /> GST/HST credit </label>
                                                 </li>
-												<li class="checkbox">
-                                                    <label for="payments_gis"> <input type="checkbox" name="payments" id="payments_gis" class="wb-tagfilter-ctrl" value="payments_gis" /> Guaranteed Income Supplement (GIS)
-													</label>
+                                                <li class="checkbox">
+                                                    <label for="payments_gis"> <input type="checkbox" name="payments" id="payments_gis" class="wb-tagfilter-ctrl" value="payments_gis" /> Guaranteed Income Supplement (GIS) </label>
                                                 </li>
-												<li class="checkbox">
-                                                    <label for="payments_oas"> <input type="checkbox" name="payments" id="payments_oas" class="wb-tagfilter-ctrl" value="payments_oas" /> Old Age Security (OAS)
-													</label>
+                                                <li class="checkbox">
+                                                    <label for="payments_oas"> <input type="checkbox" name="payments" id="payments_oas" class="wb-tagfilter-ctrl" value="payments_oas" /> Old Age Security (OAS) </label>
                                                 </li>
-												<li class="checkbox">
-                                                    <label for="payments_tri"> <input type="checkbox" name="payments" id="payments_tri" class="wb-tagfilter-ctrl" value="payments_tri" /> Ontario Trillium Benefit
-													</label>
+                                                <li class="checkbox">
+                                                    <label for="payments_tri"> <input type="checkbox" name="payments" id="payments_tri" class="wb-tagfilter-ctrl" value="payments_tri" /> Ontario Trillium Benefit </label>
                                                 </li>
-												<li class="checkbox">
+                                                <li class="checkbox">
                                                     <label for="payments_sloan"> <input type="checkbox" name="payments" id="payments_sloan" class="wb-tagfilter-ctrl" value="payments_sloan" /> Student loans </label>
                                                 </li>
-												<li class="checkbox">
-                                                    <label for="payments_sinv"> <input type="checkbox" name="payments" id="payments_sinv" class="wb-tagfilter-ctrl" value="payments_sinv" /> Supplier invoices 
-													</label>
+                                                <li class="checkbox">
+                                                    <label for="payments_sinv"> <input type="checkbox" name="payments" id="payments_sinv" class="wb-tagfilter-ctrl" value="payments_sinv" /> Supplier invoices </label>
                                                 </li>
-												<li class="checkbox">
-                                                    <label for="payments_refund"> <input type="checkbox" name="payments" id="payments_refund" class="wb-tagfilter-ctrl" value="payments_refund" /> Tax refunds
-													</label>
+                                                <li class="checkbox">
+                                                    <label for="payments_refund"> <input type="checkbox" name="payments" id="payments_refund" class="wb-tagfilter-ctrl" value="payments_refund" /> Tax refunds </label>
                                                 </li>
-												<li class="checkbox">
-                                                    <label for="payments_veterans"> <input type="checkbox" name="payments" id="payments_veterans" class="wb-tagfilter-ctrl" value="payments_veterans" /> War Veterans Allowance and other veterans’ benefits
-													</label>
+                                                <li class="checkbox">
+                                                    <label for="payments_veterans">
+                                                        <input type="checkbox" name="payments" id="payments_veterans" class="wb-tagfilter-ctrl" value="payments_veterans" /> War Veterans Allowance and other veterans’ benefits
+                                                    </label>
                                                 </li>
                                                 <!-- <li class="checkbox">
                                                     <label for="payments_other"> <input type="checkbox" name="payments" id="payments_other" class="wb-tagfilter-ctrl" value="payments_other" /> Other </label>
@@ -376,69 +369,76 @@
                                         </fieldset>
                                     </div>
                                 </details>
-								<h2 class="nojs-hide mrgn-bttm-lg h4">
-									<span class="wb-fltr-info"> <span class="fnt-nrml">Your payments:</span>&nbsp;<span data-nbitem></span></span>
-								</h2>
+                                <h2 class="nojs-hide mrgn-bttm-lg h4">
+                                    <span class="wb-fltr-info"> <span class="fnt-nrml">Your payments:</span>&nbsp;<span data-nbitem></span></span>
+                                </h2>
                             </div>
                             <div class="col-sm-6 col-md-7 col-lg-8 mrgn-bttm-lg">
                                 <div class="events-list wb-tagfilter-items">
                                     <article
                                         data-wb-tags="for_individualsin payments_ccr payments_ccb payments_cwb payments_gsthst payments_tri payments_refund"
                                         class="panel panel-info brdr-tp brdr-rght brdr-bttm brdr-lft mrgn-bttm-md position-relative"
-                                    >                
-                                    <h3 class="panel-heading panel-title" style="padding: 15px;">
-                                        Canada Revenue Agency (CRA) - Individuals
-                                    </h3>
-                                        <div class="panel-body">                                
-                                                <h4 class="mrgn-tp-sm">Available payments</h4>
-                                                <ul>
-                                                    <li>Canada Carbon Rebate</li>
-                                                    <li>Canada child benefit</li>
-                                                    <li>Canada workers benefit</li>
-                                                    <li>GST/HST credit</li>
-                                                    <li>Ontario Trillium Benefit</li>
-                                                    <li>Tax refunds</li>
-                                                </ul>
-                                                <h4>How to sign-up or update your banking information</h4>
-                                                <h5><i class="fa fa-globe"></i> Online</h5>
-                                                <ul class="list-unstyled cnjnctn-type-or cnjnctn-xs" style="padding: .75em; border: 1px solid #ddd; border-radius: 4px;">
-                                                    <li class="cnjnctn-col">
-                                                    <p>In the <b>profile</b> section of: <a class="btn btn-primary mrgn-tp-md" href="https://www.canada.ca/en/revenue-agency/services/e-services/digital-services-individuals/account-individuals.html">CRA&nbsp;My&nbsp;Account</a></p>
-                                                    </li>
-                                                    <li class="cnjnctn-col">
-                                                    <p><b>online banking</b> with <a href="https://www.canada.ca/en/revenue-agency/services/about-canada-revenue-agency-cra/direct-deposit.html#tfi">participating financial institutions</a></p>
-                                                    </li>
-                                                </ul>
-                                                <h5><i class="fa fa-phone"></i> Phone</h5>
-                                                <p><b>1-800-959-8281</b></p>
-                                                     <hr />
-                                                <h5><i class="fa fa-people-arrows"></i> In person</h5>
-                                                <p>Your bank or other financial institution can help you sign-up for direct deposit for your CRA payments.
-                                                </p>
-                                                <hr />
-
-                                                <h5><i class="fa fa-envelope"></i> Mail</h5>
-                                                <p>Takes up to 3 months to process.</p>
-
-                                                <p>Complete the <a href="https://www.tpsgc-pwgsc.gc.ca/recgen/form/inscription-enrolment-eng.html">Canada Direct Deposit enrolment form</a> and send it to the Receiver General for Canada at the address indicated at the bottom of the form. </p>
-
-                                                <hr />
-
-                                                <h4>More information</h4>
-                                                <p><a href="https://www.canada.ca/en/revenue-agency/services/about-canada-revenue-agency-cra/direct-deposit.html">Canada Revenue Agency - Direct Deposit for Individuals</a></p>
-                                            </div>
-                                    </article>
-                                    <article
-                                    data-wb-tags="for_business payments_refund"
-                                    class="panel panel-info brdr-tp brdr-rght brdr-bttm brdr-lft mrgn-bttm-md position-relative"
-                                >                
-                                <h3 class="panel-heading panel-title" style="padding: 15px;">
-                                    Canada Revenue Agency (CRA) - Businesses
-                                </h3>
-                                    <div class="panel-body">                                
+                                    >
+                                        <h3 class="panel-heading panel-title" style="padding: 15px;">
+                                            Canada Revenue Agency (CRA) - Individuals
+                                        </h3>
+                                        <div class="panel-body">
                                             <h4 class="mrgn-tp-sm">Available payments</h4>
                                             <ul>
-                                                <li>Tax refunds including:
+                                                <li>Canada Carbon Rebate</li>
+                                                <li>Canada child benefit</li>
+                                                <li>Canada workers benefit</li>
+                                                <li>GST/HST credit</li>
+                                                <li>Ontario Trillium Benefit</li>
+                                                <li>Tax refunds</li>
+                                            </ul>
+                                            <h4>How to sign-up or update your banking information</h4>
+                                            <h5><i class="fa fa-globe"></i> Online</h5>
+                                            <ul class="list-unstyled cnjnctn-type-or cnjnctn-xs" style="padding: 0.75em; border: 1px solid #ddd; border-radius: 4px;">
+                                                <li class="cnjnctn-col">
+                                                    <p>
+                                                        In the <b>profile</b> section of:
+                                                        <a class="btn btn-primary mrgn-tp-md" href="https://www.canada.ca/en/revenue-agency/services/e-services/digital-services-individuals/account-individuals.html">
+                                                            CRA&nbsp;My&nbsp;Account
+                                                        </a>
+                                                    </p>
+                                                </li>
+                                                <li class="cnjnctn-col">
+                                                    <p>
+                                                        <b>online banking</b> with <a href="https://www.canada.ca/en/revenue-agency/services/about-canada-revenue-agency-cra/direct-deposit.html#tfi">participating financial institutions</a>
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                            <h5><i class="fa fa-phone"></i> Phone</h5>
+                                            <p><b>1-800-959-8281</b></p>
+                                            <hr />
+                                            <h5><i class="fa fa-people-arrows"></i> In person</h5>
+                                            <p>Your bank or other financial institution can help you sign-up for direct deposit for your CRA payments.</p>
+                                            <hr />
+
+                                            <h5><i class="fa fa-envelope"></i> Mail</h5>
+                                            <p>Takes up to 3 months to process.</p>
+
+                                            <p>
+                                                Complete the <a href="https://www.tpsgc-pwgsc.gc.ca/recgen/form/inscription-enrolment-eng.html">Canada Direct Deposit enrolment form</a> and send it to the Receiver General for Canada at the
+                                                address indicated at the bottom of the form.
+                                            </p>
+
+                                            <hr />
+
+                                            <h4>More information</h4>
+                                            <p><a href="https://www.canada.ca/en/revenue-agency/services/about-canada-revenue-agency-cra/direct-deposit.html">Canada Revenue Agency - Direct Deposit for Individuals</a></p>
+                                        </div>
+                                    </article>
+                                    <article data-wb-tags="for_business payments_refund" class="panel panel-info brdr-tp brdr-rght brdr-bttm brdr-lft mrgn-bttm-md position-relative">
+                                        <h3 class="panel-heading panel-title" style="padding: 15px;">
+                                            Canada Revenue Agency (CRA) - Businesses
+                                        </h3>
+                                        <div class="panel-body">
+                                            <h4 class="mrgn-tp-sm">Available payments</h4>
+                                            <ul>
+                                                <li>
+                                                    Tax refunds including:
                                                     <ul>
                                                         <li>Corporation income tax refund</li>
                                                         <li>Goods and services tax/harmonized sales tax refund</li>
@@ -450,115 +450,120 @@
                                             <p>For payments to CRA suppliers see: <a href="#">Supplier invoices</a></p>
                                             <h4>How to sign-up or update your banking information</h4>
                                             <h5><i class="fa fa-globe"></i> Online</h5>
-                                            <ul class="list-unstyled cnjnctn-type-or cnjnctn-xs" style="padding: .75em; border: 1px solid #ddd; border-radius: 4px;">
+                                            <ul class="list-unstyled cnjnctn-type-or cnjnctn-xs" style="padding: 0.75em; border: 1px solid #ddd; border-radius: 4px;">
                                                 <li class="cnjnctn-col">
-                                                <p>In the <b>profile</b> section of: <a class="btn btn-primary mrgn-tp-md" href="https://www.canada.ca/en/revenue-agency/services/e-services/digital-services-businesses/business-account.html">CRA&nbsp;My&nbsp;Business Account</a></p>
+                                                    <p>
+                                                        In the <b>profile</b> section of:
+                                                        <a class="btn btn-primary mrgn-tp-md" href="https://www.canada.ca/en/revenue-agency/services/e-services/digital-services-businesses/business-account.html">
+                                                            CRA&nbsp;My&nbsp;Business Account
+                                                        </a>
+                                                    </p>
                                                 </li>
                                                 <li class="cnjnctn-col">
-                                                <p><b>online banking</b> with <a href="https://www.canada.ca/en/revenue-agency/services/about-canada-revenue-agency-cra/direct-deposit.html#tfi">participating financial institutions</a></p>
+                                                    <p>
+                                                        <b>online banking</b> with <a href="https://www.canada.ca/en/revenue-agency/services/about-canada-revenue-agency-cra/direct-deposit.html#tfi">participating financial institutions</a>
+                                                    </p>
                                                 </li>
                                             </ul>
                                             <h4>More information</h4>
                                             <p><a href="https://www.canada.ca/en/revenue-agency/services/about-canada-revenue-agency-cra/direct-deposit.html">Canada Revenue Agency - Direct Deposit for Business</a></p>
                                         </div>
-                                </article>
-                                <article
-                                data-wb-tags="for_individualsout payments_oas payments_cpp payments_annuity payments_veterans payments_pspension"
-                                class="panel panel-info brdr-tp brdr-rght brdr-bttm brdr-lft mrgn-bttm-md position-relative"
-                            >                
-                            <h3 class="panel-heading panel-title" style="padding: 15px;">
-                                Government of Canada - Individuals Outside of Canada 
-                            </h3>
-                                <div class="panel-body">                                
-                                        <h4 class="mrgn-tp-sm">Available payments</h4>
-                                        <p>Service Canada</p>
-                                        <ul>
-                                            <li>Canada Pension Plan</li>
-                                            <li>Canada Pension Plan international agreement</li>
-                                            <li>Old Age Security pension</li>
-                                            <li>Old Age Security pension international agreement</li>
-                                            <li>Canadian government annuities</li>
-                                        </ul>
-                                        <p>Veterans Affairs Canada</p>
-                                        <ul>
-                                            <li>Pension or award</li>
-                                            <li>War Veterans Allowance</li>
-                                            <li>Financial benefits</li>
-                                        </ul>
-                                        <p>Pension for retired Government of Canada employees</p>
-                                        <ul>
-                                            <li>Federal public service pension</li>
-                                            <li>Canadian Forces pension</li>
-                                            <li>Judges' pension</li>
-                                            <li>Royal Canadian Mounted Police (RCMP) pension</li>       
-                                        </ul>
-                                        <h4>How to sign-up or update your banking information</h4>
-                                        <p>The Government of Canada offers direct deposit in <b>many countries</b> around the world. <a href="">Check if your country is available</a>.</p>
-                                        <h5><i class="fa fa-envelope"></i> Mail</h5>
-                                        <p><a href="">Direct deposit for individuals with a foreign bank account</a>.</p>
-                                    </div>
-                            </article>
-                            <article
-                                        data-wb-tags="for_individualsin payments_ei"
-                                        class="panel panel-info brdr-tp brdr-rght brdr-bttm brdr-lft mrgn-bttm-md position-relative"
-                                    >                
-                                    <h3 class="panel-heading panel-title" style="padding: 15px;">
-                                        Service Canada - Employment Insurance
-                                    </h3>
-                                        <div class="panel-body">                                
-                                                <h4 class="mrgn-tp-sm">Available payments</h4>
-                                                <p>Employment insurance including:</p>
-                                                <ul>
-                                                    <li>Regular benefits</li>
-                                                    <li>Sickness benefits</li>
-                                                    <li>Maternity and parental benefits</li>
-                                                    <li>Caregiving benefits and leave</li>
-                                                    <li>Benefits for the self-employed</li>
-                                                    <li>Fishing benefits </li> 
-                                                </ul>
-                                                <h4>How to sign-up or update your banking information</h4>
-                                                <h5><i class="fa fa-globe"></i> Online</h5>
-                                                <details><summary>Sign-up online</summary>
-                                                    <p>Only available for new sign-up.</p>
-                                                    <p>Can <b>not be used</b> to change your bank account information.</p>
-                                                    <a class="btn btn-primary mrgn-tp-md" href="https://www.canada.ca/en/employment-social-development/services/my-account.html">My Service Canada Account</a>
-                                                </details>
-
-                                                <hr />
-                                                <h5><i class="fa fa-phone"></i> Phone</h5>
-                                                <p><b>1-800-206-7218 </b> (press "0" to speak with an agent)</p>
-
-                                                <p>Teletypewriter (TTY)</p>
-                                                <p><b>1-800-529-3742</b></p>
-                                                     <hr />
-                                                
-                                                <h5><i class="fa fa-people-arrows"></i> In person</h5>
-                                                <p><a href="http://www.servicecanada.gc.ca/tbsc-fsco/sc-hme.jsp?lang=eng">Find a Service Canada Office close to your home</a>.
-                                                </p>
-                                                <hr />
-                                                <h5><i class="fa fa-envelope"></i> Mail</h5>
-                                                <p>Takes up to 3 months to process.</p>
-                                                <p>Complete the <a href="https://www.tpsgc-pwgsc.gc.ca/recgen/form/inscription-enrolment-eng.html">Canada Direct Deposit enrolment form</a> and send it to the Receiver General for Canada at the address indicated at the bottom of the form.</p>
-                                            </div>
                                     </article>
                                     <article
-                                    data-wb-tags="for_individualsin payments_cpp payments_oas payments_gis"
-                                    class="panel panel-info brdr-tp brdr-rght brdr-bttm brdr-lft mrgn-bttm-md position-relative"
-                                >                
-                                <h3 class="panel-heading panel-title" style="padding: 15px;">
-                                    Service Canada - Canada Pension Plan (CPP) / Old Age Security (OAS) - In Canada
-                                </h3>
-                                    <div class="panel-body">                                
+                                        data-wb-tags="for_individualsout payments_oas payments_cpp payments_annuity payments_veterans payments_pspension"
+                                        class="panel panel-info brdr-tp brdr-rght brdr-bttm brdr-lft mrgn-bttm-md position-relative"
+                                    >
+                                        <h3 class="panel-heading panel-title" style="padding: 15px;">
+                                            Government of Canada - Individuals Outside of Canada
+                                        </h3>
+                                        <div class="panel-body">
+                                            <h4 class="mrgn-tp-sm">Available payments</h4>
+                                            <p>Service Canada</p>
+                                            <ul>
+                                                <li>Canada Pension Plan</li>
+                                                <li>Canada Pension Plan international agreement</li>
+                                                <li>Old Age Security pension</li>
+                                                <li>Old Age Security pension international agreement</li>
+                                                <li>Canadian government annuities</li>
+                                            </ul>
+                                            <p>Veterans Affairs Canada</p>
+                                            <ul>
+                                                <li>Pension or award</li>
+                                                <li>War Veterans Allowance</li>
+                                                <li>Financial benefits</li>
+                                            </ul>
+                                            <p>Pension for retired Government of Canada employees</p>
+                                            <ul>
+                                                <li>Federal public service pension</li>
+                                                <li>Canadian Forces pension</li>
+                                                <li>Judges' pension</li>
+                                                <li>Royal Canadian Mounted Police (RCMP) pension</li>
+                                            </ul>
+                                            <h4>How to sign-up or update your banking information</h4>
+                                            <p>The Government of Canada offers direct deposit in <b>many countries</b> around the world. <a href="">Check if your country is available</a>.</p>
+                                            <h5><i class="fa fa-envelope"></i> Mail</h5>
+                                            <p><a href="">Direct deposit for individuals with a foreign bank account</a>.</p>
+                                        </div>
+                                    </article>
+                                    <article data-wb-tags="for_individualsin payments_ei" class="panel panel-info brdr-tp brdr-rght brdr-bttm brdr-lft mrgn-bttm-md position-relative">
+                                        <h3 class="panel-heading panel-title" style="padding: 15px;">
+                                            Service Canada - Employment Insurance
+                                        </h3>
+                                        <div class="panel-body">
+                                            <h4 class="mrgn-tp-sm">Available payments</h4>
+                                            <p>Employment insurance including:</p>
+                                            <ul>
+                                                <li>Regular benefits</li>
+                                                <li>Sickness benefits</li>
+                                                <li>Maternity and parental benefits</li>
+                                                <li>Caregiving benefits and leave</li>
+                                                <li>Benefits for the self-employed</li>
+                                                <li>Fishing benefits</li>
+                                            </ul>
+                                            <h4>How to sign-up or update your banking information</h4>
+                                            <h5><i class="fa fa-globe"></i> Online</h5>
+                                            <details>
+                                                <summary>Sign-up online</summary>
+                                                <p>Only available for new sign-up.</p>
+                                                <p>Can <b>not be used</b> to change your bank account information.</p>
+                                                <a class="btn btn-primary mrgn-tp-md" href="https://www.canada.ca/en/employment-social-development/services/my-account.html">My Service Canada Account</a>
+                                            </details>
+
+                                            <hr />
+                                            <h5><i class="fa fa-phone"></i> Phone</h5>
+                                            <p><b>1-800-206-7218 </b> (press "0" to speak with an agent)</p>
+
+                                            <p>Teletypewriter (TTY)</p>
+                                            <p><b>1-800-529-3742</b></p>
+                                            <hr />
+
+                                            <h5><i class="fa fa-people-arrows"></i> In person</h5>
+                                            <p><a href="http://www.servicecanada.gc.ca/tbsc-fsco/sc-hme.jsp?lang=eng">Find a Service Canada Office close to your home</a>.</p>
+                                            <hr />
+                                            <h5><i class="fa fa-envelope"></i> Mail</h5>
+                                            <p>Takes up to 3 months to process.</p>
+                                            <p>
+                                                Complete the <a href="https://www.tpsgc-pwgsc.gc.ca/recgen/form/inscription-enrolment-eng.html">Canada Direct Deposit enrolment form</a> and send it to the Receiver General for Canada at the
+                                                address indicated at the bottom of the form.
+                                            </p>
+                                        </div>
+                                    </article>
+                                    <article data-wb-tags="for_individualsin payments_cpp payments_oas payments_gis" class="panel panel-info brdr-tp brdr-rght brdr-bttm brdr-lft mrgn-bttm-md position-relative">
+                                        <h3 class="panel-heading panel-title" style="padding: 15px;">
+                                            Service Canada - Canada Pension Plan (CPP) / Old Age Security (OAS) - In Canada
+                                        </h3>
+                                        <div class="panel-body">
                                             <h4 class="mrgn-tp-sm">Available payments</h4>
                                             <ul>
                                                 <li>Canada Pension Plan retirement pension</li>
                                                 <li>Canada Pension Plan disability benefits</li>
                                                 <li>Guaranteed Income Supplement</li>
-                                                <li>Old Age Security</li>                            
+                                                <li>Old Age Security</li>
                                             </ul>
                                             <h4>How to sign-up or update your banking information</h4>
                                             <h5><i class="fa fa-globe"></i> Online</h5>
-                                            <details><summary>Sign-up online</summary>
+                                            <details>
+                                                <summary>Sign-up online</summary>
                                                 <p>Only available for new sign-up.</p>
                                                 <p>Can <b>not be used</b> to change your bank account information.</p>
                                                 <a class="btn btn-primary mrgn-tp-md" href="https://www.canada.ca/en/employment-social-development/services/my-account.html">My Service Canada Account</a>
@@ -570,79 +575,71 @@
 
                                             <p>Teletypewriter (TTY)</p>
                                             <p><b>1-800‑255‑4786</b></p>
-                                                 <hr />
-                                            
+                                            <hr />
+
                                             <h5><i class="fa fa-people-arrows"></i> In person</h5>
-                                            <p><a href="http://www.servicecanada.gc.ca/tbsc-fsco/sc-hme.jsp?lang=eng">Find a Service Canada Office close to your home</a>.
-                                            </p>
+                                            <p><a href="http://www.servicecanada.gc.ca/tbsc-fsco/sc-hme.jsp?lang=eng">Find a Service Canada Office close to your home</a>.</p>
                                         </div>
-                                </article>
-                                <article
-                                data-wb-tags="for_business payments_sinv"
-                                class="panel panel-info brdr-tp brdr-rght brdr-bttm brdr-lft mrgn-bttm-md position-relative"
-                            >                
-                            <h3 class="panel-heading panel-title" style="padding: 15px;">
-                                Suppliers to the Government of Canada 
-                            </h3>
-                                <div class="panel-body">                                
-                                        <h4 class="mrgn-tp-sm">Available payments</h4>
-                                        <p>Payment of invoices for goods and services provided to Government of Canada departments and agencies.</p>
-                                        <h4>How to sign-up or update your banking information</h4>
-                                        <h5><i class="fa fa-envelope"></i> Email</h5>
-                                       <p>Contact the department or agency that you have a contract with:</p>
-                                       <p><a href="">Direct deposit for government suppliers</a></p>
-                                    </div>
-                            </article>
-                            <article
-                                data-wb-tags="for_individualsin payments_veterans"
-                                class="panel panel-info brdr-tp brdr-rght brdr-bttm brdr-lft mrgn-bttm-md position-relative"
-                            >                
-                            <h3 class="panel-heading panel-title" style="padding: 15px;">
-                                Veterans Affairs Canada - Individuals in Canada
-                            </h3>
-                                <div class="panel-body">                                
-                                        <h4 class="mrgn-tp-sm">Available payments</h4>
-                                        <ul>
-                                            <li>Disability Benefits</li>
-                                            <li>War Veterans Allowance</li>
-                                            <li>Financial Benefits</li>
-                                            <li>Treatment Benefits</li>
-                                            <li>Veterans Independence Program Benefits</li>
-                                            <li>Vocational Rehabilitation</li>
-                                        </ul>
-                                        <h4>How to sign-up or update your banking information</h4>
-                                        <h5><i class="fa fa-globe"></i> Online</h5>
+                                    </article>
+                                    <article data-wb-tags="for_business payments_sinv" class="panel panel-info brdr-tp brdr-rght brdr-bttm brdr-lft mrgn-bttm-md position-relative">
+                                        <h3 class="panel-heading panel-title" style="padding: 15px;">
+                                            Suppliers to the Government of Canada
+                                        </h3>
+                                        <div class="panel-body">
+                                            <h4 class="mrgn-tp-sm">Available payments</h4>
+                                            <p>Payment of invoices for goods and services provided to Government of Canada departments and agencies.</p>
+                                            <h4>How to sign-up or update your banking information</h4>
+                                            <h5><i class="fa fa-envelope"></i> Email</h5>
+                                            <p>Contact the department or agency that you have a contract with:</p>
+                                            <p><a href="">Direct deposit for government suppliers</a></p>
+                                        </div>
+                                    </article>
+                                    <article data-wb-tags="for_individualsin payments_veterans" class="panel panel-info brdr-tp brdr-rght brdr-bttm brdr-lft mrgn-bttm-md position-relative">
+                                        <h3 class="panel-heading panel-title" style="padding: 15px;">
+                                            Veterans Affairs Canada - Individuals in Canada
+                                        </h3>
+                                        <div class="panel-body">
+                                            <h4 class="mrgn-tp-sm">Available payments</h4>
+                                            <ul>
+                                                <li>Disability Benefits</li>
+                                                <li>War Veterans Allowance</li>
+                                                <li>Financial Benefits</li>
+                                                <li>Treatment Benefits</li>
+                                                <li>Veterans Independence Program Benefits</li>
+                                                <li>Vocational Rehabilitation</li>
+                                            </ul>
+                                            <h4>How to sign-up or update your banking information</h4>
+                                            <h5><i class="fa fa-globe"></i> Online</h5>
                                             <a class="btn btn-primary mrgn-tp-md" href="https://www.veterans.gc.ca/eng/e_services">My VAC Account</a>
                                             <hr />
                                             <h5><i class="fa fa-phone"></i> Phone</h5>
                                             <p><b>1-866-522-2122</b></p>
-                                                 <hr />
+                                            <hr />
                                             <h5><i class="fa fa-envelope"></i> Mail</h5>
                                             <p>Complete the <a href="https://www.veterans.gc.ca/eng/forms/document/vac441">Direct Deposit Request</a> form and send it by mail to the address indicated on the form.</p>
                                             <hr />
                                             <h5><i class="fa fa-people-arrows"></i> In person</h5>
-                                            <p>Complete the <a href="https://www.veterans.gc.ca/eng/forms/document/vac441">Direct Deposit Request</a> form and bring it in person to your <a href="https://www.veterans.gc.ca/eng/contact">local VAC office</a>.</p>
+                                            <p>
+                                                Complete the <a href="https://www.veterans.gc.ca/eng/forms/document/vac441">Direct Deposit Request</a> form and bring it in person to your
+                                                <a href="https://www.veterans.gc.ca/eng/contact">local VAC office</a>.
                                             </p>
-                                    </div>
-                            </article>
-                            <article
-                                data-wb-tags="for_individualsin payments_pspay"
-                                class="panel panel-info brdr-tp brdr-rght brdr-bttm brdr-lft mrgn-bttm-md position-relative"
-                            >                
-                            <h3 class="panel-heading panel-title" style="padding: 15px;">
-                                Federal public service pay
-                            </h3>
-                                <div class="panel-body">                                
-                                        <h4 class="mrgn-tp-sm">Available payments</h4>
-                                        <ul>
-                                            <li></li>
-                                        </ul>
-                                        <h4>How to sign-up or update your banking information</h4>
-                                        <h5><i class="fa fa-globe"></i> Online</h5>
+                                        </div>
+                                    </article>
+                                    <article data-wb-tags="for_individualsin payments_pspay" class="panel panel-info brdr-tp brdr-rght brdr-bttm brdr-lft mrgn-bttm-md position-relative">
+                                        <h3 class="panel-heading panel-title" style="padding: 15px;">
+                                            Federal public service pay
+                                        </h3>
+                                        <div class="panel-body">
+                                            <h4 class="mrgn-tp-sm">Available payments</h4>
+                                            <ul>
+                                                <li></li>
+                                            </ul>
+                                            <h4>How to sign-up or update your banking information</h4>
+                                            <h5><i class="fa fa-globe"></i> Online</h5>
                                             <hr />
                                             <h5><i class="fa fa-phone"></i> Phone</h5>
                                             <p><b>1-</b></p>
-                                                 <hr />
+                                            <hr />
                                             <h5><i class="fa fa-envelope"></i> Mail</h5>
 
                                             <hr />
@@ -651,158 +648,135 @@
 
                                             <h4>More information</h4>
                                             <p>need info</p>
-                                    </div>
-                            </article>
-                            <article
-                            data-wb-tags="for_individualsin payments_pspension"
-                            class="panel panel-info brdr-tp brdr-rght brdr-bttm brdr-lft mrgn-bttm-md position-relative"
-                        >                
-                        <h3 class="panel-heading panel-title" style="padding: 15px;">
-                            Pension for retired Government of Canada employees - Individuals in Canada
-                        </h3>
-                            <div class="panel-body">                                
-                                    <h4 class="mrgn-tp-sm">Available payments</h4>
-                                    <ul>
-                                        <li>Federal public service pension </li>
-                                        <li>Canadian Forces pension </li>
-                                        <li>Judges' pension </li>
-                                        <li>Royal Canadian Mounted Police (RCMP) pension </li>
-                                    </ul>
-                                    <h4>How to sign-up or update your banking information</h4>
-                                    <h5><i class="fa fa-globe"></i> Online</h5>
-                                        <hr />
-                                        <h5><i class="fa fa-phone"></i> Phone</h5>
-                                        <p><b>1-</b></p>
-                                             <hr />
-                                        <h5><i class="fa fa-envelope"></i> Mail</h5>
-                                        <hr />
-                                        <h5><i class="fa fa-people-arrows"></i> In person</h5>
-                                        <hr />
+                                        </div>
+                                    </article>
+                                    <article data-wb-tags="for_individualsin payments_pspension" class="panel panel-info brdr-tp brdr-rght brdr-bttm brdr-lft mrgn-bttm-md position-relative">
+                                        <h3 class="panel-heading panel-title" style="padding: 15px;">
+                                            Pension for retired Government of Canada employees - Individuals in Canada
+                                        </h3>
+                                        <div class="panel-body">
+                                            <h4 class="mrgn-tp-sm">Available payments</h4>
+                                            <ul>
+                                                <li>Federal public service pension</li>
+                                                <li>Canadian Forces pension</li>
+                                                <li>Judges' pension</li>
+                                                <li>Royal Canadian Mounted Police (RCMP) pension</li>
+                                            </ul>
+                                            <h4>How to sign-up or update your banking information</h4>
+                                            <h5><i class="fa fa-globe"></i> Online</h5>
+                                            <hr />
+                                            <h5><i class="fa fa-phone"></i> Phone</h5>
+                                            <p><b>1-</b></p>
+                                            <hr />
+                                            <h5><i class="fa fa-envelope"></i> Mail</h5>
+                                            <hr />
+                                            <h5><i class="fa fa-people-arrows"></i> In person</h5>
+                                            <hr />
 
-                                        <h4>More information</h4>
-                                        <p>need info</p>
-                                </div>
-                        </article>
-                        <article
-                        data-wb-tags="for_business for_organizations payments_grants"
-                        class="panel panel-info brdr-tp brdr-rght brdr-bttm brdr-lft mrgn-bttm-md position-relative"
-                    >                
-                    <h3 class="panel-heading panel-title" style="padding: 15px;">
-                        Indigenous Services Canada / Crown-Indigenous Relations and Northern Affairs - Grants and Contributions
-                    </h3>
-                        <div class="panel-body">                                
-                                <h4 class="mrgn-tp-sm">Available payments</h4>
-                                <ul>
-                                    <li></li>
-                                </ul>
-                                <h4>How to sign-up or update your banking information</h4>
-                                <h5><i class="fa fa-globe"></i> Online</h5>
-                                    <hr />
-                                    <h5><i class="fa fa-phone"></i> Phone</h5>
-                                    <p><b>1-</b></p>
-                                         <hr />
-                                    <h5><i class="fa fa-envelope"></i> Mail</h5>
-                                    <hr />
-                                    <h5><i class="fa fa-people-arrows"></i> In person</h5>
-                                    <hr />
+                                            <h4>More information</h4>
+                                            <p>need info</p>
+                                        </div>
+                                    </article>
+                                    <article data-wb-tags="for_business for_organizations payments_grants" class="panel panel-info brdr-tp brdr-rght brdr-bttm brdr-lft mrgn-bttm-md position-relative">
+                                        <h3 class="panel-heading panel-title" style="padding: 15px;">
+                                            Indigenous Services Canada / Crown-Indigenous Relations and Northern Affairs - Grants and Contributions
+                                        </h3>
+                                        <div class="panel-body">
+                                            <h4 class="mrgn-tp-sm">Available payments</h4>
+                                            <ul>
+                                                <li></li>
+                                            </ul>
+                                            <h4>How to sign-up or update your banking information</h4>
+                                            <h5><i class="fa fa-globe"></i> Online</h5>
+                                            <hr />
+                                            <h5><i class="fa fa-phone"></i> Phone</h5>
+                                            <p><b>1-</b></p>
+                                            <hr />
+                                            <h5><i class="fa fa-envelope"></i> Mail</h5>
+                                            <hr />
+                                            <h5><i class="fa fa-people-arrows"></i> In person</h5>
+                                            <hr />
 
-                                    <h4>More information</h4>
-                                    <p>need info</p>
-                            </div>
-                    </article>
-                    <article
-                        data-wb-tags="for_individualsin payments_apprenticeship"
-                        class="panel panel-info brdr-tp brdr-rght brdr-bttm brdr-lft mrgn-bttm-md position-relative"
-                    >                
-                    <h3 class="panel-heading panel-title" style="padding: 15px;">
-                        Service Canada - Apprenticeship grants and loans
-                    </h3>
-                        <div class="panel-body">                                
-                                <h4 class="mrgn-tp-sm">Available payments</h4>
-                                <ul>
-                                    <li></li>
-                                </ul>
-                                <h4>How to sign-up or update your banking information</h4>
-                                <h5><i class="fa fa-globe"></i> Online</h5>
-                                    <hr />
-                                    <h5><i class="fa fa-phone"></i> Phone</h5>
-                                    <p><b>1-</b></p>
-                                         <hr />
-                                    <h5><i class="fa fa-envelope"></i> Mail</h5>
-                                    <hr />
-                                    <h5><i class="fa fa-people-arrows"></i> In person</h5>
-                                    <hr />
+                                            <h4>More information</h4>
+                                            <p>need info</p>
+                                        </div>
+                                    </article>
+                                    <article data-wb-tags="for_individualsin payments_apprenticeship" class="panel panel-info brdr-tp brdr-rght brdr-bttm brdr-lft mrgn-bttm-md position-relative">
+                                        <h3 class="panel-heading panel-title" style="padding: 15px;">
+                                            Service Canada - Apprenticeship grants and loans
+                                        </h3>
+                                        <div class="panel-body">
+                                            <h4 class="mrgn-tp-sm">Available payments</h4>
+                                            <ul>
+                                                <li></li>
+                                            </ul>
+                                            <h4>How to sign-up or update your banking information</h4>
+                                            <h5><i class="fa fa-globe"></i> Online</h5>
+                                            <hr />
+                                            <h5><i class="fa fa-phone"></i> Phone</h5>
+                                            <p><b>1-</b></p>
+                                            <hr />
+                                            <h5><i class="fa fa-envelope"></i> Mail</h5>
+                                            <hr />
+                                            <h5><i class="fa fa-people-arrows"></i> In person</h5>
+                                            <hr />
 
-                                    <h4>More information</h4>
-                                    <p>need info</p>
-                            </div>
-                    </article>
-                    <article
-                    data-wb-tags="for_individualsin payments_sloan"
-                    class="panel panel-info brdr-tp brdr-rght brdr-bttm brdr-lft mrgn-bttm-md position-relative"
-                >                
-                <h3 class="panel-heading panel-title" style="padding: 15px;">
-                    National Student Loans Service Centre - Student Loans
-                </h3>
-                    <div class="panel-body">                                
-                            <h4 class="mrgn-tp-sm">Available payments</h4>
-                            <ul>
-                                <li>Student loans</li>
-                            </ul>
-                            <h4>How to sign-up or update your banking information</h4>
-                            <h5><i class="fa fa-globe"></i> Online</h5>
-                                <hr />
-                                <h5><i class="fa fa-phone"></i> Phone</h5>
-                                <p><b>1-</b></p>
-                                     <hr />
-                                <h5><i class="fa fa-envelope"></i> Mail</h5>
-                                <hr />
-                                <h5><i class="fa fa-people-arrows"></i> In person</h5>
-                                <hr />
+                                            <h4>More information</h4>
+                                            <p>need info</p>
+                                        </div>
+                                    </article>
+                                    <article data-wb-tags="for_individualsin payments_sloan" class="panel panel-info brdr-tp brdr-rght brdr-bttm brdr-lft mrgn-bttm-md position-relative">
+                                        <h3 class="panel-heading panel-title" style="padding: 15px;">
+                                            National Student Loans Service Centre - Student Loans
+                                        </h3>
+                                        <div class="panel-body">
+                                            <h4 class="mrgn-tp-sm">Available payments</h4>
+                                            <ul>
+                                                <li>Student loans</li>
+                                            </ul>
+                                            <h4>How to sign-up or update your banking information</h4>
+                                            <h5><i class="fa fa-globe"></i> Online</h5>
+                                            <hr />
+                                            <h5><i class="fa fa-phone"></i> Phone</h5>
+                                            <p><b>1-</b></p>
+                                            <hr />
+                                            <h5><i class="fa fa-envelope"></i> Mail</h5>
+                                            <hr />
+                                            <h5><i class="fa fa-people-arrows"></i> In person</h5>
+                                            <hr />
 
-                                <h4>More information</h4>
-                                <p>need info</p>
-                        </div>
-                </article>
-                <article
-                data-wb-tags="for_individualsin payments_annuity"
-                class="panel panel-info brdr-tp brdr-rght brdr-bttm brdr-lft mrgn-bttm-md position-relative"
-            >                
-            <h3 class="panel-heading panel-title" style="padding: 15px;">
-                Canadian Government Annuities - Individuals in Canada
-            </h3>
-                <div class="panel-body">                                
-                        <h4 class="mrgn-tp-sm">Available payments</h4>
-                        <ul>
-                            <li>Student loans</li>
-                        </ul>
-                        <h4>How to sign-up or update your banking information</h4>
-                        <h5><i class="fa fa-globe"></i> Online</h5>
-                            <hr />
-                            <h5><i class="fa fa-phone"></i> Phone</h5>
-                            <p><b>1-</b></p>
-                                 <hr />
-                            <h5><i class="fa fa-envelope"></i> Mail</h5>
-                            <hr />
-                            <h5><i class="fa fa-people-arrows"></i> In person</h5>
-                            <hr />
+                                            <h4>More information</h4>
+                                            <p>need info</p>
+                                        </div>
+                                    </article>
+                                    <article data-wb-tags="for_individualsin payments_annuity" class="panel panel-info brdr-tp brdr-rght brdr-bttm brdr-lft mrgn-bttm-md position-relative">
+                                        <h3 class="panel-heading panel-title" style="padding: 15px;">
+                                            Canadian Government Annuities - Individuals in Canada
+                                        </h3>
+                                        <div class="panel-body">
+                                            <h4 class="mrgn-tp-sm">Available payments</h4>
+                                            <ul>
+                                                <li>Student loans</li>
+                                            </ul>
+                                            <h4>How to sign-up or update your banking information</h4>
+                                            <h5><i class="fa fa-globe"></i> Online</h5>
+                                            <hr />
+                                            <h5><i class="fa fa-phone"></i> Phone</h5>
+                                            <p><b>1-</b></p>
+                                            <hr />
+                                            <h5><i class="fa fa-envelope"></i> Mail</h5>
+                                            <hr />
+                                            <h5><i class="fa fa-people-arrows"></i> In person</h5>
+                                            <hr />
 
-                            <h4>More information</h4>
-                            <p>need info</p>
-                    </div>
-            </article>
+                                            <h4>More information</h4>
+                                            <p>need info</p>
+                                        </div>
+                                    </article>
                                 </div>
                                 <div class="wb-tagfilter-noresult">
                                     <section class="alert alert-warning">
-                                        <h3>Sorry, we couldn't find an event that match the filters selected</h3>
-                                        <p>Please try:</p>
-                                        <ul>
-                                            <li>removing some of your filters</li>
-                                            <li>making sure all search terms are spelled correctly</li>
-                                            <li><a href="./event-calendar.html">clearing all filters</a></li>
-                                        </ul>
-                                        <p class="mrgn-tp-lg">Still can’t find what your looking for? Contact the National InfoLine 1-800-811-1148 (Monday to Friday 8:00 am to 5:00 pm <abbr title="Eastern Time">ET</abbr>).</p>
-                                    </section>
+                                        <h3>Sorry, we couldn't find anything that match the filters selected</h3>
                                 </div>
                                 <div id="filteredEventsListPagination"></div>
                             </div>
@@ -811,7 +785,47 @@
                     <!-- <p class="gc-byline small mrgn-tp-lg mrgn-bttm-0">From: <a href="/en/public-services-procurement.html">Public Services and Procurement Canada</a></p> -->
                 </div>
             </div>
-
+            <div class="well brdr-0 brdr-rds-0 mrgn-bttm-0">
+                <section class="container">
+                <h2 id="help" class="mrgn-tp-0">Help with direct deposit</h2>
+                <div class="row wb-eqht-grd">
+                    <div class="col-xs-12 col-md-6">
+                        <details>
+                            <summary><span id="errors">[]</span></summary>
+                            <p>[]]</p>
+                        </details>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <details>
+                            <summary><span id="errors">[]</span></summary>
+                            <p>[]]</p>
+                        </details>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <details>
+                            <summary><span id="errors">[]</span></summary>
+                            <p>[]]</p>
+                        </details>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <details>
+                            <summary><span id="errors">[]</span></summary>
+                            <p>[]]</p>
+                        </details>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <details>
+                            <summary><span id="errors">[]</span></summary>
+                            <p>[]]</p>
+                        </details>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <details>
+                            <summary><span id="errors">[]</span></summary>
+                            <p>[]]</p>
+                        </details>
+                    </div>
+                </div>
             <section class="pagedetails">
                 <h2 class="wb-inv">Page details</h2>
                 <div class="row">
@@ -823,13 +837,10 @@
                     </div>
                 </div>
             </section>
+        </section>
+
+    </div>
         </main>
-
-        <div class="newpar new section"></div>
-
-        <div class="par iparys_inherited"></div>
-
-        <div class="newpar new section"></div>
 
         <div class="par iparys_inherited">
             <div class="global-footer">
