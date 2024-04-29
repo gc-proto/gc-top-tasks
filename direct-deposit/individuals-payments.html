@@ -261,7 +261,10 @@ h1 span.stacked span:nth-child(2) {
 	font-weight: 500;
 	margin-bottom: 0.17em;
 }
+
 </style>
+
+
 
         <main property="mainContentOfPage" resource="#wb-main" typeof="WebPageElement">
             <div class="mwstransform section">
@@ -271,76 +274,120 @@ h1 span.stacked span:nth-child(2) {
                             <span>Set up or update direct deposit</span>: <span>Individuals in Canada</span>
                         </span>
                     </h1>
-                    <fieldset class="gc-chckbxrdio mrgn-tp-lg">
+                    <fieldset class="gc-chckbxrdio">
                         <legend>What payments do you recieve, or want to recieve by direct deposit? <br>Select all that apply:</legend>
-                        <ul class="list-unstyled lst-spcd-2">
-                            <li class="checkbox">
-                                <input type="checkbox" id="cond0">
-                                <label for="cond0">Apprenticeship grants and loans</label>
-                            </li>
-                            <li class="checkbox">
-                                <input type="checkbox" id="cond1">
-                                <label for="cond1">Canada Carbon Rebate (CCR)</label>
-                            </li>
-                            <li class="checkbox">
-                                <input type="checkbox" id="cond2">
-                                <label for="cond2">Canada child benefit(CCB) </label>
-                            </li>
-                            <li class="checkbox">
-                                <input type="checkbox" id="cond3">
-                                <label for="cond3">Canada Pension Plan (CPP)</label>
-                            </li>
-                            <li class="checkbox">
-                                <input type="checkbox" id="cond4">
-                                <label for="cond4">Employment Insurance (EI)</label>
-                            </li>
-                            <li class="checkbox">
-                                <input type="checkbox" id="cond5">
-                                <label for="cond5">Federal public service pay</label>
-                            </li>
-                            <li class="checkbox">
-                                <input type="checkbox" id="cond6">
-                                <label for="cond6">Federal public service pension</label>
-                            </li>
-                            <li class="checkbox">
-                                <input type="checkbox" id="cond7">
-                                <label for="cond7">Government annuity</label>
-                            </li>
-                            <li class="checkbox">
-                                <input type="checkbox" id="cond9">
-                                <label for="cond9">GST/HST credit</label>
-                            </li>
-                            <li class="checkbox">
-                                <input type="checkbox" id="cond10">
-                                <label for="con10">Guaranteed Income Supplement (GIS)</label>
-                            </li>
-                            <li class="checkbox">
-                                <input type="checkbox" id="cond11">
-                                <label for="cond11">Old Age Security (OAS)</label>
-                            </li>
-                            <li class="checkbox">
-                                <input type="checkbox" id="cond12">
-                                <label for="cond12">Ontario Trillium Benefit (OTB)</label>
-                            </li>
-                            <li class="checkbox">
-                                <input type="checkbox" id="cond13">
-                                <label for="cond13">Student loans</label>
-                            </li> 
-                            <li class="checkbox">
-                                <input type="checkbox" id="cond14">
-                                <label for="cond14">Tax refunds</label>
-                            </li> 
-                            <li class="checkbox">
-                                <input type="checkbox" id="cond15">
-                                <label for="cond15">War veterans allowance and other veterans' benefits</label>
-                            </li> 
-                        </ul>
+                        <form id="myForm">
+                            <ul class="list-unstyled lst-spcd-2">
+                                <li class="checkbox">
+                                    <input type="checkbox" id="apprenticeship" name="option1" value="Apprenticeship grants and loans">
+                                    <label for="apprenticeship">Apprenticeship grants and loans</label>
+                                </li>
+                                <li class="checkbox">
+                                    <input type="checkbox" id="carbonRebate" name="option2" value="Canada Carbon Rebate (CCR)">
+                                    <label for="carbonRebate">Canada Carbon Rebate (CCR)</label>
+                                </li>
+                                <li class="checkbox">
+                                    <input type="checkbox" id="childBenefit" name="option3" value="Canada child benefit (CCB)">
+                                    <label for="childBenefit">Canada child benefit (CCB)</label>
+                                </li>
+                                <li class="checkbox">
+                                    <input type="checkbox" id="pensionPlan" name="option4" value="Canada Pension Plan (CPP)">
+                                    <label for="pensionPlan">Canada Pension Plan (CPP)</label>
+                                </li>
+                                <li class="checkbox">
+                                    <input type="checkbox" id="employmentInsurance" name="option5" value="Employment Insurance (EI)">
+                                    <label for="employmentInsurance">Employment Insurance (EI)</label>
+                                </li>
+                                <li class="checkbox">
+                                    <input type="checkbox" id="publicServicePay" name="option6" value="Federal public service pay">
+                                    <label for="publicServicePay">Federal public service pay</label>
+                                </li>
+                                <li class="checkbox">
+                                    <input type="checkbox" id="publicServicePension" name="option7" value="Federal public service pension">
+                                    <label for="publicServicePension">Federal public service pension</label>
+                                </li>
+                                <li class="checkbox">
+                                    <input type="checkbox" id="governmentAnnuity" name="option8" value="Government annuity">
+                                    <label for="governmentAnnuity">Government annuity</label>
+                                </li>
+                                <li class="checkbox">
+                                    <input type="checkbox" id="gstHstCredit" name="option9" value="GST/HST credit">
+                                    <label for="gstHstCredit">GST/HST credit</label>
+                                </li>
+                                <li class="checkbox">
+                                    <input type="checkbox" id="guaranteedIncomeSupplement" name="option10" value="Guaranteed Income Supplement (GIS)">
+                                    <label for="guaranteedIncomeSupplement">Guaranteed Income Supplement (GIS)</label>
+                                </li>
+                                <li class="checkbox">
+                                    <input type="checkbox" id="oldAgeSecurity" name="option11" value="Old Age Security (OAS)">
+                                    <label for="oldAgeSecurity">Old Age Security (OAS)</label>
+                                </li>
+                                <li class="checkbox">
+                                    <input type="checkbox" id="trilliumBenefit" name="option12" value="Ontario Trillium Benefit (OTB)">
+                                    <label for="trilliumBenefit">Ontario Trillium Benefit (OTB)</label>
+                                </li>
+                                <li class="checkbox">
+                                    <input type="checkbox" id="studentLoans" name="option13" value="Student loans">
+                                    <label for="studentLoans">Student loans</label>
+                                </li>
+                                <li class="checkbox">
+                                    <input type="checkbox" id="taxRefunds" name="option14" value="Tax refunds">
+                                    <label for="taxRefunds">Tax refunds</label>
+                                </li>
+                                <li class="checkbox">
+                                    <input type="checkbox" id="warVeteransAllowance" name="option15" value="War veterans allowance and other veterans' benefits">
+                                    <label for="warVeteransAllowance">War veterans allowance and other veterans' benefits</label>
+                                </li>
+                            </ul>
+                            <button class="btn btn-primary mrgn-tp-md" type="button" id="continueBtn">Continue</button>
+                        </form>
                     </fieldset>
-                   
-                    <div class="mrgn-tp-lg">
-                        <a href="results-for-task.html" class="btn btn-primary">Continue</a>
-                    </div>
-  
+                
+                    <script>
+                        document.getElementById("continueBtn").addEventListener("click", function() {
+                            var selectedOptions = [];
+                            var checkboxes = document.querySelectorAll('input[type=checkbox]:checked');
+                
+                            checkboxes.forEach(function(checkbox) {
+                                selectedOptions.push(checkbox.value);
+                            });
+                
+                            // Store selected options in session storage
+                            sessionStorage.setItem("selectedOptions", JSON.stringify(selectedOptions));
+                
+                            // Navigate to the result page
+                            window.location.href = "result-page.html";
+                        });
+                    </script>
+
+                    <!-- <form id="myForm">
+                        <input type="checkbox" name="option1" value="Option 1"> Option 1<br>
+                        <input type="checkbox" name="option2" value="Option 2"> Option 2<br>
+                        <input type="checkbox" name="option3" value="Option 3"> Option 3<br>
+                        <button type="button" id="continueBtn">Continue</button>
+                    </form>
+                    
+                    <script>
+                        document.getElementById("continueBtn").addEventListener("click", function() {
+                            var form = document.getElementById("myForm");
+                            var formData = new FormData(form);
+                            var selectedOptions = [];
+                    
+                            // Extract selected options
+                            for (var pair of formData.entries()) {
+                                if (pair[1] === "on") { // Checkbox is checked
+                                    selectedOptions.push(pair[0]);
+                                }
+                            }
+                    
+                            // Store selected options in local storage
+                            localStorage.setItem("selectedOptions", JSON.stringify(selectedOptions));
+                    
+                            // Navigate to the result page
+                            window.location.href = "result-page.html";
+                        });
+                    </script>
+   -->
                     
             <section class="pagedetails">
                 <h2 class="wb-inv">Page details</h2>
