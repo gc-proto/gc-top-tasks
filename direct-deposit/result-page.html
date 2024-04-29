@@ -276,12 +276,23 @@ h1 span.stacked span:nth-child(2) {
                     <script>
                         // Retrieve selected options from local storage
                         var selectedOptions = JSON.parse(localStorage.getItem("selectedOptions"));
-                    
-                        // Display selected options
+                
+                        // Display content based on selected options
                         var resultDiv = document.getElementById("result");
                         resultDiv.innerHTML = "<h2>Selected Options:</h2>";
                         selectedOptions.forEach(function(option) {
-                            resultDiv.innerHTML += "<p>" + option + "</p>";
+                            switch (option) {
+                                case "option1":
+                                    resultDiv.innerHTML += "<p>Content for Option 1</p>";
+                                    break;
+                                case "option2":
+                                    resultDiv.innerHTML += "<p>Content for Option 2</p>";
+                                    break;
+                                case "option3":
+                                    resultDiv.innerHTML += "<p>Content for Option 3</p>";
+                                    break;
+                                // Add more cases as needed
+                            }
                         });
                     </script>
   
