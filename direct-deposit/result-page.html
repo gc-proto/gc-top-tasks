@@ -271,7 +271,34 @@ h1 span.stacked span:nth-child(2) {
                             <span>Set up or update direct deposit</span>: <span>Individuals in Canada</span>
                         </span>
                     </h1>
+
                     <div id="result"></div>
+
+                    <script>
+                        // Retrieve selected options from session storage
+                        var selectedOptions = JSON.parse(sessionStorage.getItem("selectedOptions"));
+                
+                        // Display selected options
+                        var resultDiv = document.getElementById("result");
+                        resultDiv.innerHTML = "<h2>Selected Options:</h2>";
+                
+                        selectedOptions.forEach(function(option) {
+                            switch (option) {
+                                case "Option 1":
+                                    resultDiv.innerHTML += "<p>Content for Option 1</p>";
+                                    break;
+                                case "Option 2":
+                                    resultDiv.innerHTML += "<p>Content for Option 2</p>";
+                                    break;
+                                case "Option 3":
+                                    resultDiv.innerHTML += "<p>Content for Option 3</p>";
+                                    break;
+                                // Add more cases as needed for additional options
+                            }
+                        });
+                    </script>
+
+                    <!-- <div id="result"></div>
 
                     <script>
                         // Retrieve selected options from local storage
@@ -294,7 +321,7 @@ h1 span.stacked span:nth-child(2) {
                                 // Add more cases as needed
                             }
                         });
-                    </script>
+                    </script> -->
   
                     
             <section class="pagedetails">
