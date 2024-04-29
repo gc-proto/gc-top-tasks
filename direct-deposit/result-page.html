@@ -280,6 +280,11 @@ h1 span.stacked span:nth-child(2) {
                     </div>
                     
                     <script>
+                        // Don't display individual multiple times
+                        function alreadyDisplayed(individuals) {
+                            return document.querySelector('.' + individuals) !== null;
+                         }
+
                         // Retrieve selected options from session storage
                         var selectedOptions = JSON.parse(sessionStorage.getItem("selectedOptions"));
                     
@@ -311,8 +316,67 @@ h1 span.stacked span:nth-child(2) {
                                     resultHtml += "<li>Content for Apprenticeship grants and loans</li>";
                                     break;
                                 case "Canada Carbon Rebate (CCR)":
+                                if (!alreadyDisplayed('individuals')) {
                                     resultHtml += `
-            <li class="mrgn-tp-lg">
+            <li class="individuals">
+                <article
+                        class="individuals panel panel-info brdr-tp brdr-rght brdr-bttm brdr-lft mrgn-bttm-md position-relative"
+                    >
+                        <h3 class="mrgn-tp-0 panel-heading panel-title" style="padding: 15px; border-bottom: 1px solid #ccc;">Canada Revenue Agency (CRA) - Individuals
+                        </h3>
+                        <div class="panel-body">
+                            <details>
+                            <summary><h4 class="mrgn-tp-sm">All payments that will be changed</h4></summary>
+                            <ul>
+                                <li>Canada Carbon Rebate</li>
+                                <li>Canada child benefit</li>
+                                <li>Canada workers benefit</li>
+                                <li>GST/HST credit</li>
+                                <li>Ontario Trillium Benefit</li>
+                                <li>Tax refunds</li>
+                            </ul>
+                        </details>
+                            <h4>Sign-up or update your banking information</h4>
+                            <h5><i class="fa fa-globe"></i> Online</h5>
+                            <ul class="list-unstyled cnjnctn-type-or cnjnctn-xs" style="padding: 0.75em; border: 1px solid #ddd; border-radius: 4px;">
+                                <li class="cnjnctn-col">
+                                    <p>
+                                        In the <b>profile</b> section of:
+                                        <a class="btn btn-primary mrgn-tp-md" href="https://www.canada.ca/en/revenue-agency/services/e-services/digital-services-individuals/account-individuals.html">
+                                            CRA&nbsp;My&nbsp;Account
+                                        </a>
+                                    </p>
+                                </li>
+                                <li class="cnjnctn-col">
+                                    <p>
+                                        <b>online banking</b> with <a href="https://www.canada.ca/en/revenue-agency/services/about-canada-revenue-agency-cra/direct-deposit.html#tfi">participating financial institutions</a>
+                                    </p>
+                                </li>
+                            </ul>
+                            <h5><i class="fa fa-phone"></i> Phone</h5>
+                            <p><b>1-800-959-8281</b></p>
+                            <hr />
+                            <h5><i class="fa fa-people-arrows"></i> In person</h5>
+                            <p>Your bank or other financial institution can help you sign-up for direct deposit for your CRA payments.</p>
+                            <hr />
+    
+                            <h5><i class="fa fa-envelope"></i> Mail</h5>
+                            <p>Takes up to 3 months to process.</p>
+    
+                            <p>
+                                Complete the <a href="https://www.tpsgc-pwgsc.gc.ca/recgen/form/inscription-enrolment-eng.html">Canada Direct Deposit enrolment form</a> and send it to the Receiver General for Canada at the
+                                address indicated at the bottom of the form.
+                            </p>
+    
+                        </div>
+                    </article>
+            </li>`;
+        }
+                                    break;
+                                case "Canada child benefit (CCB)":
+                                if (!alreadyDisplayed('individuals')) {
+                                    resultHtml += `
+            <li class="individuals">
                 <article
                         class="panel panel-info brdr-tp brdr-rght brdr-bttm brdr-lft mrgn-bttm-md position-relative"
                     >
@@ -365,9 +429,7 @@ h1 span.stacked span:nth-child(2) {
                         </div>
                     </article>
             </li>`;
-                                    break;
-                                case "Canada child benefit (CCB)":
-                                    resultHtml += "<li>Content for Canada child benefit (CCB)</li>";
+                                }
                                     break;
                                 case "Canada Pension Plan (CPP)":
                                     resultHtml += "<li>Content for Canada Pension Plan (CPP)</li>";
@@ -434,7 +496,62 @@ h1 span.stacked span:nth-child(2) {
                                     resultHtml += "<li>Content for Government annuity</li>";
                                     break;
                                 case "GST/HST credit":
-                                    resultHtml += "<li>Content for GST/HST credit</li>";
+                                if (!alreadyDisplayed('individuals')) {
+                                    resultHtml += `
+            <li class="individuals">
+                <article
+                        class="individuals panel panel-info brdr-tp brdr-rght brdr-bttm brdr-lft mrgn-bttm-md position-relative"
+                    >
+                        <h3 class="mrgn-tp-0 panel-heading panel-title" style="padding: 15px; border-bottom: 1px solid #ccc;">Canada Revenue Agency (CRA) - Individuals
+                        </h3>
+                        <div class="panel-body">
+                            <details>
+                            <summary><h4 class="mrgn-tp-sm">All payments that will be changed</h4></summary>
+                            <ul>
+                                <li>Canada Carbon Rebate</li>
+                                <li>Canada child benefit</li>
+                                <li>Canada workers benefit</li>
+                                <li>GST/HST credit</li>
+                                <li>Ontario Trillium Benefit</li>
+                                <li>Tax refunds</li>
+                            </ul>
+                        </details>
+                            <h4>Sign-up or update your banking information</h4>
+                            <h5><i class="fa fa-globe"></i> Online</h5>
+                            <ul class="list-unstyled cnjnctn-type-or cnjnctn-xs" style="padding: 0.75em; border: 1px solid #ddd; border-radius: 4px;">
+                                <li class="cnjnctn-col">
+                                    <p>
+                                        In the <b>profile</b> section of:
+                                        <a class="btn btn-primary mrgn-tp-md" href="https://www.canada.ca/en/revenue-agency/services/e-services/digital-services-individuals/account-individuals.html">
+                                            CRA&nbsp;My&nbsp;Account
+                                        </a>
+                                    </p>
+                                </li>
+                                <li class="cnjnctn-col">
+                                    <p>
+                                        <b>online banking</b> with <a href="https://www.canada.ca/en/revenue-agency/services/about-canada-revenue-agency-cra/direct-deposit.html#tfi">participating financial institutions</a>
+                                    </p>
+                                </li>
+                            </ul>
+                            <h5><i class="fa fa-phone"></i> Phone</h5>
+                            <p><b>1-800-959-8281</b></p>
+                            <hr />
+                            <h5><i class="fa fa-people-arrows"></i> In person</h5>
+                            <p>Your bank or other financial institution can help you sign-up for direct deposit for your CRA payments.</p>
+                            <hr />
+    
+                            <h5><i class="fa fa-envelope"></i> Mail</h5>
+                            <p>Takes up to 3 months to process.</p>
+    
+                            <p>
+                                Complete the <a href="https://www.tpsgc-pwgsc.gc.ca/recgen/form/inscription-enrolment-eng.html">Canada Direct Deposit enrolment form</a> and send it to the Receiver General for Canada at the
+                                address indicated at the bottom of the form.
+                            </p>
+    
+                        </div>
+                    </article>
+            </li>`;
+        }
                                     break;
                                 case "Guaranteed Income Supplement (GIS)":
                                     resultHtml += "<li>Content for Guaranteed Income Supplement (GIS)</li>";
@@ -443,13 +560,123 @@ h1 span.stacked span:nth-child(2) {
                                     resultHtml += "<li>Content for Old Age Security (OAS)</li>";
                                     break;
                                 case "Ontario Trillium Benefit (OTB)":
-                                    resultHtml += "<li>Content for Ontario Trillium Benefit (OTB)</li>";
+                                if (!alreadyDisplayed('individuals')) {
+                                    resultHtml += `
+            <li class="individuals">
+                <article
+                        class="individuals panel panel-info brdr-tp brdr-rght brdr-bttm brdr-lft mrgn-bttm-md position-relative"
+                    >
+                        <h3 class="mrgn-tp-0 panel-heading panel-title" style="padding: 15px; border-bottom: 1px solid #ccc;">Canada Revenue Agency (CRA) - Individuals
+                        </h3>
+                        <div class="panel-body">
+                            <details>
+                            <summary><h4 class="mrgn-tp-sm">All payments that will be changed</h4></summary>
+                            <ul>
+                                <li>Canada Carbon Rebate</li>
+                                <li>Canada child benefit</li>
+                                <li>Canada workers benefit</li>
+                                <li>GST/HST credit</li>
+                                <li>Ontario Trillium Benefit</li>
+                                <li>Tax refunds</li>
+                            </ul>
+                        </details>
+                            <h4>Sign-up or update your banking information</h4>
+                            <h5><i class="fa fa-globe"></i> Online</h5>
+                            <ul class="list-unstyled cnjnctn-type-or cnjnctn-xs" style="padding: 0.75em; border: 1px solid #ddd; border-radius: 4px;">
+                                <li class="cnjnctn-col">
+                                    <p>
+                                        In the <b>profile</b> section of:
+                                        <a class="btn btn-primary mrgn-tp-md" href="https://www.canada.ca/en/revenue-agency/services/e-services/digital-services-individuals/account-individuals.html">
+                                            CRA&nbsp;My&nbsp;Account
+                                        </a>
+                                    </p>
+                                </li>
+                                <li class="cnjnctn-col">
+                                    <p>
+                                        <b>online banking</b> with <a href="https://www.canada.ca/en/revenue-agency/services/about-canada-revenue-agency-cra/direct-deposit.html#tfi">participating financial institutions</a>
+                                    </p>
+                                </li>
+                            </ul>
+                            <h5><i class="fa fa-phone"></i> Phone</h5>
+                            <p><b>1-800-959-8281</b></p>
+                            <hr />
+                            <h5><i class="fa fa-people-arrows"></i> In person</h5>
+                            <p>Your bank or other financial institution can help you sign-up for direct deposit for your CRA payments.</p>
+                            <hr />
+    
+                            <h5><i class="fa fa-envelope"></i> Mail</h5>
+                            <p>Takes up to 3 months to process.</p>
+    
+                            <p>
+                                Complete the <a href="https://www.tpsgc-pwgsc.gc.ca/recgen/form/inscription-enrolment-eng.html">Canada Direct Deposit enrolment form</a> and send it to the Receiver General for Canada at the
+                                address indicated at the bottom of the form.
+                            </p>
+    
+                        </div>
+                    </article>
+            </li>`;
+        }
                                     break;
                                 case "Student loans":
                                     resultHtml += "<li>Content for Student loans</li>";
                                     break;
                                 case "Tax refunds":
-                                    resultHtml += "<li>Content for Tax refunds</li>";
+                                if (!alreadyDisplayed('individuals')) {
+                                    resultHtml += `
+            <li class="individuals">
+                <article
+                        class="individuals panel panel-info brdr-tp brdr-rght brdr-bttm brdr-lft mrgn-bttm-md position-relative"
+                    >
+                        <h3 class="mrgn-tp-0 panel-heading panel-title" style="padding: 15px; border-bottom: 1px solid #ccc;">Canada Revenue Agency (CRA) - Individuals
+                        </h3>
+                        <div class="panel-body">
+                            <details>
+                            <summary><h4 class="mrgn-tp-sm">All payments that will be changed</h4></summary>
+                            <ul>
+                                <li>Canada Carbon Rebate</li>
+                                <li>Canada child benefit</li>
+                                <li>Canada workers benefit</li>
+                                <li>GST/HST credit</li>
+                                <li>Ontario Trillium Benefit</li>
+                                <li>Tax refunds</li>
+                            </ul>
+                        </details>
+                            <h4>Sign-up or update your banking information</h4>
+                            <h5><i class="fa fa-globe"></i> Online</h5>
+                            <ul class="list-unstyled cnjnctn-type-or cnjnctn-xs" style="padding: 0.75em; border: 1px solid #ddd; border-radius: 4px;">
+                                <li class="cnjnctn-col">
+                                    <p>
+                                        In the <b>profile</b> section of:
+                                        <a class="btn btn-primary mrgn-tp-md" href="https://www.canada.ca/en/revenue-agency/services/e-services/digital-services-individuals/account-individuals.html">
+                                            CRA&nbsp;My&nbsp;Account
+                                        </a>
+                                    </p>
+                                </li>
+                                <li class="cnjnctn-col">
+                                    <p>
+                                        <b>online banking</b> with <a href="https://www.canada.ca/en/revenue-agency/services/about-canada-revenue-agency-cra/direct-deposit.html#tfi">participating financial institutions</a>
+                                    </p>
+                                </li>
+                            </ul>
+                            <h5><i class="fa fa-phone"></i> Phone</h5>
+                            <p><b>1-800-959-8281</b></p>
+                            <hr />
+                            <h5><i class="fa fa-people-arrows"></i> In person</h5>
+                            <p>Your bank or other financial institution can help you sign-up for direct deposit for your CRA payments.</p>
+                            <hr />
+    
+                            <h5><i class="fa fa-envelope"></i> Mail</h5>
+                            <p>Takes up to 3 months to process.</p>
+    
+                            <p>
+                                Complete the <a href="https://www.tpsgc-pwgsc.gc.ca/recgen/form/inscription-enrolment-eng.html">Canada Direct Deposit enrolment form</a> and send it to the Receiver General for Canada at the
+                                address indicated at the bottom of the form.
+                            </p>
+    
+                        </div>
+                    </article>
+            </li>`;
+        }
                                     break;
                                 case "War veterans allowance and other veterans' benefits":
                                     resultHtml += "<li>Content for War veterans allowance and other veterans' benefits</li>";
