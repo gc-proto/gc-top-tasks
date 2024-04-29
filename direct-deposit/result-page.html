@@ -274,39 +274,75 @@ h1 span.stacked span:nth-child(2) {
 
                     <div id="youSelected"></div>
 
-    <div id="result"></div>
-
-    <script>
-        // Retrieve selected options from session storage
-        var selectedOptions = JSON.parse(sessionStorage.getItem("selectedOptions"));
-
-        // Display "You selected" section
-        var youSelectedDiv = document.getElementById("youSelected");
-        youSelectedDiv.innerHTML = "<h2>You selected:</h2><ul>";
-        selectedOptions.forEach(function(option) {
-            youSelectedDiv.innerHTML += "<li>" + option + "</li>";
-        });
-        youSelectedDiv.innerHTML += "</ul>";
-
-        // Display "Selected Options" section
-        var resultDiv = document.getElementById("result");
-        resultDiv.innerHTML = "<h2>Selected Options:</h2>";
-
-        selectedOptions.forEach(function(option) {
-            switch (option) {
-                case "Option 1":
-                    resultDiv.innerHTML += "<p>Content for Option 1</p>";
-                    break;
-                case "Option 2":
-                    resultDiv.innerHTML += "<p>Content for Option 2</p>";
-                    break;
-                case "Option 3":
-                    resultDiv.innerHTML += "<p>Content for Option 3</p>";
-                    break;
-                // Add more cases as needed for additional options
-            }
-        });
-    </script>
+                    <div id="result"></div>
+                
+                    <script>
+                        // Retrieve selected options from session storage
+                        var selectedOptions = JSON.parse(sessionStorage.getItem("selectedOptions"));
+                
+                        // Display "You selected" section
+                        var youSelectedDiv = document.getElementById("youSelected");
+                        youSelectedDiv.innerHTML = "<h2>You selected:</h2><ul>";
+                        selectedOptions.forEach(function(option) {
+                            youSelectedDiv.innerHTML += "<li>" + option + "</li>";
+                        });
+                        youSelectedDiv.innerHTML += "</ul>";
+                
+                        // Display "Selected Options" section
+                        var resultDiv = document.getElementById("result");
+                        resultDiv.innerHTML = "<h2>Selected Options:</h2>";
+                
+                        selectedOptions.forEach(function(option) {
+                            switch (option) {
+                                case "Apprenticeship grants and loans":
+                                    resultDiv.innerHTML += "<p>Content for Apprenticeship grants and loans</p>";
+                                    break;
+                                case "Canada Carbon Rebate (CCR)":
+                                    resultDiv.innerHTML += "<p>Content for Canada Carbon Rebate (CCR)</p>";
+                                    break;
+                                case "Canada child benefit (CCB)":
+                                    resultDiv.innerHTML += "<p>Content for Canada child benefit (CCB)</p>";
+                                    break;
+                                case "Canada Pension Plan (CPP)":
+                                    resultDiv.innerHTML += "<p>Content for Canada Pension Plan (CPP)</p>";
+                                    break;
+                                case "Employment Insurance (EI)":
+                                    resultDiv.innerHTML += "<p>Content for Employment Insurance (EI)</p>";
+                                    break;
+                                case "Federal public service pay":
+                                    resultDiv.innerHTML += "<p>Content for Federal public service pay</p>";
+                                    break;
+                                case "Federal public service pension":
+                                    resultDiv.innerHTML += "<p>Content for Federal public service pension</p>";
+                                    break;
+                                case "Government annuity":
+                                    resultDiv.innerHTML += "<p>Content for Government annuity</p>";
+                                    break;
+                                case "GST/HST credit":
+                                    resultDiv.innerHTML += "<p>Content for GST/HST credit</p>";
+                                    break;
+                                case "Guaranteed Income Supplement (GIS)":
+                                    resultDiv.innerHTML += "<p>Content for Guaranteed Income Supplement (GIS)</p>";
+                                    break;
+                                case "Old Age Security (OAS)":
+                                    resultDiv.innerHTML += "<p>Content for Old Age Security (OAS)</p>";
+                                    break;
+                                case "Ontario Trillium Benefit (OTB)":
+                                    resultDiv.innerHTML += "<p>Content for Ontario Trillium Benefit (OTB)</p>";
+                                    break;
+                                case "Student loans":
+                                    resultDiv.innerHTML += "<p>Content for Student loans</p>";
+                                    break;
+                                case "Tax refunds":
+                                    resultDiv.innerHTML += "<p>Content for Tax refunds</p>";
+                                    break;
+                                case "War veterans allowance and other veterans' benefits":
+                                    resultDiv.innerHTML += "<p>Content for War veterans allowance and other veterans' benefits</p>";
+                                    break;
+                                // Add more cases for other options
+                            }
+                        });
+                    </script>
 
                     <!-- <div id="result"></div>
 
