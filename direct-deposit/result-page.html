@@ -20,6 +20,18 @@
         <noscript><link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/wet-boew/css/noscript.min.css" /></noscript>
 
         <script>
+               // Don't display individual multiple times
+               function alreadyDisplayed(individuals) {
+                            return document.querySelector('.' + individuals) !== null;
+                            console.log(individuals + ' exists:', elementExists);
+                            return elementExists;
+                         }
+
+                         console.log("Checking if already displayed");
+                        if (!alreadyDisplayed('individuals')) {
+                            // Your code here
+                        }
+
             !(function (a) {
                 var e = "https://s.go-mpulse.net/boomerang/",
                     t = "addEventListener";
@@ -280,11 +292,6 @@ h1 span.stacked span:nth-child(2) {
                     </div>
                     
                     <script>
-                        // Don't display individual multiple times
-                        function alreadyDisplayed(individuals) {
-                            return document.querySelector('.' + individuals) !== null;
-                         }
-
                         // Retrieve selected options from session storage
                         var selectedOptions = JSON.parse(sessionStorage.getItem("selectedOptions"));
                     
@@ -320,7 +327,7 @@ h1 span.stacked span:nth-child(2) {
                                     resultHtml += `
             <li class="individuals">
                 <article
-                        class="individuals panel panel-info brdr-tp brdr-rght brdr-bttm brdr-lft mrgn-bttm-md position-relative"
+                        class="panel panel-info brdr-tp brdr-rght brdr-bttm brdr-lft mrgn-bttm-md position-relative"
                     >
                         <h3 class="mrgn-tp-0 panel-heading panel-title" style="padding: 15px; border-bottom: 1px solid #ccc;">Canada Revenue Agency (CRA) - Individuals
                         </h3>
@@ -500,7 +507,7 @@ h1 span.stacked span:nth-child(2) {
                                     resultHtml += `
             <li class="individuals">
                 <article
-                        class="individuals panel panel-info brdr-tp brdr-rght brdr-bttm brdr-lft mrgn-bttm-md position-relative"
+                        class="panel panel-info brdr-tp brdr-rght brdr-bttm brdr-lft mrgn-bttm-md position-relative"
                     >
                         <h3 class="mrgn-tp-0 panel-heading panel-title" style="padding: 15px; border-bottom: 1px solid #ccc;">Canada Revenue Agency (CRA) - Individuals
                         </h3>
@@ -564,7 +571,7 @@ h1 span.stacked span:nth-child(2) {
                                     resultHtml += `
             <li class="individuals">
                 <article
-                        class="individuals panel panel-info brdr-tp brdr-rght brdr-bttm brdr-lft mrgn-bttm-md position-relative"
+                        class="panel panel-info brdr-tp brdr-rght brdr-bttm brdr-lft mrgn-bttm-md position-relative"
                     >
                         <h3 class="mrgn-tp-0 panel-heading panel-title" style="padding: 15px; border-bottom: 1px solid #ccc;">Canada Revenue Agency (CRA) - Individuals
                         </h3>
@@ -625,7 +632,7 @@ h1 span.stacked span:nth-child(2) {
                                     resultHtml += `
             <li class="individuals">
                 <article
-                        class="individuals panel panel-info brdr-tp brdr-rght brdr-bttm brdr-lft mrgn-bttm-md position-relative"
+                        class="panel panel-info brdr-tp brdr-rght brdr-bttm brdr-lft mrgn-bttm-md position-relative"
                     >
                         <h3 class="mrgn-tp-0 panel-heading panel-title" style="padding: 15px; border-bottom: 1px solid #ccc;">Canada Revenue Agency (CRA) - Individuals
                         </h3>
