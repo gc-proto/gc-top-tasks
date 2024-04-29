@@ -272,77 +272,289 @@ h1 span.stacked span:nth-child(2) {
                         </span>
                     </h1>
 
-                    <div id="youSelected"></div>
-
-                    <div id="result"></div>
-                
+                    <div class="col-md-8">
+                        <div class="row">
+                            <div class="well mrgn-tp-md small" id="youSelected"></div>
+                            <div id="result"></div>
+                        </div>
+                    </div>
+                    
                     <script>
                         // Retrieve selected options from session storage
                         var selectedOptions = JSON.parse(sessionStorage.getItem("selectedOptions"));
-                
-                        // Display "You selected" section
+                    
+                        // Display "You selected" section as a list
                         var youSelectedDiv = document.getElementById("youSelected");
-                        youSelectedDiv.innerHTML = "<h2>You selected:</h2><ul>";
-                        selectedOptions.forEach(function(option) {
-                            youSelectedDiv.innerHTML += "<li>" + option + "</li>";
+                        var listHtml = "<p>You selected:</p><ul>";
+                        selectedOptions.forEach(function(option, index) {
+                            listHtml += "<li><b>" + option + "</b></li>";
                         });
-                        youSelectedDiv.innerHTML += "</ul>";
-                
+                        listHtml += "</ul>";
+                        youSelectedDiv.innerHTML = listHtml;
+                    
                         // Display "Selected Options" section
                         var resultDiv = document.getElementById("result");
-                        resultDiv.innerHTML = "<h2>Selected Options:</h2>";
-                
+                        var resultHtml = "<h2>Selected Options:</h2>";
+                    
+                        // Add paragraph before options begin
+                        if (selectedOptions.length === 1) {
+                            resultHtml += "<p>Based on your selection, you will need to setup or update your banking information in the following place:</p>";
+                        } else {
+                            resultHtml += "<p>Based on your selections, you will need to setup or update your banking information in <b>" + selectedOptions.length + "</b> different places:</p>";
+                        }
+                    
+                        // Start building the ordered list
+                        resultHtml += "<ol class='lst-stps mrgn-tp-lg'>";
                         selectedOptions.forEach(function(option) {
                             switch (option) {
                                 case "Apprenticeship grants and loans":
-                                    resultDiv.innerHTML += "<p>Content for Apprenticeship grants and loans</p>";
+                                    resultHtml += "<li>Content for Apprenticeship grants and loans</li>";
                                     break;
                                 case "Canada Carbon Rebate (CCR)":
-                                    resultDiv.innerHTML += "<p>Content for Canada Carbon Rebate (CCR)</p>";
+                                    resultHtml += `
+            <li class="mrgn-tp-lg">
+                <article
+                        class="panel panel-info brdr-tp brdr-rght brdr-bttm brdr-lft mrgn-bttm-md position-relative"
+                    >
+                        <h3 class="mrgn-tp-0 panel-heading panel-title" style="padding: 15px; border-bottom: 1px solid #ccc;">Canada Revenue Agency (CRA) - Individuals
+                        </h3>
+                        <div class="panel-body">
+                            <details>
+                            <summary><h4 class="mrgn-tp-sm">All payments that will be changed</h4></summary>
+                            <ul>
+                                <li>Canada Carbon Rebate</li>
+                                <li>Canada child benefit</li>
+                                <li>Canada workers benefit</li>
+                                <li>GST/HST credit</li>
+                                <li>Ontario Trillium Benefit</li>
+                                <li>Tax refunds</li>
+                            </ul>
+                        </details>
+                            <h4>Sign-up or update your banking information</h4>
+                            <h5><i class="fa fa-globe"></i> Online</h5>
+                            <ul class="list-unstyled cnjnctn-type-or cnjnctn-xs" style="padding: 0.75em; border: 1px solid #ddd; border-radius: 4px;">
+                                <li class="cnjnctn-col">
+                                    <p>
+                                        In the <b>profile</b> section of:
+                                        <a class="btn btn-primary mrgn-tp-md" href="https://www.canada.ca/en/revenue-agency/services/e-services/digital-services-individuals/account-individuals.html">
+                                            CRA&nbsp;My&nbsp;Account
+                                        </a>
+                                    </p>
+                                </li>
+                                <li class="cnjnctn-col">
+                                    <p>
+                                        <b>online banking</b> with <a href="https://www.canada.ca/en/revenue-agency/services/about-canada-revenue-agency-cra/direct-deposit.html#tfi">participating financial institutions</a>
+                                    </p>
+                                </li>
+                            </ul>
+                            <h5><i class="fa fa-phone"></i> Phone</h5>
+                            <p><b>1-800-959-8281</b></p>
+                            <hr />
+                            <h5><i class="fa fa-people-arrows"></i> In person</h5>
+                            <p>Your bank or other financial institution can help you sign-up for direct deposit for your CRA payments.</p>
+                            <hr />
+    
+                            <h5><i class="fa fa-envelope"></i> Mail</h5>
+                            <p>Takes up to 3 months to process.</p>
+    
+                            <p>
+                                Complete the <a href="https://www.tpsgc-pwgsc.gc.ca/recgen/form/inscription-enrolment-eng.html">Canada Direct Deposit enrolment form</a> and send it to the Receiver General for Canada at the
+                                address indicated at the bottom of the form.
+                            </p>
+    
+                        </div>
+                    </article>
+            </li>`;
                                     break;
                                 case "Canada child benefit (CCB)":
-                                    resultDiv.innerHTML += "<p>Content for Canada child benefit (CCB)</p>";
+                                    resultHtml += "<li>Content for Canada child benefit (CCB)</li>";
                                     break;
                                 case "Canada Pension Plan (CPP)":
-                                    resultDiv.innerHTML += "<p>Content for Canada Pension Plan (CPP)</p>";
+                                    resultHtml += "<li>Content for Canada Pension Plan (CPP)</li>";
                                     break;
                                 case "Employment Insurance (EI)":
-                                    resultDiv.innerHTML += "<p>Content for Employment Insurance (EI)</p>";
+                                    resultHtml += `
+            <li class="mrgn-tp-lg">
+                <article class="panel panel-info brdr-tp brdr-rght brdr-bttm brdr-lft mrgn-bttm-md position-relative">
+                    <h3 class="mrgn-tp-0 panel-heading panel-title" style="padding: 15px; border-bottom: 1px solid #ccc;">
+                        Employment Insurance (Service Canada)
+                    </h3>
+                    <div class="panel-body">
+                        <details>
+                            <summary><h4 class="mrgn-tp-sm">All payments that will be changed</h4></summary>
+                            <p>Employment insurance including:</p>
+                            <ul>
+                                <li>Regular benefits</li>
+                                <li>Sickness benefits</li>
+                                <li>Maternity and parental benefits</li>
+                                <li>Caregiving benefits and leave</li>
+                                <li>Benefits for the self-employed</li>
+                                <li>Fishing benefits</li>
+                            </ul>
+                        </details>
+                        <h4>Sign-up or update your banking information</h4>
+                        <details>
+                            <summary>Sign-up</summary>
+                            <h5><i class="fa fa-globe"></i> Online</h5>
+                            <p>Only available for new sign-ups.</p>
+                            <p>Can <b>not be used</b> to change your bank account information.</p>
+                            <a class="btn btn-primary mrgn-tp-md" href="https://www.canada.ca/en/employment-social-development/services/my-account.html">My Service Canada Account</a>
+                            <hr />
+                            <h5><i class="fa fa-phone"></i> Phone</h5>
+                            <p><b>1-800-206-7218</b> (press "0" to speak with an agent)</p>
+                            <p>Teletypewriter (TTY)</p>
+                            <p><b>1-800-529-3742</b></p>
+                            <hr />
+                            <h5><i class="fa fa-people-arrows"></i> In person</h5>
+                            <p><a href="http://www.servicecanada.gc.ca/tbsc-fsco/sc-hme.jsp?lang=eng">Find a Service Canada Office close to your home</a></p>
+                        </details>
+                        <details>
+                            <summary>Update your banking information</summary>
+                            <p>Updates <strong>cannot</strong> be done online, and must be done by:</p>
+                            <h5><i class="fa fa-phone"></i> Phone</h5>
+                            <p><b>1-800-206-7218</b> (press "0" to speak with an agent)</p>
+                            <p>Teletypewriter (TTY)</p>
+                            <p><b>1-800-529-3742</b></p>
+                            <hr />
+                            <h5><i class="fa fa-people-arrows"></i> In person</h5>
+                            <p><a href="http://www.servicecanada.gc.ca/tbsc-fsco/sc-hme.jsp?lang=eng">Find a Service Canada Office close to your home</a></p>
+                        </details>
+                    </div>
+                </article>
+            </li>`;
+        break;
                                     break;
                                 case "Federal public service pay":
-                                    resultDiv.innerHTML += "<p>Content for Federal public service pay</p>";
+                                    resultHtml += "<li>Content for Federal public service pay</li>";
                                     break;
                                 case "Federal public service pension":
-                                    resultDiv.innerHTML += "<p>Content for Federal public service pension</p>";
+                                    resultHtml += "<li>Content for Federal public service pension</li>";
                                     break;
                                 case "Government annuity":
-                                    resultDiv.innerHTML += "<p>Content for Government annuity</p>";
+                                    resultHtml += "<li>Content for Government annuity</li>";
                                     break;
                                 case "GST/HST credit":
-                                    resultDiv.innerHTML += "<p>Content for GST/HST credit</p>";
+                                    resultHtml += "<li>Content for GST/HST credit</li>";
                                     break;
                                 case "Guaranteed Income Supplement (GIS)":
-                                    resultDiv.innerHTML += "<p>Content for Guaranteed Income Supplement (GIS)</p>";
+                                    resultHtml += "<li>Content for Guaranteed Income Supplement (GIS)</li>";
                                     break;
                                 case "Old Age Security (OAS)":
-                                    resultDiv.innerHTML += "<p>Content for Old Age Security (OAS)</p>";
+                                    resultHtml += "<li>Content for Old Age Security (OAS)</li>";
                                     break;
                                 case "Ontario Trillium Benefit (OTB)":
-                                    resultDiv.innerHTML += "<p>Content for Ontario Trillium Benefit (OTB)</p>";
+                                    resultHtml += "<li>Content for Ontario Trillium Benefit (OTB)</li>";
                                     break;
                                 case "Student loans":
-                                    resultDiv.innerHTML += "<p>Content for Student loans</p>";
+                                    resultHtml += "<li>Content for Student loans</li>";
                                     break;
                                 case "Tax refunds":
-                                    resultDiv.innerHTML += "<p>Content for Tax refunds</p>";
+                                    resultHtml += "<li>Content for Tax refunds</li>";
                                     break;
                                 case "War veterans allowance and other veterans' benefits":
-                                    resultDiv.innerHTML += "<p>Content for War veterans allowance and other veterans' benefits</p>";
+                                    resultHtml += "<li>Content for War veterans allowance and other veterans' benefits</li>";
                                     break;
                                 // Add more cases for other options
                             }
                         });
+                        resultHtml += "</ol>";
+                        resultDiv.innerHTML = resultHtml;
                     </script>
+                    
+
+                    <!-- <div class="col-md-8">
+                        <div class="row">
+                            <div class="well mrgn-tp-md small" id="youSelected"></div>
+                            <div id="result"></div>
+                        </div>
+                    </div>
+                    
+                    <script>
+                        // Retrieve selected options from session storage
+                        var selectedOptions = JSON.parse(sessionStorage.getItem("selectedOptions"));
+                    
+                        // Display "You selected" section as a list
+                        var youSelectedDiv = document.getElementById("youSelected");
+                        youSelectedDiv.innerHTML = "<p>You selected:</p><ul>";
+                        var selectedOptionsLength = selectedOptions.length;
+                        selectedOptions.forEach(function(option, index) {
+                            // Check if it's the second last item
+                            if (index === selectedOptionsLength - 2) {
+                                youSelectedDiv.innerHTML += "<li><b>" + option + "</b> and </li>";
+                            } else if (index === selectedOptionsLength - 1) { // Check if it's the last item
+                                youSelectedDiv.innerHTML += "<li><b>" + option + "</b></li>";
+                            } else {
+                                youSelectedDiv.innerHTML += "<li><b>" + option + "</b>,</li>";
+                            }
+                        });
+                        youSelectedDiv.innerHTML += "</ul>";
+                    
+                        // Display "Selected Options" section
+                        var resultDiv = document.getElementById("result");
+                        resultDiv.innerHTML = "<h2>Selected Options:</h2>";
+                    
+                        // Add paragraph before options begin
+                        if (selectedOptions.length === 1) {
+                            resultDiv.innerHTML += "<p>Based on your selection, you will need to setup or update your banking information in the following place:</p>";
+                        } else {
+                            resultDiv.innerHTML += "<p>Based on your selections, you will need to setup or update your banking information in <b>" + selectedOptions.length + "</b> different places:</p>";
+                        }
+                    
+                        // Display selected options as an ordered list
+                        resultDiv.innerHTML += "<ol class='lst-stps mrgn-tp-lg'>";
+                        selectedOptions.forEach(function(option) {
+                            switch (option) {
+                                case "Apprenticeship grants and loans":
+                                    resultDiv.innerHTML += "<li>Content for Apprenticeship grants and loans</li>";
+                                    break;
+                                case "Canada Carbon Rebate (CCR)":
+                                    resultDiv.innerHTML += "<li>Content for Canada Carbon Rebate (CCR)</li>";
+                                    break;
+                                case "Canada child benefit (CCB)":
+                                    resultDiv.innerHTML += "<li>Content for Canada child benefit (CCB)</li>";
+                                    break;
+                                case "Canada Pension Plan (CPP)":
+                                    resultDiv.innerHTML += "<li>Content for Canada Pension Plan (CPP)</li>";
+                                    break;
+                                case "Employment Insurance (EI)":
+                                    resultDiv.innerHTML += "<li>Content for Employment Insurance (EI)</li>";
+                                    break;
+                                case "Federal public service pay":
+                                    resultDiv.innerHTML += "<li>Content for Federal public service pay</li>";
+                                    break;
+                                case "Federal public service pension":
+                                    resultDiv.innerHTML += "<li>Content for Federal public service pension</li>";
+                                    break;
+                                case "Government annuity":
+                                    resultDiv.innerHTML += "<li>Content for Government annuity</li>";
+                                    break;
+                                case "GST/HST credit":
+                                    resultDiv.innerHTML += "<li>Content for GST/HST credit</li>";
+                                    break;
+                                case "Guaranteed Income Supplement (GIS)":
+                                    resultDiv.innerHTML += "<li>Content for Guaranteed Income Supplement (GIS)</li>";
+                                    break;
+                                case "Old Age Security (OAS)":
+                                    resultDiv.innerHTML += "<li>Content for Old Age Security (OAS)</li>";
+                                    break;
+                                case "Ontario Trillium Benefit (OTB)":
+                                    resultDiv.innerHTML += "<li>Content for Ontario Trillium Benefit (OTB)</li>";
+                                    break;
+                                case "Student loans":
+                                    resultDiv.innerHTML += "<li>Content for Student loans</li>";
+                                    break;
+                                case "Tax refunds":
+                                    resultDiv.innerHTML += "<li>Content for Tax refunds</li>";
+                                    break;
+                                case "War veterans allowance and other veterans' benefits":
+                                    resultDiv.innerHTML += "<li>Content for War veterans allowance and other veterans' benefits</li>";
+                                    break;
+                                // Add more cases for other options
+                            }
+                        });
+                        resultDiv.innerHTML += "</ol>";
+
+                        </script> -->
 
                     <!-- <div id="result"></div>
 
