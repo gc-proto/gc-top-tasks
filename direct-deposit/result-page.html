@@ -261,6 +261,11 @@ h1 span.stacked span:nth-child(2) {
 	font-weight: 500;
 	margin-bottom: 0.17em;
 }
+
+ol.lst-stps>li:before, ol.lst-stps>li ol.lst-stps-sub>li:before {
+    margin-top: 5px;
+}
+
 </style>
 
         <main property="mainContentOfPage" resource="#wb-main" typeof="WebPageElement">
@@ -304,7 +309,7 @@ var individualsCount = 0;
 if (selectedOptions.length === 1) {
     resultHtml += "<p>Based on your selection, you will need to setup or update your banking information in the following place:</p>";
 } else {
-    resultHtml += "<p>Based on your selections, you will need to setup or update your banking information in <b>" + selectedOptions.length + "</b> different places:</p>";
+    resultHtml += "<p>Based on your selections, you will need to setup or update your banking information in <b>" + selectedOptions.length + " different places</b>:</p>";
 }
 
 // Start building the ordered list
@@ -440,7 +445,7 @@ resultDiv.innerHTML = resultHtml;
 
 // Update the count in the paragraph based on displayed options
 if (displayedOptionsCount > 0) {
-    resultDiv.querySelector("p").innerHTML = "Based on your selections, you will need to setup or update your banking information in <b>" + displayedOptionsCount + "</b> different place(s):";
+    resultDiv.querySelector("p").innerHTML = "Based on your selections, you will need to setup or update your banking information in <b>" + displayedOptionsCount + " different place(s)</b>:";
 }
 </script>
                     
@@ -576,8 +581,6 @@ if (displayedOptionsCount > 0) {
                     </div>
                 </div>
             </section>
-        </section>
-
     </div>
         </main>
 
