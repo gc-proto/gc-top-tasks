@@ -328,7 +328,7 @@ selectedOptions.forEach(function(option) {
                 resultHtml 
             resultHtml += `
             <li class="cpp-oas">
-                <article data-wb-tags="for_individualsin payments_cpp payments_oas payments_gis" class="panel panel-info brdr-tp brdr-rght brdr-bttm brdr-lft mrgn-bttm-md position-relative">
+                <article class="panel panel-info brdr-tp brdr-rght brdr-bttm brdr-lft mrgn-bttm-md position-relative">
                                         <h3 class="panel-heading panel-title" style="padding: 15px;">
                                             Service Canada - Canada Pension Plan (CPP) / Old Age Security (OAS) - In Canada
                                         </h3>
@@ -402,7 +402,38 @@ selectedOptions.forEach(function(option) {
             displayedOptionsCount++; // Increment counter for displayed options
             break;
         case "War veterans allowance and other veterans' benefits":
-            resultHtml += "<li>Content for War veterans allowance and other veterans' benefits</li>";
+            resultHtml += `<li>
+                <article class="panel panel-info brdr-tp brdr-rght brdr-bttm brdr-lft mrgn-bttm-md position-relative">
+                                        <h3 class="panel-heading panel-title" style="padding: 15px;">
+                                            Veterans Affairs Canada - Individuals in Canada
+                                        </h3>
+                                        <div class="panel-body">
+                                            <h4 class="mrgn-tp-sm">All payments that will be changed</h4>
+                                            <ul>
+                                                <li>Disability Benefits</li>
+                                                <li>War Veterans Allowance</li>
+                                                <li>Financial Benefits</li>
+                                                <li>Treatment Benefits</li>
+                                                <li>Veterans Independence Program Benefits</li>
+                                                <li>Vocational Rehabilitation</li>
+                                            </ul>
+                                            <h4>How to sign-up or update your banking information</h4>
+                                            <h5><i class="fa fa-globe"></i> Online</h5>
+                                            <a class="btn btn-primary mrgn-tp-md" href="https://www.veterans.gc.ca/eng/e_services">My VAC Account</a>
+                                            <hr />
+                                            <h5><i class="fa fa-phone"></i> Phone</h5>
+                                            <p><b>1-866-522-2122</b></p>
+                                            <hr />
+                                            <h5><i class="fa fa-envelope"></i> Mail</h5>
+                                            <p>Complete the <a href="https://www.veterans.gc.ca/eng/forms/document/vac441">Direct Deposit Request</a> form and send it by mail to the address indicated on the form.</p>
+                                            <hr />
+                                            <h5><i class="fa fa-people-arrows"></i> In person</h5>
+                                            <p>
+                                                Complete the <a href="https://www.veterans.gc.ca/eng/forms/document/vac441">Direct Deposit Request</a> form and bring it in person to your
+                                                <a href="https://www.veterans.gc.ca/eng/contact">local VAC office</a>.
+                                            </p>
+                                        </div>
+                                    </article></li>`;
             displayedOptionsCount++; // Increment counter for displayed options
             break;
         case "Canada Carbon Rebate (CCR)":
