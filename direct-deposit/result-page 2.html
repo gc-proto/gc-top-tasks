@@ -301,10 +301,9 @@ youSelectedDiv.innerHTML = listHtml;
 var resultDiv = document.getElementById("result");
 var resultHtml = "<h2>Your results:</h2>";
 
-// Initialize counters for displayed options and individuals + cppoas
+// Initialize counters for displayed options and individuals
 var displayedOptionsCount = 0;
 var individualsCount = 0;
-var cppoasCount = 0;
 
 // Add paragraph before options begin
 if (selectedOptions.length === 1) {
@@ -323,9 +322,6 @@ selectedOptions.forEach(function(option) {
             displayedOptionsCount++; // Increment counter for displayed options
             break;
         case "Canada Pension Plan (CPP)":
-        case "Old Age Security (OAS)":
-        if (cppoasCount === 0) {
-                resultHtml 
             resultHtml += `
             <li class="cpp-oas">
                 <article data-wb-tags="for_individualsin payments_cpp payments_oas payments_gis" class="panel panel-info brdr-tp brdr-rght brdr-bttm brdr-lft mrgn-bttm-md position-relative">
@@ -377,9 +373,7 @@ selectedOptions.forEach(function(option) {
                                                 <hr />
                                             </details>
 </li>`;
-                cppoasCount++; // Increment counter for cppoas
-                displayedOptionsCount++; // Increment counter for displayed options
-            }
+            displayedOptionsCount++; // Increment counter for displayed options
             break;
         case "Federal public service pay":
             resultHtml += "<li>Content for Federal public service pay</li>";
@@ -395,6 +389,10 @@ selectedOptions.forEach(function(option) {
             break;
         case "Guaranteed Income Supplement (GIS)":
             resultHtml += "<li>Content for Guaranteed Income Supplement (GIS)</li>";
+            displayedOptionsCount++; // Increment counter for displayed options
+            break;
+        case "Old Age Security (OAS)":
+            resultHtml += "<li>Content for Old Age Security (OAS)</li>";
             displayedOptionsCount++; // Increment counter for displayed options
             break;
         case "Student loans":
