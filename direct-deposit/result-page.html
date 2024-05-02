@@ -280,7 +280,8 @@ ol.lst-stps>li:before, ol.lst-stps>li ol.lst-stps-sub>li:before {
                     <div class="col-md-8">
                         <div class="row">
                             <div class="well mrgn-tp-md small" id="youSelected"></div>
-                            <div id="result"></div>
+                            <div id="result">
+                            </div>
                         </div>
                     </div>
                     
@@ -559,8 +560,13 @@ resultDiv.innerHTML = resultHtml;
 
 // Update the count in the paragraph based on displayed options
 if (displayedOptionsCount > 0) {
-    resultDiv.querySelector("p").innerHTML = "Based on your selections, you will need to setup or update your banking information in <b>" + displayedOptionsCount + " different place(s)</b>:";
+    if (displayedOptionsCount === 1) {
+        resultDiv.querySelector("p").innerHTML = "Based on your selections, you will need to setup or update your banking information in the following place:";
+    } else {
+        resultDiv.querySelector("p").innerHTML = "Based on your selections, you will need to setup or update your banking information in <b>" + displayedOptionsCount + " different places</b>:";
+    }
 }
+
 </script>
                     
 
