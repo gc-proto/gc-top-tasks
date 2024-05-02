@@ -4,7 +4,7 @@
     <head prefix="og: http://ogp.me/ns#">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta charset="utf-8" />
-        <title>Direct deposit - Canada.ca</title>
+        <title>Direct deposit results - Canada.ca</title>
         <meta content="width=device-width,initial-scale=1" name="viewport" />
 
         <link rel="schema.dcterms" href="http://purl.org/dc/terms/" />
@@ -322,6 +322,7 @@ selectedOptions.forEach(function(option) {
             resultHtml += "<li>Content for Apprenticeship grants and loans</li>";
             displayedOptionsCount++; // Increment counter for displayed options
             break;
+        case "Guaranteed Income Supplement (GIS)":
         case "Canada Pension Plan (CPP)":
         case "Old Age Security (OAS)":
         if (cppoasCount === 0) {
@@ -330,7 +331,7 @@ selectedOptions.forEach(function(option) {
             <li class="cpp-oas">
                 <article class="panel panel-info brdr-tp brdr-rght brdr-bttm brdr-lft mrgn-bttm-md position-relative">
                                         <h3 class="panel-heading panel-title" style="padding: 15px;">
-                                            Service Canada - Canada Pension Plan (CPP) / Old Age Security (OAS) - In Canada
+                                            Canada Pension Plan (CPP) / Old Age Security (OAS) - Service Canada
                                         </h3>
                                         <div class="panel-body">
                                             <details>
@@ -391,10 +392,6 @@ selectedOptions.forEach(function(option) {
             break;
         case "Government annuity":
             resultHtml += "<li>Content for Government annuity</li>";
-            displayedOptionsCount++; // Increment counter for displayed options
-            break;
-        case "Guaranteed Income Supplement (GIS)":
-            resultHtml += "<li>Content for Guaranteed Income Supplement (GIS)</li>";
             displayedOptionsCount++; // Increment counter for displayed options
             break;
         case "Student loans":
