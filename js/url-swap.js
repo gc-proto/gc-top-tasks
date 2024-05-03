@@ -47,17 +47,18 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 document.addEventListener('DOMContentLoaded', function() {
-    // Select the form by its action attribute
-    var form = document.querySelector('form[action="https://www.canada.ca/en/sr/srb.html"]');
-
-    // Check if the form exists
-    if (form) {
-        // Change the action to an empty string
-        form.action = "";
-
-        // Optionally, prevent form from submitting
-        form.onsubmit = function() {
-            return false;
-        };
+    // Function to modify form action and prevent submission
+    function modifyFormAction(formSelector) {
+        var form = document.querySelector(formSelector);
+        if (form) {
+            form.action = "";  // Set action to empty string
+            form.onsubmit = function() { return false; };  // Prevent submission
+        }
     }
+
+    // Modify the first form
+    modifyFormAction('form[action="https://www.canada.ca/en/sr/srb.html"]');
+    
+    // Modify the second form - with URL escaping
+    modifyFormAction('form[action="https://www.canada.ca/en/revenue-agency/search.html?q=&wb-srch-sub="]');
 });
