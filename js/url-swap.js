@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
         "https://www.canada.ca/en/public-services-procurement/services/payments-to-from-government/direct-deposit.html": "https://test.canada.ca/gc-top-tasks/direct-deposit/direct-deposit.html",
         "https://www.canada.ca/en.html": "https://test.canada.ca/gc-top-tasks/direct-deposit/home.html",
         "https://www.canada.ca/en/sr/srb.html": "#",
-        "https://www.canada.ca/en/sr/srb.html?q=&wb-srch-sub="; "#",
+        "https://www.canada.ca/en/sr/srb.html?q=&wb-srch-sub=": "#",
 
     };
 
