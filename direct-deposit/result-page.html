@@ -397,7 +397,23 @@ selectedOptions.forEach(function(option) {
             displayedOptionsCount++; // Increment counter for displayed options
             break;
         case "Student loans":
-            resultHtml += "<li>Content for Student loans</li>";
+            resultHtml += `
+            <li>
+                <article class="panel panel-info brdr-tp brdr-rght brdr-bttm brdr-lft mrgn-bttm-md position-relative">
+                                        <h3 class="panel-heading panel-title" style="padding: 15px;">
+                                            National Student Loans Service Centre - Student Loans and Grants
+                                        </h3>
+                                        <div class="panel-body">
+                                            <details>
+                            <summary><h4 class="mrgn-tp-sm">All payments that will be changed</h4></summary>                                            <ul>
+                                                <li>Canada Student Grants</li>
+                                                <li>Canada Student Loans</li>
+                                            </ul>
+                                            </details>
+                                            <h5><i class="fa fa-globe"></i> Online</h5>
+                                            <p>Sign-in to your <a href="https://protege-secure.csnpe-nslsc.canada.ca/en/public/sign-in-method">National Student Loans Account</a>
+                                           
+</li>`;
             displayedOptionsCount++; // Increment counter for displayed options
             break;
         case "War veterans allowance and other veterans' benefits":
