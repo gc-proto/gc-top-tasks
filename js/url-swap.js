@@ -45,3 +45,10 @@ document.addEventListener("DOMContentLoaded", function() {
     var config = { childList: true, subtree: true };
     observer.observe(document.body, config);
 });
+
+window.onload = function() {
+    var searchButton = document.getElementById('wb-srch-sub');
+    if (searchButton) {
+        searchButton.disabled = true;
+    }
+};
