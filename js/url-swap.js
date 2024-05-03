@@ -60,5 +60,5 @@ document.addEventListener('DOMContentLoaded', function() {
     modifyFormAction('form[action="https://www.canada.ca/en/sr/srb.html"]');
     
     // Modify the second form - with URL escaping
-    modifyFormAction('form[action="https://www.canada.ca/en/revenue-agency/search.html?q=&wb-srch-sub="]');
+    modifyFormAction('form[action="https://www.canada.ca/en/revenue-agency/search.html"]');
 });
