@@ -389,7 +389,41 @@ selectedOptions.forEach(function(option) {
             displayedOptionsCount++; // Increment counter for displayed options
             break;
         case "Federal public service pension":
-            resultHtml += "<li>Content for Federal public service pension</li>";
+            resultHtml += `
+            <li class="cpp-oas">
+                <article class="panel panel-info brdr-tp brdr-rght brdr-bttm brdr-lft mrgn-bttm-md position-relative">
+                                        <h3 class="panel-heading panel-title" style="padding: 15px;">
+                                            Pension for retired Government of Canada employees
+                                        </h3>
+                                        <div class="panel-body">
+                                       <h4 class="mrgn-tp-sm">Available payments</h4>
+                                       <ul>
+                                            <li>Available payments</li>
+                                            <li>Federal public service pension</li>
+                                            <li>Canadian Forces pension</li>
+                                            <li>Judges' pension</li>
+                                            <li>Royal Canadian Mounted Police (RCMP) pension</li>
+                                        </ul>
+                                            <h4>How to sign-up or update your banking information</h4>
+                                            
+                                            <h5>Federal public service pension</h5>
+                                            <p>1-800-561-7930</b></p>
+                                            <hr>
+                                            
+                                            <h5>Royal Canadian Mounted Police pension</h5>
+                                            <p><b>1-855-502-7090</b></br>
+                                            <a href="#">pensioncentrercmp.centredespensionsgrc@tpsgc-pwgsc.gc.ca</a>></p>
+                                            <hr>
+
+                                            <h5>Canadian Armed Forces pension</h5>
+                                            <p><b>1-800‑267‑0325</b></br>
+                                            <a href="#">pensioncentrecaf.centredespensionsfac@tpsgc-pwgsc.gc.ca</a></p>
+                                            <hr>
+
+                                            <h5>Judges pension</h5>
+                                            <p> <b>1-877‑583‑4266</b></br>
+                                            <a href="#">info@fja-cmf.gc.ca</a></p>
+</li>`;
             displayedOptionsCount++; // Increment counter for displayed options
             break;
         case "Government annuity":
