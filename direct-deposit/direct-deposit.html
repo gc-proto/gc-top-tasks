@@ -51,7 +51,7 @@
 				href: "#"
 			},{
 				title: "Payments to and from government",
-				href: "./public-services-procurement/payments-to-from-government.html"
+				href: "404.html"
 			}],
 			search: true,
 			siteMenu: true,
@@ -218,24 +218,24 @@
 						</ul>
 						<h4><span class="wb-inv">Themes and topics</span></h4>
 						<ul class="list-unstyled colcount-sm-2 colcount-md-3">
-							<li><a href="https://www.canada.ca/en/services/jobs.html">Jobs</a></li>
-							<li><a href="https://www.canada.ca/en/services/immigration-citizenship.html">Immigration and citizenship</a></li>
-							<li><a href="https://travel.gc.ca/">Travel and tourism</a></li>
-							<li><a href="https://www.canada.ca/en/services/business.html">Business</a></li>
-							<li><a href="benefits.html">Benefits</a></li>
-							<li><a href="https://www.canada.ca/en/services/health.html">Health</a></li>
-							<li><a href="taxes.html">Taxes</a></li>
-							<li><a href="https://www.canada.ca/en/services/environment.html">Environment and natural resources</a></li>
-							<li><a href="https://www.canada.ca/en/services/defence.html">National security and defence</a></li>
-							<li><a href="https://www.canada.ca/en/services/culture.html">Culture, history and sport</a></li>
-							<li><a href="https://www.canada.ca/en/services/policing.html">Policing, justice and emergencies</a></li>
-							<li><a href="https://www.canada.ca/en/services/transport.html">Transport and infrastructure</a></li>
-							<li><a href="https://international.gc.ca/world-monde/index.aspx?lang=eng">Canada and the world</a></li>
-							<li><a href="finance.html">Money and finance</a></li>
-							<li><a href="https://www.canada.ca/en/services/science.html">Science and innovation</a></li>
-							<li><a href="https://www.canada.ca/en/services/indigenous-peoples.html">Indigenous peoples</a></li>
-							<li><a href="https://www.canada.ca/en/services/veterans-military.html">Veterans and military</a></li>
-							<li><a href="https://www.canada.ca/en/services/youth.html">Youth</a></li>
+							<li><a href="404.html">Jobs</a></li>
+							<li><a href="404.html">Immigration and citizenship</a></li>
+							<li><a href="404.html">Travel and tourism</a></li>
+							<li><a href="404.html">Business</a></li>
+							<li><a href="404.html">Benefits</a></li>
+							<li><a href="404.html">Health</a></li>
+							<li><a href="404.html">Taxes</a></li>
+							<li><a href="404.html">Environment and natural resources</a></li>
+							<li><a href="404.html">National security and defence</a></li>
+							<li><a href="404.html">Culture, history and sport</a></li>
+							<li><a href="404.html">Policing, justice and emergencies</a></li>
+							<li><a href="404.html">Transport and infrastructure</a></li>
+							<li><a href="404.html">Canada and the world</a></li>
+							<li><a href="404.html">Money and finance</a></li>
+							<li><a href="404.html">Science and innovation</a></li>
+							<li><a href="404.html">Indigenous peoples</a></li>
+							<li><a href="404.html">Veterans and military</a></li>
+							<li><a href="404.html">Youth</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -270,5 +270,65 @@
 <script src="https://www.canada.ca/etc/designs/canada/wet-boew/js/ep-pp.min.js"></script>
 <script src="https://www.canada.ca/etc/designs/canada/wet-boew/js/wet-boew.min.js"></script>
 <script src="https://www.canada.ca/etc/designs/canada/wet-boew/js/theme.min.js"></script>
-<script type="text/javascript" src="https://test.canada.ca/gc-top-tasks/js/url-swap.js"></script></body>
+<script>
+	// Define the URL mappings
+    var urlMappings = {
+        "https://www.canada.ca/en.html": "https://test.canada.ca/gc-top-tasks/direct-deposit/404.html",
+        "https://www.canada.ca/en/sr/srb.html": "#",
+        "https://www.canada.ca/en/sr/srb.html?q=&wb-srch-sub=": "#",
+
+    };
+
+    // Function to update URLs
+    function updateURLs() {
+        var links = document.querySelectorAll("a");
+        links.forEach(function(link) {
+            var currentHref = link.href;
+            if (urlMappings[currentHref]) {
+                link.href = urlMappings[currentHref];
+                console.log(`Replaced ${currentHref} with ${urlMappings[currentHref]}`);
+            }
+        });
+    }
+
+    // Initially update any URLs present at load
+    updateURLs();
+
+    // Observer to monitor changes in the document
+    var observer = new MutationObserver(function(mutations) {
+        mutations.forEach(function(mutation) {
+            if (mutation.type === 'childList' && mutation.addedNodes.length > 0) {
+                mutation.addedNodes.forEach(function(node) {
+                    if (node.nodeType === Node.ELEMENT_NODE) {
+                        if (node.matches("a") || node.querySelector("a")) {
+                            updateURLs(); // Call updateURLs function if a new <a> tag is added
+                        }
+                    }
+                });
+            }
+        });
+    });
+
+    // Observer options - observe changes in child elements
+    var config = { childList: true, subtree: true };
+    observer.observe(document.body, config);
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Function to modify form action and prevent submission
+    function modifyFormAction(formSelector) {
+        var form = document.querySelector(formSelector);
+        if (form) {
+            form.action = "";  // Set action to empty string
+            form.onsubmit = function() { return false; };  // Prevent submission
+        }
+    }
+
+    // Modify the first form
+    modifyFormAction('form[action="https://www.canada.ca/en/sr/srb.html"]');
+    
+    // Modify the second form - with URL escaping
+    modifyFormAction('form[action="https://www.canada.ca/en/revenue-agency/search.html"]');
+});
+</script>
 </html>
