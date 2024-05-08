@@ -271,8 +271,13 @@
 <script src="https://www.canada.ca/etc/designs/canada/wet-boew/js/wet-boew.min.js"></script>
 <script src="https://www.canada.ca/etc/designs/canada/wet-boew/js/theme.min.js"></script>
 <script>
-	// Define the URL mappings
+document.addEventListener("DOMContentLoaded", function() {
+    // Define the URL mappings
     var urlMappings = {
+		"https://www.canada.ca/en/services/taxes.html": "https://test.canada.ca/gc-top-tasks/direct-deposit/404.html",
+        "https://www.canada.ca/en/services/benefits.html": "https://test.canada.ca/gc-top-tasks/direct-deposit/404.html",
+        "https://www.canada.ca/en/services/finance.html": "https://test.canada.ca/gc-top-tasks/direct-deposit/404.htmlml",
+        "https://www.canada.ca/en/public-services-procurement/services/payments-to-from-government/direct-deposit.html": "https://test.canada.ca/gc-top-tasks/direct-deposit/404.html",
         "https://www.canada.ca/en.html": "https://test.canada.ca/gc-top-tasks/direct-deposit/404.html",
         "https://www.canada.ca/en/sr/srb.html": "#",
         "https://www.canada.ca/en/sr/srb.html?q=&wb-srch-sub=": "#",
