@@ -324,7 +324,30 @@ resultHtml += "<ol class='lst-stps mrgn-tp-lg'>";
 selectedOptions.forEach(function(option) {
     switch (option) {
         case "Apprenticeship grants":
-            resultHtml += "<li>Content for Apprenticeship grants</li>";
+            resultHtml += `<li>
+                <article class="panel panel-info brdr-tp brdr-rght brdr-bttm brdr-lft mrgn-bttm-md position-relative">
+                                        <h3 class="panel-heading panel-title" style="padding: 15px;">
+                                             Apprenticeship grants - Service Canada
+                                        </h3>
+                                        <div class="panel-body">
+                                            <details>
+                            <summary><h4 class="mrgn-tp-sm">All payments that will be changed</h4></summary>                                            
+                                            <ul>
+                                                <li>Apprenticeship Incentive Grant for Women</li>
+                                                <li>Apprenticeship Incentive Grant</li>
+                                                <li>Apprenticeship Completion Grant</li>
+                                            </ul>
+                                            </details>
+                                            <h4>How to sign-up or update your banking information</h4>
+                                           
+                                                <h5><i class="fa fa-phone"></i> Phone</h5>
+                                                <p><b>1-866-724-3644</b></p>
+    
+                                                <p>Teletypewriter (TTY)</p>
+                                                <p><b>1-866-909-9757</b></p>
+                                                <hr />
+
+</li>`;
             displayedOptionsCount++; // Increment counter for displayed options
             break;
         case "Guaranteed Income Supplement (GIS)":
@@ -403,7 +426,28 @@ selectedOptions.forEach(function(option) {
             }
             break;
         case "Federal public service pay":
-            resultHtml += "<li>Content for Federal public service pay</li>";
+            resultHtml += `
+            <li>
+                <article class="panel panel-info brdr-tp brdr-rght brdr-bttm brdr-lft mrgn-bttm-md position-relative">
+                                        <h3 class="panel-heading panel-title" style="padding: 15px;">
+                                            Federal public service pay
+                                        </h3>
+                                        <div class="panel-body">
+                                       <h4 class="mrgn-tp-sm">All payments that will be changed</h4>
+                                       <ul>
+                                            <li>Employee pay for departments and agencies served by the <a href="https://www.tpsgc-pwgsc.gc.ca/remuneration-compensation/services-paye-pay-services/paye-centre-pay/calendrier-schedule-eng.html">Public Service Pay Centre</a></li>
+                                        </ul>
+                                            <h4>How to sign-up or update your banking information</h4>
+
+                                            <h5><i class="fa fa-globe"></i> Online</h5>
+
+                                            <p>Use the <b>Phoenix Pay System</b> on <a href="https://gcintranet.tpsgc-pwgsc.gc.ca/remuneration-compensation/awr-cwa-eng.html">Compensation Web Applications (available on Government of Canada network only)</a></p>
+                                            </hr>
+
+                                            <h4>More information</h4>
+
+                                            <p>For assistance contact the <a href="https://www.tpsgc-pwgsc.gc.ca/remuneration-compensation/services-paye-pay-services/paye-centre-pay/cn-cu-eng.html">Client Contact Centre</a></p>
+</li>`;
             displayedOptionsCount++; // Increment counter for displayed options
             break;
         case "Federal public service pension":
@@ -416,7 +460,6 @@ selectedOptions.forEach(function(option) {
                                         <div class="panel-body">
                                        <h4 class="mrgn-tp-sm">Available payments</h4>
                                        <ul>
-                                            <li>Available payments</li>
                                             <li>Federal public service pension</li>
                                             <li>Canadian Forces pension</li>
                                             <li>Judges' pension</li>
@@ -445,7 +488,51 @@ selectedOptions.forEach(function(option) {
             displayedOptionsCount++; // Increment counter for displayed options
             break;
         case "Government annuity":
-            resultHtml += "<li>Content for Government annuity</li>";
+            resultHtml += `
+            <li>
+                <article class="panel panel-info brdr-tp brdr-rght brdr-bttm brdr-lft mrgn-bttm-md position-relative">
+                                        <h3 class="panel-heading panel-title" style="padding: 15px;">
+                                            Canadian Government Annuities
+                                        </h3>
+                                        <div class="panel-body">
+                                            <details>
+                            <summary><h4 class="mrgn-tp-sm">All payments that will be changed</h4></summary>
+                                            <ul>
+                                                <li>Canadian Government Annuities</li>
+                                            </ul>
+                                            </details>
+                                            <h4>How to sign-up or update your banking information</h4>
+                                             <p>To have your payments deposited directly by bank account or to change your direct deposit information, contact the Annuities Branch by phone or in writing.</p>
+
+                                             <p>You will need to provide:</p>
+                                            
+                                             <ul>
+                                                 <li>your Annuity Contract Number or your Social Insurance Number</li>
+                                                 <li>the name and number of your bank or financial institution</li>
+                                                 <li>the number of the branch where you have your account</li>
+                                                 <li>your bank account number</li>
+                                            </ul>
+
+                                            <hr />
+                                            <h5><i class="fa fa-phone"></i> Phone</h5>
+                                            <p><b>1-800-561-7922</b></p>
+
+                                            <p>Fax</p>
+                                            <p><b>1-506-548-7428</b></p>
+                                            <hr />
+                                            <h5><i class="fa fa-envelope"></i> Mail</h5>
+                                            <p>Canadian Government Annuities Branch<br>
+                                                Employment and Social Development Canada<br>
+                                                P.O. Box 12,000<br>
+                                                Bathurst, NB E2A 4T6
+                                                </p>
+                                            <hr />
+                                            <h5>More information</h5>   
+                                                <p><a href="https://www.canada.ca/en/employment-social-development/services/cpp-annuities.html">Canadian government annuities</a></p>
+                                            </div>
+                                            </article>
+                                           
+</li>`;
             displayedOptionsCount++; // Increment counter for displayed options
             break;
         case "Student loans":
@@ -464,6 +551,8 @@ selectedOptions.forEach(function(option) {
                                             </details>
                                             <h5><i class="fa fa-globe"></i> Online</h5>
                                             <p>Sign-in to your <a href="https://protege-secure.csnpe-nslsc.canada.ca/en/public/sign-in-method">National Student Loans Account</a>
+                                        </div>
+                                        </article>
                                            
 </li>`;
             displayedOptionsCount++; // Increment counter for displayed options
